@@ -1,0 +1,7 @@
+{
+  "graph": {
+    "alpha": 0.85,
+    "hubPenalty": 0
+  },
+  "fullShare": 0.6
+}

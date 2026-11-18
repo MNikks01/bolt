@@ -1,0 +1,839 @@
+{
+  "repo": "stackblitz-labs/bolt.diy",
+  "head": "9cbb4c90266d99b93c953fd05810ad5d1d5efa80",
+  "minedAt": "2026-11-18",
+  "tasks": [
+    {
+      "id": "3cae5eda",
+      "split": "test",
+      "sha": "3cae5eda4708fb243860e92a2010d88d7608c1bc",
+      "parent": "0a2a11ff46f7b556860c9fe698f65014059e3283",
+      "date": "2026-11-16",
+      "prompt": "Add terminal output as chat context",
+      "edited": [
+        "app/components/chat/Chat.client.tsx",
+        "app/components/chat/ChatBox.tsx",
+        "app/components/workbench/terminal/TerminalTabs.tsx",
+        "app/lib/stores/terminal.ts",
+        "app/lib/stores/workbench.ts",
+        "app/utils/shell.ts"
+      ],
+      "added": [
+        "app/components/chat/TerminalContextAttachments.tsx",
+        "app/lib/stores/terminalContext.ts"
+      ]
+    },
+    {
+      "id": "0a2a11ff",
+      "split": "test",
+      "sha": "0a2a11ff46f7b556860c9fe698f65014059e3283",
+      "parent": "9706e88cb39ae040d17ca054e1e6363f91a069f2",
+      "date": "2026-11-16",
+      "prompt": "Prevent code changes in discussion mode",
+      "edited": [
+        "app/components/chat/AssistantMessage.tsx",
+        "app/components/chat/BaseChat.tsx",
+        "app/components/chat/Chat.client.tsx",
+        "app/components/chat/ChatBox.tsx",
+        "app/lib/hooks/useMessageParser.ts",
+        "app/routes/api.chat.ts"
+      ],
+      "added": []
+    },
+    {
+      "id": "82b6e7e2",
+      "split": "test",
+      "sha": "82b6e7e2b8417b1fcc111b6bc3a971708a355bbc",
+      "parent": "50e6cb39a5d6dbc1d617d8de1a53bd831f3842ee",
+      "date": "2026-11-16",
+      "prompt": "Enable only onboarding-selected providers",
+      "edited": [
+        "app/components/onboarding/FirstRunOnboarding.tsx",
+        "app/lib/stores/settings.ts"
+      ],
+      "added": []
+    },
+    {
+      "id": "8f3098ef",
+      "split": "test",
+      "sha": "8f3098efed2e3166164d82bdb2753ccff460abea",
+      "parent": "9e991958e192f314fd434c5e2b238c532b6d845f",
+      "date": "2026-11-16",
+      "prompt": "Fix starter template import with invalid GitHub token",
+      "edited": [
+        "app/routes/api.github-template.ts"
+      ],
+      "added": []
+    },
+    {
+      "id": "213c99bd",
+      "split": "test",
+      "sha": "213c99bdcb97cc7b8e179f00a5567190321d082b",
+      "parent": "9e991958e192f314fd434c5e2b238c532b6d845f",
+      "date": "2026-11-16",
+      "prompt": "feat: allow smoke tests to skip onboarding",
+      "edited": [
+        "app/components/onboarding/FirstRunOnboarding.tsx"
+      ],
+      "added": []
+    },
+    {
+      "id": "07921715",
+      "split": "test",
+      "sha": "07921715e64b12d787a0ca2aaa63bed629b9be01",
+      "parent": "9e991958e192f314fd434c5e2b238c532b6d845f",
+      "date": "2026-11-16",
+      "prompt": "fix(security): validate API CORS origins",
+      "edited": [
+        "app/lib/security.ts"
+      ],
+      "added": []
+    },
+    {
+      "id": "9e991958",
+      "split": "test",
+      "sha": "9e991958e192f314fd434c5e2b238c532b6d845f",
+      "parent": "7e9daf48e066bbaffb755c53d3bebcc118f95265",
+      "date": "2026-11-16",
+      "prompt": "fix: default Ollama base URL",
+      "edited": [
+        "app/lib/modules/llm/providers/ollama.ts"
+      ],
+      "added": [
+        "app/lib/modules/llm/providers/ollama.spec.ts"
+      ]
+    },
+    {
+      "id": "deb6c738",
+      "split": "test",
+      "sha": "deb6c73863e214ce16481d8d46d664adf0919e7d",
+      "parent": "db5a844d032302f14efaa2985fbc9766da550d61",
+      "date": "2026-11-15",
+      "prompt": "Avoid concurrent public asset copies in Electron builds",
+      "edited": [
+        "electron/main/vite.config.ts",
+        "electron/preload/vite.config.ts"
+      ],
+      "added": []
+    },
+    {
+      "id": "06e1d64e",
+      "split": "test",
+      "sha": "06e1d64eebbef31415d09a72e082f2e85bfb47a9",
+      "parent": "1c42c9dc4fbed50c09133ef2ae09853ea6dfe74f",
+      "date": "2026-11-15",
+      "prompt": "fix: stabilize workbench and streaming tests",
+      "edited": [
+        "app/lib/stores/workbench-lifecycle.spec.ts",
+        "tests/performance/core-journeys.perf.test.tsx"
+      ],
+      "added": []
+    },
+    {
+      "id": "5ae893cc",
+      "split": "test",
+      "sha": "5ae893cce1fcc53f00ae4ec68cd9faa46829320c",
+      "parent": "8eeaf5c449b823fd348492d9ef93edff22c60d82",
+      "date": "2026-11-15",
+      "prompt": "Move model settings caret after label",
+      "edited": [
+        "app/components/chat/ChatBox.tsx"
+      ],
+      "added": []
+    },
+    {
+      "id": "8eeaf5c4",
+      "split": "test",
+      "sha": "8eeaf5c449b823fd348492d9ef93edff22c60d82",
+      "parent": "48edd2cd8c033d34341e7e718ce8cf7808ec4f96",
+      "date": "2026-11-15",
+      "prompt": "Label expanded model settings toggle",
+      "edited": [
+        "app/components/chat/ChatBox.tsx"
+      ],
+      "added": []
+    },
+    {
+      "id": "48edd2cd",
+      "split": "test",
+      "sha": "48edd2cd8c033d34341e7e718ce8cf7808ec4f96",
+      "parent": "353b44c8f386aeb15abdf277515d78ff50f7578e",
+      "date": "2026-11-15",
+      "prompt": "Move microphone next to tool access menu",
+      "edited": [
+        "app/components/chat/ChatBox.tsx"
+      ],
+      "added": []
+    },
+    {
+      "id": "922a5c0d",
+      "split": "test",
+      "sha": "922a5c0d3ba7a20ec970303fd31d72090bb469ce",
+      "parent": "f0477acba1b5ff18e7d5ba2f2a57778fa16db60d",
+      "date": "2026-11-11",
+      "prompt": "perf: guard static composer handoff",
+      "edited": [
+        "app/components/chat/StaticComposer.tsx",
+        "tests/unit/StaticComposer.test.tsx"
+      ],
+      "added": []
+    },
+    {
+      "id": "70a5f257",
+      "split": "test",
+      "sha": "70a5f2578e758e73263e96996742a9742daf0590",
+      "parent": "353b44c8f386aeb15abdf277515d78ff50f7578e",
+      "date": "2026-10-21",
+      "prompt": "perf: highlight chat code blocks in a worker",
+      "edited": [
+        "app/components/chat/CodeBlock.tsx"
+      ],
+      "added": []
+    },
+    {
+      "id": "c89f3a39",
+      "split": "test",
+      "sha": "c89f3a39b709b1b1e270707a053d0341916fba3f",
+      "parent": "353b44c8f386aeb15abdf277515d78ff50f7578e",
+      "date": "2026-10-14",
+      "prompt": "Avoid model refetches on provider selection",
+      "edited": [
+        "app/components/chat/BaseChat.tsx"
+      ],
+      "added": []
+    },
+    {
+      "id": "7fd6e157",
+      "split": "test",
+      "sha": "7fd6e157d1d94e248addea8771680b42219a3f5e",
+      "parent": "8133577a3a38b0c96223496badcf7db49c5927bf",
+      "date": "2026-10-13",
+      "prompt": "fix: attach agent completion evidence automatically",
+      "edited": [
+        "app/lib/.server/llm/agent-loop.spec.ts",
+        "app/lib/.server/llm/agent-loop.ts",
+        "app/lib/common/agentLoop.ts"
+      ],
+      "added": []
+    },
+    {
+      "id": "8133577a",
+      "split": "test",
+      "sha": "8133577a3a38b0c96223496badcf7db49c5927bf",
+      "parent": "74e2c87b781425fd374e9b413a97801c1463eb6b",
+      "date": "2026-10-13",
+      "prompt": "fix: style connector configure buttons",
+      "edited": [
+        "app/components/@settings/tabs/connectors/ConnectorsTab.tsx"
+      ],
+      "added": []
+    },
+    {
+      "id": "79eac0c0",
+      "split": "test",
+      "sha": "79eac0c0af5bd1924710b6cb150116df9e904054",
+      "parent": "72bf4bcc2604a9b60b71f2bf8de5b0485fed45d8",
+      "date": "2026-10-13",
+      "prompt": "feat: convert Agent button to dropdown with Agent and Discuss modes",
+      "edited": [
+        "app/components/chat/ChatBox.tsx"
+      ],
+      "added": []
+    },
+    {
+      "id": "72bf4bcc",
+      "split": "test",
+      "sha": "72bf4bcc2604a9b60b71f2bf8de5b0485fed45d8",
+      "parent": "9b9f907d5850f300b67e29d7973646a8420dd562",
+      "date": "2026-10-13",
+      "prompt": "feat: add Preferences card to Control Panel main view",
+      "edited": [
+        "app/components/@settings/core/constants.tsx"
+      ],
+      "added": []
+    },
+    {
+      "id": "9b9f907d",
+      "split": "test",
+      "sha": "9b9f907d5850f300b67e29d7973646a8420dd562",
+      "parent": "e515f727204df9249d9cf7f85f59fd9b061a0371",
+      "date": "2026-10-13",
+      "prompt": "fix: restore Import Folder and Import Zip buttons on homescreen",
+      "edited": [
+        "app/components/chat/BaseChat.tsx"
+      ],
+      "added": []
+    },
+    {
+      "id": "b196baac",
+      "split": "test",
+      "sha": "b196baac43f238c9d49cb5fa5339dde2c0720d01",
+      "parent": "a1bc0201be781b2c732b0a62a365e02a1a1fd689",
+      "date": "2026-10-13",
+      "prompt": "fix: code review improvements - type safety and documentation",
+      "edited": [
+        "app/lib/.server/llm/agent-stream.ts",
+        "app/lib/services/connectorActivation.ts",
+        "app/utils/clearLocks.ts"
+      ],
+      "added": []
+    },
+    {
+      "id": "7c117ba2",
+      "split": "test",
+      "sha": "7c117ba2a36a1b2999db65854fe34c64b4a893c9",
+      "parent": "c4e45035ec2d39d58250e6fe6db28b049943d804",
+      "date": "2026-10-13",
+      "prompt": "Apply onboarding API keys immediately",
+      "edited": [
+        "app/components/chat/BaseChat.tsx",
+        "app/components/chat/Chat.client.tsx",
+        "app/components/onboarding/FirstRunOnboarding.tsx"
+      ],
+      "added": [
+        "app/lib/api/apiKeys.ts"
+      ]
+    },
+    {
+      "id": "c2eb4e4f",
+      "split": "test",
+      "sha": "c2eb4e4fa6d06f0c352c59df0cb998c47c1514a7",
+      "parent": "286c9d2b3679ab52b7029628205d3f3495da645f",
+      "date": "2026-10-13",
+      "prompt": "fix: match visual edits close button background",
+      "edited": [
+        "app/components/workbench/InspectorPanel.tsx"
+      ],
+      "added": []
+    },
+    {
+      "id": "b280127d",
+      "split": "test",
+      "sha": "b280127dfbd6d2a8004a96a908d920f70465c036",
+      "parent": "eae2835dbce4f19ebd04d43c5bab10979323e04b",
+      "date": "2026-10-13",
+      "prompt": "fix: preserve Git configuration files in starter templates",
+      "edited": [
+        "app/routes/api.github-template.ts",
+        "app/utils/selectStarterTemplate.ts"
+      ],
+      "added": [
+        "app/utils/templateGitConfig.spec.ts"
+      ]
+    },
+    {
+      "id": "0c1c8e3f",
+      "split": "test",
+      "sha": "0c1c8e3f44cf8d9ea8df7916d6548c86c29bef64",
+      "parent": "8b7d8aace0ac4459bd605d3be412d27ff9507738",
+      "date": "2026-10-13",
+      "prompt": "Add agent activity feed and approval tray",
+      "edited": [
+        "app/components/chat/AssistantMessage.tsx",
+        "app/components/chat/BaseChat.tsx",
+        "app/components/chat/ToolInvocations.tsx",
+        "app/lib/runtime/projectMcp.ts"
+      ],
+      "added": [
+        "app/components/chat/ToolApprovalTray.tsx"
+      ]
+    },
+    {
+      "id": "8b7d8aac",
+      "split": "test",
+      "sha": "8b7d8aace0ac4459bd605d3be412d27ff9507738",
+      "parent": "f8ba527fac36e2bfc47d6009d114705467a2830c",
+      "date": "2026-10-12",
+      "prompt": "Match plugin detail tabs to settings buttons",
+      "edited": [
+        "app/components/@settings/tabs/plugins/PluginTab.tsx"
+      ],
+      "added": []
+    },
+    {
+      "id": "f8ba527f",
+      "split": "test",
+      "sha": "f8ba527fac36e2bfc47d6009d114705467a2830c",
+      "parent": "7532d96b61fce3aa7625726ee3698a5f092311be",
+      "date": "2026-10-12",
+      "prompt": "Show concise marketplace metadata errors",
+      "edited": [
+        "app/lib/plugins/marketplace.ts"
+      ],
+      "added": []
+    },
+    {
+      "id": "7532d96b",
+      "split": "test",
+      "sha": "7532d96b61fce3aa7625726ee3698a5f092311be",
+      "parent": "a0a90868d2d25abe0c942c4e7834471cad8d368e",
+      "date": "2026-10-12",
+      "prompt": "Match plugin controls to settings button styles",
+      "edited": [
+        "app/components/@settings/tabs/plugins/PluginTab.tsx"
+      ],
+      "added": []
+    },
+    {
+      "id": "7dc4187e",
+      "split": "test",
+      "sha": "7dc4187ed71d621f2e2146399aaafd7594cce9c5",
+      "parent": "be36f5d9885049a52ca90a185af336d1a01e58ac",
+      "date": "2026-10-12",
+      "prompt": "Add Browser Use Cloud connector",
+      "edited": [
+        "app/components/@settings/tabs/connectors/ConnectorsTab.tsx"
+      ],
+      "added": [
+        "app/components/@settings/tabs/connectors/BrowserUseCloudTab.tsx"
+      ]
+    },
+    {
+      "id": "8c2d2380",
+      "split": "test",
+      "sha": "8c2d2380c6b8e8411bd0c9f76693510a368f7250",
+      "parent": "2cb92248ad3b7662c3950a38a663d0c5faccfe0d",
+      "date": "2026-10-12",
+      "prompt": "Fix browser startup and chat tool context",
+      "edited": [
+        "app/entry.server.tsx",
+        "app/lib/.server/llm/prompt-workstyle.ts",
+        "app/lib/.server/llm/stream-text.ts",
+        "app/root.tsx",
+        "vite.config.ts"
+      ],
+      "added": [
+        "app/lib/.server/llm/model-messages.spec.ts",
+        "app/lib/.server/llm/model-messages.ts",
+        "scripts/vite/browser-polyfills.spec.ts",
+        "scripts/vite/browser-polyfills.ts"
+      ]
+    },
+    {
+      "id": "0e6514b0",
+      "split": "dev",
+      "sha": "0e6514b007d556ee944f05870726c3c7dad0b359",
+      "parent": "61da830ff94f2e8140f230a1913fb8cd5fdee5fb",
+      "date": "2026-10-12",
+      "prompt": "Fix web search redirects",
+      "edited": [
+        "app/lib/services/webTools.server.ts"
+      ],
+      "added": []
+    },
+    {
+      "id": "d3e1b8f0",
+      "split": "dev",
+      "sha": "d3e1b8f01780dbbeab5a03e4662753ece74f2574",
+      "parent": "1b2d1e30d19a90efc8843ecd53cc2d4aad0ccd14",
+      "date": "2026-10-12",
+      "prompt": "Fix chat and diff control backgrounds",
+      "edited": [
+        "app/components/chat/ModelSelector.tsx",
+        "app/components/workbench/DiffView.tsx"
+      ],
+      "added": []
+    },
+    {
+      "id": "1b2d1e30",
+      "split": "dev",
+      "sha": "1b2d1e30d19a90efc8843ecd53cc2d4aad0ccd14",
+      "parent": "79462a0426ce3e0c4f2733ed7f6c844143ae30b1",
+      "date": "2026-10-12",
+      "prompt": "Add prompt tool access modes",
+      "edited": [
+        "app/components/chat/ChatBox.tsx",
+        "app/components/chat/ToolInvocations.tsx"
+      ],
+      "added": [
+        "app/components/chat/ToolAccessMenu.tsx",
+        "app/lib/stores/toolAccess.ts"
+      ]
+    },
+    {
+      "id": "79462a04",
+      "split": "dev",
+      "sha": "79462a0426ce3e0c4f2733ed7f6c844143ae30b1",
+      "parent": "ae892d563b89c905449ab913e51dd92ee2203fe2",
+      "date": "2026-10-12",
+      "prompt": "Fix workbench search fallback",
+      "edited": [
+        "app/lib/runtime/ripgrepClient.ts",
+        "vite.config.ts"
+      ],
+      "added": []
+    },
+    {
+      "id": "c982a09e",
+      "split": "dev",
+      "sha": "c982a09eac355683418168ac805da3801a15dadc",
+      "parent": "1900fce67460c669eefb5e7e81083951a7b772a2",
+      "date": "2026-10-12",
+      "prompt": "fix(zip-import): avoid autorun without import handler and use UIMessage type",
+      "edited": [
+        "app/components/chat/ImportZipButton.tsx",
+        "app/utils/zipImport.ts"
+      ],
+      "added": [
+        "app/components/chat/ImportZipButton.spec.tsx",
+        "app/utils/zipImport.spec.ts"
+      ]
+    },
+    {
+      "id": "5f95ba62",
+      "split": "dev",
+      "sha": "5f95ba621afc06661136cbf58fdf8ec3d5805b73",
+      "parent": "173c4e5292b76956c9d61b0198739468ae51f41f",
+      "date": "2026-10-12",
+      "prompt": "fix(api): reject missing roles and classify token limits",
+      "edited": [
+        "app/lib/.server/api/errors.spec.ts",
+        "app/lib/.server/api/errors.ts",
+        "app/lib/.server/api/schemas.spec.ts",
+        "app/lib/.server/api/schemas.ts",
+        "app/routes/api.llmcall.ts"
+      ],
+      "added": []
+    },
+    {
+      "id": "4d357d80",
+      "split": "dev",
+      "sha": "4d357d807f26ad79c0865464c2b07396071c0787",
+      "parent": "a77dc7140d10649e4351b3a70971b2d278c023dc",
+      "date": "2026-10-12",
+      "prompt": "fix(docs): apply Material color scheme to body",
+      "edited": [
+        "docs/docs/javascripts/theme-sync.js"
+      ],
+      "added": []
+    },
+    {
+      "id": "173c4e52",
+      "split": "dev",
+      "sha": "173c4e5292b76956c9d61b0198739468ae51f41f",
+      "parent": "a7c2cf9b4eda19285e0fd96d307ae3e9ce5d4d3c",
+      "date": "2026-10-11",
+      "prompt": "fix(api): sanitize llmcall stream errors",
+      "edited": [
+        "app/routes/api.llmcall.ts"
+      ],
+      "added": []
+    },
+    {
+      "id": "a7c2cf9b",
+      "split": "dev",
+      "sha": "a7c2cf9b4eda19285e0fd96d307ae3e9ce5d4d3c",
+      "parent": "b285272f91cc5445ea7d8a0df4be3ff5b2c4b6e6",
+      "date": "2026-10-11",
+      "prompt": "fix(api): bound and sanitize provider requests",
+      "edited": [
+        "app/lib/.server/api/errors.ts",
+        "app/lib/.server/api/schemas.spec.ts",
+        "app/lib/.server/api/schemas.ts",
+        "app/routes/api.chat.ts"
+      ],
+      "added": [
+        "app/lib/.server/api/errors.spec.ts"
+      ]
+    },
+    {
+      "id": "a77dc714",
+      "split": "dev",
+      "sha": "a77dc7140d10649e4351b3a70971b2d278c023dc",
+      "parent": "4aabf78da3ae4314e91f3bf2211c2d603a75ae24",
+      "date": "2026-10-11",
+      "prompt": "fix(docs): persist app light dark theme",
+      "edited": [
+        "app/components/ui/DocumentationPanel.tsx",
+        "docs/docs/javascripts/theme-sync.js"
+      ],
+      "added": []
+    },
+    {
+      "id": "501b61e0",
+      "split": "dev",
+      "sha": "501b61e032a14ff51ccf569589df6f66152df795",
+      "parent": "a92cff695fedf6240459ca7fa33bbb4714f66885",
+      "date": "2026-10-11",
+      "prompt": "fix(test): resolve Vitest alias as filesystem path",
+      "edited": [
+        "vitest.config.ts"
+      ],
+      "added": []
+    },
+    {
+      "id": "4aabf78d",
+      "split": "dev",
+      "sha": "4aabf78da3ae4314e91f3bf2211c2d603a75ae24",
+      "parent": "1900fce67460c669eefb5e7e81083951a7b772a2",
+      "date": "2026-10-11",
+      "prompt": "Sync documentation theme with app",
+      "edited": [
+        "app/components/ui/DocumentationPanel.tsx"
+      ],
+      "added": [
+        "docs/docs/javascripts/theme-sync.js"
+      ]
+    },
+    {
+      "id": "b285272f",
+      "split": "dev",
+      "sha": "b285272f91cc5445ea7d8a0df4be3ff5b2c4b6e6",
+      "parent": "10c111eb3c8b22f4425d65675c2d9d296d2e5314",
+      "date": "2026-10-11",
+      "prompt": "feat(api): validate model requests at runtime with typed errors",
+      "edited": [
+        "app/lib/security.spec.ts",
+        "app/lib/security.ts",
+        "app/routes/api.chat.ts",
+        "app/routes/api.enhancer.ts",
+        "app/routes/api.llmcall.ts"
+      ],
+      "added": [
+        "app/lib/.server/api/errors.ts",
+        "app/lib/.server/api/read-body.spec.ts",
+        "app/lib/.server/api/read-body.ts",
+        "app/lib/.server/api/schemas.spec.ts",
+        "app/lib/.server/api/schemas.ts"
+      ]
+    },
+    {
+      "id": "10c111eb",
+      "split": "dev",
+      "sha": "10c111eb3c8b22f4425d65675c2d9d296d2e5314",
+      "parent": "1900fce67460c669eefb5e7e81083951a7b772a2",
+      "date": "2026-10-11",
+      "prompt": "fix(zip-import): build imported messages with createMessage",
+      "edited": [
+        "app/components/chat/ImportZipButton.tsx",
+        "app/utils/zipImport.ts"
+      ],
+      "added": [
+        "app/utils/zipImport.spec.ts"
+      ]
+    },
+    {
+      "id": "f95520d7",
+      "split": "dev",
+      "sha": "f95520d76fd28ac3860697cd7ee59491dadd9310",
+      "parent": "8c53804655fe5a26ddfbdae44037f286bcdad532",
+      "date": "2026-10-11",
+      "prompt": "Fix snapshot restoration for URL-based chat routes",
+      "edited": [
+        "app/lib/persistence/chatCache.spec.ts",
+        "app/lib/persistence/chatCache.ts",
+        "app/lib/persistence/useChatHistory.spec.tsx",
+        "app/lib/persistence/useChatHistory.ts"
+      ],
+      "added": []
+    },
+    {
+      "id": "bd157aff",
+      "split": "dev",
+      "sha": "bd157aff09657c6bf97ccfa6959fbf86cc05d065",
+      "parent": "4d882ef7421bbc526c5d5b0b57c7432dee9f9991",
+      "date": "2026-10-11",
+      "prompt": "Retheme first-run onboarding",
+      "edited": [
+        "app/components/chat/ExamplePrompts.tsx",
+        "app/components/onboarding/FirstRunOnboarding.tsx",
+        "app/components/ui/Dialog.tsx"
+      ],
+      "added": []
+    },
+    {
+      "id": "4d882ef7",
+      "split": "dev",
+      "sha": "4d882ef7421bbc526c5d5b0b57c7432dee9f9991",
+      "parent": "0be4f0bdd22ab38fae0b7c2e5fc21940e3f19073",
+      "date": "2026-10-11",
+      "prompt": "Avoid no-op onboarding close handler",
+      "edited": [
+        "app/components/onboarding/FirstRunOnboarding.tsx"
+      ],
+      "added": []
+    },
+    {
+      "id": "3b1643b9",
+      "split": "dev",
+      "sha": "3b1643b91042f64ecfc2d7c2fddeeb7b0c936209",
+      "parent": "8ed467017de301c34f0e72f369730da2805d3293",
+      "date": "2026-10-11",
+      "prompt": "Use theme surfaces for local provider endpoints",
+      "edited": [
+        "app/components/@settings/tabs/providers/local/ProviderCard.tsx"
+      ],
+      "added": []
+    },
+    {
+      "id": "c6370b90",
+      "split": "dev",
+      "sha": "c6370b90ec4b270124f6d0bee09b4763caee9a80",
+      "parent": "e768898bc173838a899b851a4ef38b58d50e878c",
+      "date": "2026-10-11",
+      "prompt": "Use theme surfaces in event logs",
+      "edited": [
+        "app/components/@settings/tabs/event-logs/EventLogsTab.tsx"
+      ],
+      "added": []
+    },
+    {
+      "id": "e768898b",
+      "split": "dev",
+      "sha": "e768898bc173838a899b851a4ef38b58d50e878c",
+      "parent": "ce3b9b0d0be78f879bfb7d64affce071f7932454",
+      "date": "2026-10-11",
+      "prompt": "Fix appearance controls in settings",
+      "edited": [
+        "app/components/@settings/tabs/settings/SettingsTab.tsx"
+      ],
+      "added": []
+    },
+    {
+      "id": "ce3b9b0d",
+      "split": "dev",
+      "sha": "ce3b9b0d0be78f879bfb7d64affce071f7932454",
+      "parent": "7a9ec54485ce2d6a76f16581064317780d7f9600",
+      "date": "2026-10-11",
+      "prompt": "Add appearance step to onboarding",
+      "edited": [
+        "app/components/onboarding/FirstRunOnboarding.tsx"
+      ],
+      "added": []
+    },
+    {
+      "id": "7a9ec544",
+      "split": "dev",
+      "sha": "7a9ec54485ce2d6a76f16581064317780d7f9600",
+      "parent": "c3effb778f94c62cfbe35d8b21c1b8a16094c14f",
+      "date": "2026-10-11",
+      "prompt": "Fix onboarding back button colors",
+      "edited": [
+        "app/components/onboarding/FirstRunOnboarding.tsx"
+      ],
+      "added": []
+    },
+    {
+      "id": "c3effb77",
+      "split": "dev",
+      "sha": "c3effb778f94c62cfbe35d8b21c1b8a16094c14f",
+      "parent": "f1a356230f8613013b1ed0f2798b5836a1d463ca",
+      "date": "2026-10-11",
+      "prompt": "Polish onboarding profile controls",
+      "edited": [
+        "app/components/onboarding/FirstRunOnboarding.tsx"
+      ],
+      "added": []
+    },
+    {
+      "id": "447bad9b",
+      "split": "dev",
+      "sha": "447bad9b18e92230361613a70a00081924163e5e",
+      "parent": "266f9e03fd1e884d45cbb2bff6a1321d7292e316",
+      "date": "2026-10-11",
+      "prompt": "Add theme and interface appearance options",
+      "edited": [
+        "app/components/@settings/tabs/settings/SettingsTab.tsx",
+        "app/root.tsx",
+        "app/types/theme.ts"
+      ],
+      "added": []
+    },
+    {
+      "id": "10735af1",
+      "split": "dev",
+      "sha": "10735af13c850d6f7a2230a0afd059dce013ffbf",
+      "parent": "ff1f8b916c500f362bb0175e250e15379a023d58",
+      "date": "2026-10-11",
+      "prompt": "Add selectable default profile avatars",
+      "edited": [
+        "app/components/@settings/core/AvatarDropdown.tsx",
+        "app/components/@settings/tabs/profile/ProfileTab.tsx",
+        "app/components/sidebar/Menu.client.tsx",
+        "app/lib/stores/profile.ts"
+      ],
+      "added": []
+    },
+    {
+      "id": "621b4b37",
+      "split": "dev",
+      "sha": "621b4b377fc090bf3f9d4ed9a84d7a94b3021501",
+      "parent": "6f5c1626dacb0c0f3499620fde17b676aa6bc123",
+      "date": "2026-10-11",
+      "prompt": "Add in-app documentation and bug report panels",
+      "edited": [
+        "app/components/@settings/core/AvatarDropdown.tsx",
+        "app/components/@settings/core/ControlPanel.tsx",
+        "app/components/header/HeaderActionButtons.client.tsx",
+        "app/components/sidebar/Menu.client.tsx"
+      ],
+      "added": [
+        "app/components/header/ReportBugPanel.tsx",
+        "app/components/ui/DocumentationPanel.tsx"
+      ]
+    },
+    {
+      "id": "8b2065da",
+      "split": "dev",
+      "sha": "8b2065da35582726b122e1283d3670a76afb2397",
+      "parent": "6f5c1626dacb0c0f3499620fde17b676aa6bc123",
+      "date": "2026-10-11",
+      "prompt": "Preserve settings cloud provider tab state",
+      "edited": [
+        "app/components/@settings/core/ControlPanel.tsx",
+        "app/components/@settings/tabs/providers/cloud/CloudProvidersTab.tsx",
+        "app/components/@settings/tabs/providers/local/ProviderCard.tsx"
+      ],
+      "added": []
+    },
+    {
+      "id": "c71cd009",
+      "split": "dev",
+      "sha": "c71cd009a3dfc453b667f70a0c24f04c44cddd29",
+      "parent": "6f5c1626dacb0c0f3499620fde17b676aa6bc123",
+      "date": "2026-10-11",
+      "prompt": "Improve settings and data management UI",
+      "edited": [
+        "app/components/@settings/core/AvatarDropdown.tsx",
+        "app/components/@settings/tabs/data/DataTab.tsx",
+        "app/components/@settings/tabs/event-logs/EventLogsTab.tsx",
+        "app/components/@settings/tabs/settings/SettingsTab.tsx"
+      ],
+      "added": []
+    },
+    {
+      "id": "d8ccd5a6",
+      "split": "dev",
+      "sha": "d8ccd5a6f38b5da2698886f0077a7486a54c4c83",
+      "parent": "07a6e59080c57c40fed4d5d4e17a1ea987109af6",
+      "date": "2026-10-11",
+      "prompt": "Speed up template responses and parse XML file calls",
+      "edited": [
+        "app/components/chat/Chat.client.tsx",
+        "app/lib/runtime/enhanced-message-parser.ts",
+        "app/lib/stores/workbench.ts",
+        "app/routes/api.chat.ts",
+        "app/utils/selectStarterTemplate.ts"
+      ],
+      "added": []
+    },
+    {
+      "id": "5397ce4d",
+      "split": "dev",
+      "sha": "5397ce4de1c7c252eaa74c92d321d7af2c7f5166",
+      "parent": "749f362113e55b9d5426251c21e3e72bbac1aa63",
+      "date": "2026-10-10",
+      "prompt": "Fix blank app starter creation",
+      "edited": [
+        "app/components/chat/StarterTemplates.tsx",
+        "app/routes.ts",
+        "app/utils/selectStarterTemplate.ts"
+      ],
+      "added": [
+        "app/components/chat/StarterTemplateImport.client.tsx",
+        "app/routes/starter.tsx",
+        "tests/unit/starter-template-import.test.tsx"
+      ]
+    }
+  ]
+}

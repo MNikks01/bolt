@@ -1,0 +1,28 @@
+{
+  "name": "bolt-context-selection",
+  "version": "0.1.0",
+  "description": "Pick the files a coding agent needs for a task within a token budget; compress the rest to signatures. Evaluated on bolt.diy's own git history.",
+  "type": "module",
+  "license": "MIT",
+  "private": true,
+  "engines": {
+    "node": ">=20.3"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.test.json",
+    "test": "vitest run",
+    "check": "npm run typecheck && npm test && npm run build",
+    "mine": "tsx eval/mine-tasks.ts",
+    "eval": "tsx eval/run.ts"
+  },
+  "dependencies": {
+    "js-tiktoken": "1.0.21",
+    "typescript": "5.9.3"
+  },
+  "devDependencies": {
+    "@types/node": "22.20.5",
+    "tsx": "4.23.15",
+    "vitest": "5.1.0"
+  }
+}

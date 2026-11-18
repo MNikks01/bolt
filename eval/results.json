@@ -1,0 +1,7536 @@
+{
+  "head": "9cbb4c90266d99b93c953fd05810ad5d1d5efa80",
+  "chosen": {
+    "graph": {
+      "alpha": 0.85,
+      "hubPenalty": 0
+    },
+    "fullShare": 0.6
+  },
+  "budgets": [
+    8000,
+    16000,
+    32000
+  ],
+  "configs": [
+    {
+      "name": "Recent files (baseline)",
+      "method": "recent",
+      "fullShare": 1
+    },
+    {
+      "name": "BM25",
+      "method": "bm25",
+      "fullShare": 1
+    },
+    {
+      "name": "BM25 + import graph",
+      "method": "bm25+graph",
+      "graph": {
+        "alpha": 0.85,
+        "hubPenalty": 0
+      },
+      "fullShare": 1
+    },
+    {
+      "name": "BM25 + signatures",
+      "method": "bm25",
+      "fullShare": 0.6
+    },
+    {
+      "name": "BM25 + import graph + signatures",
+      "method": "bm25+graph",
+      "graph": {
+        "alpha": 0.85,
+        "hubPenalty": 0
+      },
+      "fullShare": 0.6
+    }
+  ],
+  "rows": [
+    {
+      "task": "3cae5eda",
+      "config": "Recent files (baseline)",
+      "budget": 8000,
+      "fullRecall": 0,
+      "visibleRecall": 0,
+      "allFull": false,
+      "tokens": 7984,
+      "repoTokens": 810494,
+      "missed": [
+        "app/components/chat/Chat.client.tsx",
+        "app/components/chat/ChatBox.tsx",
+        "app/components/workbench/terminal/TerminalTabs.tsx",
+        "app/lib/stores/terminal.ts",
+        "app/lib/stores/workbench.ts",
+        "app/utils/shell.ts"
+      ],
+      "rankOfEdited": [
+        3,
+        4,
+        223,
+        108,
+        99,
+        178
+      ]
+    },
+    {
+      "task": "3cae5eda",
+      "config": "Recent files (baseline)",
+      "budget": 16000,
+      "fullRecall": 0.16666666666666666,
+      "visibleRecall": 0.16666666666666666,
+      "allFull": false,
+      "tokens": 15995,
+      "repoTokens": 810494,
+      "missed": [
+        "app/components/chat/ChatBox.tsx",
+        "app/components/workbench/terminal/TerminalTabs.tsx",
+        "app/lib/stores/terminal.ts",
+        "app/lib/stores/workbench.ts",
+        "app/utils/shell.ts"
+      ],
+      "rankOfEdited": [
+        3,
+        4,
+        223,
+        108,
+        99,
+        178
+      ]
+    },
+    {
+      "task": "3cae5eda",
+      "config": "Recent files (baseline)",
+      "budget": 32000,
+      "fullRecall": 0.3333333333333333,
+      "visibleRecall": 0.3333333333333333,
+      "allFull": false,
+      "tokens": 32000,
+      "repoTokens": 810494,
+      "missed": [
+        "app/components/workbench/terminal/TerminalTabs.tsx",
+        "app/lib/stores/terminal.ts",
+        "app/lib/stores/workbench.ts",
+        "app/utils/shell.ts"
+      ],
+      "rankOfEdited": [
+        3,
+        4,
+        223,
+        108,
+        99,
+        178
+      ]
+    },
+    {
+      "task": "3cae5eda",
+      "config": "BM25",
+      "budget": 8000,
+      "fullRecall": 0.3333333333333333,
+      "visibleRecall": 0.3333333333333333,
+      "allFull": false,
+      "tokens": 8000,
+      "repoTokens": 810494,
+      "missed": [
+        "app/components/chat/Chat.client.tsx",
+        "app/components/chat/ChatBox.tsx",
+        "app/components/workbench/terminal/TerminalTabs.tsx",
+        "app/lib/stores/workbench.ts"
+      ],
+      "rankOfEdited": [
+        7,
+        190,
+        28,
+        3,
+        24,
+        2
+      ]
+    },
+    {
+      "task": "3cae5eda",
+      "config": "BM25",
+      "budget": 16000,
+      "fullRecall": 0.3333333333333333,
+      "visibleRecall": 0.3333333333333333,
+      "allFull": false,
+      "tokens": 15987,
+      "repoTokens": 810494,
+      "missed": [
+        "app/components/chat/Chat.client.tsx",
+        "app/components/chat/ChatBox.tsx",
+        "app/components/workbench/terminal/TerminalTabs.tsx",
+        "app/lib/stores/workbench.ts"
+      ],
+      "rankOfEdited": [
+        7,
+        190,
+        28,
+        3,
+        24,
+        2
+      ]
+    },
+    {
+      "task": "3cae5eda",
+      "config": "BM25",
+      "budget": 32000,
+      "fullRecall": 0.5,
+      "visibleRecall": 0.5,
+      "allFull": false,
+      "tokens": 31984,
+      "repoTokens": 810494,
+      "missed": [
+        "app/components/chat/ChatBox.tsx",
+        "app/components/workbench/terminal/TerminalTabs.tsx",
+        "app/lib/stores/workbench.ts"
+      ],
+      "rankOfEdited": [
+        7,
+        190,
+        28,
+        3,
+        24,
+        2
+      ]
+    },
+    {
+      "task": "3cae5eda",
+      "config": "BM25 + import graph",
+      "budget": 8000,
+      "fullRecall": 0.3333333333333333,
+      "visibleRecall": 0.3333333333333333,
+      "allFull": false,
+      "tokens": 7995,
+      "repoTokens": 810494,
+      "missed": [
+        "app/components/chat/Chat.client.tsx",
+        "app/components/chat/ChatBox.tsx",
+        "app/components/workbench/terminal/TerminalTabs.tsx",
+        "app/lib/stores/workbench.ts"
+      ],
+      "rankOfEdited": [
+        5,
+        96,
+        28,
+        3,
+        4,
+        1
+      ]
+    },
+    {
+      "task": "3cae5eda",
+      "config": "BM25 + import graph",
+      "budget": 16000,
+      "fullRecall": 0.5,
+      "visibleRecall": 0.5,
+      "allFull": false,
+      "tokens": 15988,
+      "repoTokens": 810494,
+      "missed": [
+        "app/components/chat/Chat.client.tsx",
+        "app/components/chat/ChatBox.tsx",
+        "app/components/workbench/terminal/TerminalTabs.tsx"
+      ],
+      "rankOfEdited": [
+        5,
+        96,
+        28,
+        3,
+        4,
+        1
+      ]
+    },
+    {
+      "task": "3cae5eda",
+      "config": "BM25 + import graph",
+      "budget": 32000,
+      "fullRecall": 0.6666666666666666,
+      "visibleRecall": 0.6666666666666666,
+      "allFull": false,
+      "tokens": 31996,
+      "repoTokens": 810494,
+      "missed": [
+        "app/components/chat/ChatBox.tsx",
+        "app/components/workbench/terminal/TerminalTabs.tsx"
+      ],
+      "rankOfEdited": [
+        5,
+        96,
+        28,
+        3,
+        4,
+        1
+      ]
+    },
+    {
+      "task": "3cae5eda",
+      "config": "BM25 + signatures",
+      "budget": 8000,
+      "fullRecall": 0.16666666666666666,
+      "visibleRecall": 0.5,
+      "allFull": false,
+      "tokens": 8000,
+      "repoTokens": 810494,
+      "missed": [
+        "app/components/chat/Chat.client.tsx",
+        "app/components/chat/ChatBox.tsx",
+        "app/components/workbench/terminal/TerminalTabs.tsx",
+        "app/lib/stores/terminal.ts",
+        "app/lib/stores/workbench.ts"
+      ],
+      "rankOfEdited": [
+        7,
+        190,
+        28,
+        3,
+        24,
+        2
+      ]
+    },
+    {
+      "task": "3cae5eda",
+      "config": "BM25 + signatures",
+      "budget": 16000,
+      "fullRecall": 0.3333333333333333,
+      "visibleRecall": 0.5,
+      "allFull": false,
+      "tokens": 15984,
+      "repoTokens": 810494,
+      "missed": [
+        "app/components/chat/Chat.client.tsx",
+        "app/components/chat/ChatBox.tsx",
+        "app/components/workbench/terminal/TerminalTabs.tsx",
+        "app/lib/stores/workbench.ts"
+      ],
+      "rankOfEdited": [
+        7,
+        190,
+        28,
+        3,
+        24,
+        2
+      ]
+    },
+    {
+      "task": "3cae5eda",
+      "config": "BM25 + signatures",
+      "budget": 32000,
+      "fullRecall": 0.3333333333333333,
+      "visibleRecall": 0.8333333333333334,
+      "allFull": false,
+      "tokens": 31985,
+      "repoTokens": 810494,
+      "missed": [
+        "app/components/chat/Chat.client.tsx",
+        "app/components/chat/ChatBox.tsx",
+        "app/components/workbench/terminal/TerminalTabs.tsx",
+        "app/lib/stores/workbench.ts"
+      ],
+      "rankOfEdited": [
+        7,
+        190,
+        28,
+        3,
+        24,
+        2
+      ]
+    },
+    {
+      "task": "3cae5eda",
+      "config": "BM25 + import graph + signatures",
+      "budget": 8000,
+      "fullRecall": 0.16666666666666666,
+      "visibleRecall": 0.6666666666666666,
+      "allFull": false,
+      "tokens": 7995,
+      "repoTokens": 810494,
+      "missed": [
+        "app/components/chat/Chat.client.tsx",
+        "app/components/chat/ChatBox.tsx",
+        "app/components/workbench/terminal/TerminalTabs.tsx",
+        "app/lib/stores/terminal.ts",
+        "app/lib/stores/workbench.ts"
+      ],
+      "rankOfEdited": [
+        5,
+        96,
+        28,
+        3,
+        4,
+        1
+      ]
+    },
+    {
+      "task": "3cae5eda",
+      "config": "BM25 + import graph + signatures",
+      "budget": 16000,
+      "fullRecall": 0.3333333333333333,
+      "visibleRecall": 0.6666666666666666,
+      "allFull": false,
+      "tokens": 15988,
+      "repoTokens": 810494,
+      "missed": [
+        "app/components/chat/Chat.client.tsx",
+        "app/components/chat/ChatBox.tsx",
+        "app/components/workbench/terminal/TerminalTabs.tsx",
+        "app/lib/stores/workbench.ts"
+      ],
+      "rankOfEdited": [
+        5,
+        96,
+        28,
+        3,
+        4,
+        1
+      ]
+    },
+    {
+      "task": "3cae5eda",
+      "config": "BM25 + import graph + signatures",
+      "budget": 32000,
+      "fullRecall": 0.5,
+      "visibleRecall": 0.8333333333333334,
+      "allFull": false,
+      "tokens": 31994,
+      "repoTokens": 810494,
+      "missed": [
+        "app/components/chat/Chat.client.tsx",
+        "app/components/chat/ChatBox.tsx",
+        "app/components/workbench/terminal/TerminalTabs.tsx"
+      ],
+      "rankOfEdited": [
+        5,
+        96,
+        28,
+        3,
+        4,
+        1
+      ]
+    },
+    {
+      "task": "0a2a11ff",
+      "config": "Recent files (baseline)",
+      "budget": 8000,
+      "fullRecall": 0,
+      "visibleRecall": 0,
+      "allFull": false,
+      "tokens": 7994,
+      "repoTokens": 810345,
+      "missed": [
+        "app/components/chat/AssistantMessage.tsx",
+        "app/components/chat/BaseChat.tsx",
+        "app/components/chat/Chat.client.tsx",
+        "app/components/chat/ChatBox.tsx",
+        "app/lib/hooks/useMessageParser.ts",
+        "app/routes/api.chat.ts"
+      ],
+      "rankOfEdited": [
+        99,
+        19,
+        4,
+        48,
+        153,
+        90
+      ]
+    },
+    {
+      "task": "0a2a11ff",
+      "config": "Recent files (baseline)",
+      "budget": 16000,
+      "fullRecall": 0,
+      "visibleRecall": 0,
+      "allFull": false,
+      "tokens": 15993,
+      "repoTokens": 810345,
+      "missed": [
+        "app/components/chat/AssistantMessage.tsx",
+        "app/components/chat/BaseChat.tsx",
+        "app/components/chat/Chat.client.tsx",
+        "app/components/chat/ChatBox.tsx",
+        "app/lib/hooks/useMessageParser.ts",
+        "app/routes/api.chat.ts"
+      ],
+      "rankOfEdited": [
+        99,
+        19,
+        4,
+        48,
+        153,
+        90
+      ]
+    },
+    {
+      "task": "0a2a11ff",
+      "config": "Recent files (baseline)",
+      "budget": 32000,
+      "fullRecall": 0.16666666666666666,
+      "visibleRecall": 0.16666666666666666,
+      "allFull": false,
+      "tokens": 31995,
+      "repoTokens": 810345,
+      "missed": [
+        "app/components/chat/AssistantMessage.tsx",
+        "app/components/chat/BaseChat.tsx",
+        "app/components/chat/ChatBox.tsx",
+        "app/lib/hooks/useMessageParser.ts",
+        "app/routes/api.chat.ts"
+      ],
+      "rankOfEdited": [
+        99,
+        19,
+        4,
+        48,
+        153,
+        90
+      ]
+    },
+    {
+      "task": "0a2a11ff",
+      "config": "BM25",
+      "budget": 8000,
+      "fullRecall": 0.16666666666666666,
+      "visibleRecall": 0.16666666666666666,
+      "allFull": false,
+      "tokens": 7984,
+      "repoTokens": 810345,
+      "missed": [
+        "app/components/chat/AssistantMessage.tsx",
+        "app/components/chat/BaseChat.tsx",
+        "app/components/chat/Chat.client.tsx",
+        "app/lib/hooks/useMessageParser.ts",
+        "app/routes/api.chat.ts"
+      ],
+      "rankOfEdited": [
+        5,
+        6,
+        14,
+        2,
+        null,
+        47
+      ]
+    },
+    {
+      "task": "0a2a11ff",
+      "config": "BM25",
+      "budget": 16000,
+      "fullRecall": 0.5,
+      "visibleRecall": 0.5,
+      "allFull": false,
+      "tokens": 15971,
+      "repoTokens": 810345,
+      "missed": [
+        "app/components/chat/Chat.client.tsx",
+        "app/lib/hooks/useMessageParser.ts",
+        "app/routes/api.chat.ts"
+      ],
+      "rankOfEdited": [
+        5,
+        6,
+        14,
+        2,
+        null,
+        47
+      ]
+    },
+    {
+      "task": "0a2a11ff",
+      "config": "BM25",
+      "budget": 32000,
+      "fullRecall": 0.5,
+      "visibleRecall": 0.5,
+      "allFull": false,
+      "tokens": 31992,
+      "repoTokens": 810345,
+      "missed": [
+        "app/components/chat/Chat.client.tsx",
+        "app/lib/hooks/useMessageParser.ts",
+        "app/routes/api.chat.ts"
+      ],
+      "rankOfEdited": [
+        5,
+        6,
+        14,
+        2,
+        null,
+        47
+      ]
+    },
+    {
+      "task": "0a2a11ff",
+      "config": "BM25 + import graph",
+      "budget": 8000,
+      "fullRecall": 0.16666666666666666,
+      "visibleRecall": 0.16666666666666666,
+      "allFull": false,
+      "tokens": 7999,
+      "repoTokens": 810345,
+      "missed": [
+        "app/components/chat/AssistantMessage.tsx",
+        "app/components/chat/BaseChat.tsx",
+        "app/components/chat/Chat.client.tsx",
+        "app/lib/hooks/useMessageParser.ts",
+        "app/routes/api.chat.ts"
+      ],
+      "rankOfEdited": [
+        7,
+        4,
+        13,
+        1,
+        352,
+        23
+      ]
+    },
+    {
+      "task": "0a2a11ff",
+      "config": "BM25 + import graph",
+      "budget": 16000,
+      "fullRecall": 0.3333333333333333,
+      "visibleRecall": 0.3333333333333333,
+      "allFull": false,
+      "tokens": 15995,
+      "repoTokens": 810345,
+      "missed": [
+        "app/components/chat/AssistantMessage.tsx",
+        "app/components/chat/Chat.client.tsx",
+        "app/lib/hooks/useMessageParser.ts",
+        "app/routes/api.chat.ts"
+      ],
+      "rankOfEdited": [
+        7,
+        4,
+        13,
+        1,
+        352,
+        23
+      ]
+    },
+    {
+      "task": "0a2a11ff",
+      "config": "BM25 + import graph",
+      "budget": 32000,
+      "fullRecall": 0.5,
+      "visibleRecall": 0.5,
+      "allFull": false,
+      "tokens": 31988,
+      "repoTokens": 810345,
+      "missed": [
+        "app/components/chat/Chat.client.tsx",
+        "app/lib/hooks/useMessageParser.ts",
+        "app/routes/api.chat.ts"
+      ],
+      "rankOfEdited": [
+        7,
+        4,
+        13,
+        1,
+        352,
+        23
+      ]
+    },
+    {
+      "task": "0a2a11ff",
+      "config": "BM25 + signatures",
+      "budget": 8000,
+      "fullRecall": 0,
+      "visibleRecall": 0.5,
+      "allFull": false,
+      "tokens": 7987,
+      "repoTokens": 810345,
+      "missed": [
+        "app/components/chat/AssistantMessage.tsx",
+        "app/components/chat/BaseChat.tsx",
+        "app/components/chat/Chat.client.tsx",
+        "app/components/chat/ChatBox.tsx",
+        "app/lib/hooks/useMessageParser.ts",
+        "app/routes/api.chat.ts"
+      ],
+      "rankOfEdited": [
+        5,
+        6,
+        14,
+        2,
+        null,
+        47
+      ]
+    },
+    {
+      "task": "0a2a11ff",
+      "config": "BM25 + signatures",
+      "budget": 16000,
+      "fullRecall": 0.3333333333333333,
+      "visibleRecall": 0.6666666666666666,
+      "allFull": false,
+      "tokens": 15996,
+      "repoTokens": 810345,
+      "missed": [
+        "app/components/chat/BaseChat.tsx",
+        "app/components/chat/Chat.client.tsx",
+        "app/lib/hooks/useMessageParser.ts",
+        "app/routes/api.chat.ts"
+      ],
+      "rankOfEdited": [
+        5,
+        6,
+        14,
+        2,
+        null,
+        47
+      ]
+    },
+    {
+      "task": "0a2a11ff",
+      "config": "BM25 + signatures",
+      "budget": 32000,
+      "fullRecall": 0.5,
+      "visibleRecall": 0.6666666666666666,
+      "allFull": false,
+      "tokens": 31994,
+      "repoTokens": 810345,
+      "missed": [
+        "app/components/chat/Chat.client.tsx",
+        "app/lib/hooks/useMessageParser.ts",
+        "app/routes/api.chat.ts"
+      ],
+      "rankOfEdited": [
+        5,
+        6,
+        14,
+        2,
+        null,
+        47
+      ]
+    },
+    {
+      "task": "0a2a11ff",
+      "config": "BM25 + import graph + signatures",
+      "budget": 8000,
+      "fullRecall": 0.16666666666666666,
+      "visibleRecall": 0.5,
+      "allFull": false,
+      "tokens": 7990,
+      "repoTokens": 810345,
+      "missed": [
+        "app/components/chat/AssistantMessage.tsx",
+        "app/components/chat/BaseChat.tsx",
+        "app/components/chat/Chat.client.tsx",
+        "app/lib/hooks/useMessageParser.ts",
+        "app/routes/api.chat.ts"
+      ],
+      "rankOfEdited": [
+        7,
+        4,
+        13,
+        1,
+        352,
+        23
+      ]
+    },
+    {
+      "task": "0a2a11ff",
+      "config": "BM25 + import graph + signatures",
+      "budget": 16000,
+      "fullRecall": 0.16666666666666666,
+      "visibleRecall": 0.5,
+      "allFull": false,
+      "tokens": 15996,
+      "repoTokens": 810345,
+      "missed": [
+        "app/components/chat/AssistantMessage.tsx",
+        "app/components/chat/BaseChat.tsx",
+        "app/components/chat/Chat.client.tsx",
+        "app/lib/hooks/useMessageParser.ts",
+        "app/routes/api.chat.ts"
+      ],
+      "rankOfEdited": [
+        7,
+        4,
+        13,
+        1,
+        352,
+        23
+      ]
+    },
+    {
+      "task": "0a2a11ff",
+      "config": "BM25 + import graph + signatures",
+      "budget": 32000,
+      "fullRecall": 0.5,
+      "visibleRecall": 0.8333333333333334,
+      "allFull": false,
+      "tokens": 31998,
+      "repoTokens": 810345,
+      "missed": [
+        "app/components/chat/Chat.client.tsx",
+        "app/lib/hooks/useMessageParser.ts",
+        "app/routes/api.chat.ts"
+      ],
+      "rankOfEdited": [
+        7,
+        4,
+        13,
+        1,
+        352,
+        23
+      ]
+    },
+    {
+      "task": "82b6e7e2",
+      "config": "Recent files (baseline)",
+      "budget": 8000,
+      "fullRecall": 0.5,
+      "visibleRecall": 0.5,
+      "allFull": false,
+      "tokens": 7999,
+      "repoTokens": 808664,
+      "missed": [
+        "app/lib/stores/settings.ts"
+      ],
+      "rankOfEdited": [
+        3,
+        110
+      ]
+    },
+    {
+      "task": "82b6e7e2",
+      "config": "Recent files (baseline)",
+      "budget": 16000,
+      "fullRecall": 0.5,
+      "visibleRecall": 0.5,
+      "allFull": false,
+      "tokens": 15985,
+      "repoTokens": 808664,
+      "missed": [
+        "app/lib/stores/settings.ts"
+      ],
+      "rankOfEdited": [
+        3,
+        110
+      ]
+    },
+    {
+      "task": "82b6e7e2",
+      "config": "Recent files (baseline)",
+      "budget": 32000,
+      "fullRecall": 0.5,
+      "visibleRecall": 0.5,
+      "allFull": false,
+      "tokens": 31976,
+      "repoTokens": 808664,
+      "missed": [
+        "app/lib/stores/settings.ts"
+      ],
+      "rankOfEdited": [
+        3,
+        110
+      ]
+    },
+    {
+      "task": "82b6e7e2",
+      "config": "BM25",
+      "budget": 8000,
+      "fullRecall": 1,
+      "visibleRecall": 1,
+      "allFull": true,
+      "tokens": 8000,
+      "repoTokens": 808664,
+      "missed": [],
+      "rankOfEdited": [
+        1,
+        2
+      ]
+    },
+    {
+      "task": "82b6e7e2",
+      "config": "BM25",
+      "budget": 16000,
+      "fullRecall": 1,
+      "visibleRecall": 1,
+      "allFull": true,
+      "tokens": 15975,
+      "repoTokens": 808664,
+      "missed": [],
+      "rankOfEdited": [
+        1,
+        2
+      ]
+    },
+    {
+      "task": "82b6e7e2",
+      "config": "BM25",
+      "budget": 32000,
+      "fullRecall": 1,
+      "visibleRecall": 1,
+      "allFull": true,
+      "tokens": 31999,
+      "repoTokens": 808664,
+      "missed": [],
+      "rankOfEdited": [
+        1,
+        2
+      ]
+    },
+    {
+      "task": "82b6e7e2",
+      "config": "BM25 + import graph",
+      "budget": 8000,
+      "fullRecall": 1,
+      "visibleRecall": 1,
+      "allFull": true,
+      "tokens": 7998,
+      "repoTokens": 808664,
+      "missed": [],
+      "rankOfEdited": [
+        1,
+        2
+      ]
+    },
+    {
+      "task": "82b6e7e2",
+      "config": "BM25 + import graph",
+      "budget": 16000,
+      "fullRecall": 1,
+      "visibleRecall": 1,
+      "allFull": true,
+      "tokens": 15995,
+      "repoTokens": 808664,
+      "missed": [],
+      "rankOfEdited": [
+        1,
+        2
+      ]
+    },
+    {
+      "task": "82b6e7e2",
+      "config": "BM25 + import graph",
+      "budget": 32000,
+      "fullRecall": 1,
+      "visibleRecall": 1,
+      "allFull": true,
+      "tokens": 31991,
+      "repoTokens": 808664,
+      "missed": [],
+      "rankOfEdited": [
+        1,
+        2
+      ]
+    },
+    {
+      "task": "82b6e7e2",
+      "config": "BM25 + signatures",
+      "budget": 8000,
+      "fullRecall": 0.5,
+      "visibleRecall": 1,
+      "allFull": false,
+      "tokens": 8000,
+      "repoTokens": 808664,
+      "missed": [
+        "app/lib/stores/settings.ts"
+      ],
+      "rankOfEdited": [
+        1,
+        2
+      ]
+    },
+    {
+      "task": "82b6e7e2",
+      "config": "BM25 + signatures",
+      "budget": 16000,
+      "fullRecall": 1,
+      "visibleRecall": 1,
+      "allFull": true,
+      "tokens": 15997,
+      "repoTokens": 808664,
+      "missed": [],
+      "rankOfEdited": [
+        1,
+        2
+      ]
+    },
+    {
+      "task": "82b6e7e2",
+      "config": "BM25 + signatures",
+      "budget": 32000,
+      "fullRecall": 1,
+      "visibleRecall": 1,
+      "allFull": true,
+      "tokens": 31994,
+      "repoTokens": 808664,
+      "missed": [],
+      "rankOfEdited": [
+        1,
+        2
+      ]
+    },
+    {
+      "task": "82b6e7e2",
+      "config": "BM25 + import graph + signatures",
+      "budget": 8000,
+      "fullRecall": 0.5,
+      "visibleRecall": 1,
+      "allFull": false,
+      "tokens": 7989,
+      "repoTokens": 808664,
+      "missed": [
+        "app/lib/stores/settings.ts"
+      ],
+      "rankOfEdited": [
+        1,
+        2
+      ]
+    },
+    {
+      "task": "82b6e7e2",
+      "config": "BM25 + import graph + signatures",
+      "budget": 16000,
+      "fullRecall": 1,
+      "visibleRecall": 1,
+      "allFull": true,
+      "tokens": 15983,
+      "repoTokens": 808664,
+      "missed": [],
+      "rankOfEdited": [
+        1,
+        2
+      ]
+    },
+    {
+      "task": "82b6e7e2",
+      "config": "BM25 + import graph + signatures",
+      "budget": 32000,
+      "fullRecall": 1,
+      "visibleRecall": 1,
+      "allFull": true,
+      "tokens": 31978,
+      "repoTokens": 808664,
+      "missed": [],
+      "rankOfEdited": [
+        1,
+        2
+      ]
+    },
+    {
+      "task": "8f3098ef",
+      "config": "Recent files (baseline)",
+      "budget": 8000,
+      "fullRecall": 0,
+      "visibleRecall": 0,
+      "allFull": false,
+      "tokens": 7997,
+      "repoTokens": 807156,
+      "missed": [
+        "app/routes/api.github-template.ts"
+      ],
+      "rankOfEdited": [
+        92
+      ]
+    },
+    {
+      "task": "8f3098ef",
+      "config": "Recent files (baseline)",
+      "budget": 16000,
+      "fullRecall": 0,
+      "visibleRecall": 0,
+      "allFull": false,
+      "tokens": 15988,
+      "repoTokens": 807156,
+      "missed": [
+        "app/routes/api.github-template.ts"
+      ],
+      "rankOfEdited": [
+        92
+      ]
+    },
+    {
+      "task": "8f3098ef",
+      "config": "Recent files (baseline)",
+      "budget": 32000,
+      "fullRecall": 0,
+      "visibleRecall": 0,
+      "allFull": false,
+      "tokens": 31997,
+      "repoTokens": 807156,
+      "missed": [
+        "app/routes/api.github-template.ts"
+      ],
+      "rankOfEdited": [
+        92
+      ]
+    },
+    {
+      "task": "8f3098ef",
+      "config": "BM25",
+      "budget": 8000,
+      "fullRecall": 1,
+      "visibleRecall": 1,
+      "allFull": true,
+      "tokens": 7998,
+      "repoTokens": 807156,
+      "missed": [],
+      "rankOfEdited": [
+        2
+      ]
+    },
+    {
+      "task": "8f3098ef",
+      "config": "BM25",
+      "budget": 16000,
+      "fullRecall": 1,
+      "visibleRecall": 1,
+      "allFull": true,
+      "tokens": 16000,
+      "repoTokens": 807156,
+      "missed": [],
+      "rankOfEdited": [
+        2
+      ]
+    },
+    {
+      "task": "8f3098ef",
+      "config": "BM25",
+      "budget": 32000,
+      "fullRecall": 1,
+      "visibleRecall": 1,
+      "allFull": true,
+      "tokens": 31978,
+      "repoTokens": 807156,
+      "missed": [],
+      "rankOfEdited": [
+        2
+      ]
+    },
+    {
+      "task": "8f3098ef",
+      "config": "BM25 + import graph",
+      "budget": 8000,
+      "fullRecall": 1,
+      "visibleRecall": 1,
+      "allFull": true,
+      "tokens": 7983,
+      "repoTokens": 807156,
+      "missed": [],
+      "rankOfEdited": [
+        1
+      ]
+    },
+    {
+      "task": "8f3098ef",
+      "config": "BM25 + import graph",
+      "budget": 16000,
+      "fullRecall": 1,
+      "visibleRecall": 1,
+      "allFull": true,
+      "tokens": 15998,
+      "repoTokens": 807156,
+      "missed": [],
+      "rankOfEdited": [
+        1
+      ]
+    },
+    {
+      "task": "8f3098ef",
+      "config": "BM25 + import graph",
+      "budget": 32000,
+      "fullRecall": 1,
+      "visibleRecall": 1,
+      "allFull": true,
+      "tokens": 31999,
+      "repoTokens": 807156,
+      "missed": [],
+      "rankOfEdited": [
+        1
+      ]
+    },
+    {
+      "task": "8f3098ef",
+      "config": "BM25 + signatures",
+      "budget": 8000,
+      "fullRecall": 1,
+      "visibleRecall": 1,
+      "allFull": true,
+      "tokens": 7992,
+      "repoTokens": 807156,
+      "missed": [],
+      "rankOfEdited": [
+        2
+      ]
+    },
+    {
+      "task": "8f3098ef",
+      "config": "BM25 + signatures",
+      "budget": 16000,
+      "fullRecall": 1,
+      "visibleRecall": 1,
+      "allFull": true,
+      "tokens": 15972,
+      "repoTokens": 807156,
+      "missed": [],
+      "rankOfEdited": [
+        2
+      ]
+    },
+    {
+      "task": "8f3098ef",
+      "config": "BM25 + signatures",
+      "budget": 32000,
+      "fullRecall": 1,
+      "visibleRecall": 1,
+      "allFull": true,
+      "tokens": 31999,
+      "repoTokens": 807156,
+      "missed": [],
+      "rankOfEdited": [
+        2
+      ]
+    },
+    {
+      "task": "8f3098ef",
+      "config": "BM25 + import graph + signatures",
+      "budget": 8000,
+      "fullRecall": 1,
+      "visibleRecall": 1,
+      "allFull": true,
+      "tokens": 8000,
+      "repoTokens": 807156,
+      "missed": [],
+      "rankOfEdited": [
+        1
+      ]
+    },
+    {
+      "task": "8f3098ef",
+      "config": "BM25 + import graph + signatures",
+      "budget": 16000,
+      "fullRecall": 1,
+      "visibleRecall": 1,
+      "allFull": true,
+      "tokens": 15983,
+      "repoTokens": 807156,
+      "missed": [],
+      "rankOfEdited": [
+        1
+      ]
+    },
+    {
+      "task": "8f3098ef",
+      "config": "BM25 + import graph + signatures",
+      "budget": 32000,
+      "fullRecall": 1,
+      "visibleRecall": 1,
+      "allFull": true,
+      "tokens": 31994,
+      "repoTokens": 807156,
+      "missed": [],
+      "rankOfEdited": [
+        1
+      ]
+    },
+    {
+      "task": "213c99bd",
+      "config": "Recent files (baseline)",
+      "budget": 8000,
+      "fullRecall": 0,
+      "visibleRecall": 0,
+      "allFull": false,
+      "tokens": 7997,
+      "repoTokens": 807156,
+      "missed": [
+        "app/components/onboarding/FirstRunOnboarding.tsx"
+      ],
+      "rankOfEdited": [
+        73
+      ]
+    },
+    {
+      "task": "213c99bd",
+      "config": "Recent files (baseline)",
+      "budget": 16000,
+      "fullRecall": 0,
+      "visibleRecall": 0,
+      "allFull": false,
+      "tokens": 15988,
+      "repoTokens": 807156,
+      "missed": [
+        "app/components/onboarding/FirstRunOnboarding.tsx"
+      ],
+      "rankOfEdited": [
+        73
+      ]
+    },
+    {
+      "task": "213c99bd",
+      "config": "Recent files (baseline)",
+      "budget": 32000,
+      "fullRecall": 0,
+      "visibleRecall": 0,
+      "allFull": false,
+      "tokens": 31997,
+      "repoTokens": 807156,
+      "missed": [
+        "app/components/onboarding/FirstRunOnboarding.tsx"
+      ],
+      "rankOfEdited": [
+        73
+      ]
+    },
+    {
+      "task": "213c99bd",
+      "config": "BM25",
+      "budget": 8000,
+      "fullRecall": 1,
+      "visibleRecall": 1,
+      "allFull": true,
+      "tokens": 7985,
+      "repoTokens": 807156,
+      "missed": [],
+      "rankOfEdited": [
+        1
+      ]
+    },
+    {
+      "task": "213c99bd",
+      "config": "BM25",
+      "budget": 16000,
+      "fullRecall": 1,
+      "visibleRecall": 1,
+      "allFull": true,
+      "tokens": 15997,
+      "repoTokens": 807156,
+      "missed": [],
+      "rankOfEdited": [
+        1
+      ]
+    },
+    {
+      "task": "213c99bd",
+      "config": "BM25",
+      "budget": 32000,
+      "fullRecall": 1,
+      "visibleRecall": 1,
+      "allFull": true,
+      "tokens": 31985,
+      "repoTokens": 807156,
+      "missed": [],
+      "rankOfEdited": [
+        1
+      ]
+    },
+    {
+      "task": "213c99bd",
+      "config": "BM25 + import graph",
+      "budget": 8000,
+      "fullRecall": 1,
+      "visibleRecall": 1,
+      "allFull": true,
+      "tokens": 7998,
+      "repoTokens": 807156,
+      "missed": [],
+      "rankOfEdited": [
+        2
+      ]
+    },
+    {
+      "task": "213c99bd",
+      "config": "BM25 + import graph",
+      "budget": 16000,
+      "fullRecall": 1,
+      "visibleRecall": 1,
+      "allFull": true,
+      "tokens": 15996,
+      "repoTokens": 807156,
+      "missed": [],
+      "rankOfEdited": [
+        2
+      ]
+    },
+    {
+      "task": "213c99bd",
+      "config": "BM25 + import graph",
+      "budget": 32000,
+      "fullRecall": 1,
+      "visibleRecall": 1,
+      "allFull": true,
+      "tokens": 31983,
+      "repoTokens": 807156,
+      "missed": [],
+      "rankOfEdited": [
+        2
+      ]
+    },
+    {
+      "task": "213c99bd",
+      "config": "BM25 + signatures",
+      "budget": 8000,
+      "fullRecall": 1,
+      "visibleRecall": 1,
+      "allFull": true,
+      "tokens": 7987,
+      "repoTokens": 807156,
+      "missed": [],
+      "rankOfEdited": [
+        1
+      ]
+    },
+    {
+      "task": "213c99bd",
+      "config": "BM25 + signatures",
+      "budget": 16000,
+      "fullRecall": 1,
+      "visibleRecall": 1,
+      "allFull": true,
+      "tokens": 15995,
+      "repoTokens": 807156,
+      "missed": [],
+      "rankOfEdited": [
+        1
+      ]
+    },
+    {
+      "task": "213c99bd",
+      "config": "BM25 + signatures",
+      "budget": 32000,
+      "fullRecall": 1,
+      "visibleRecall": 1,
+      "allFull": true,
+      "tokens": 31984,
+      "repoTokens": 807156,
+      "missed": [],
+      "rankOfEdited": [
+        1
+      ]
+    },
+    {
+      "task": "213c99bd",
+      "config": "BM25 + import graph + signatures",
+      "budget": 8000,
+      "fullRecall": 1,
+      "visibleRecall": 1,
+      "allFull": true,
+      "tokens": 7994,
+      "repoTokens": 807156,
+      "missed": [],
+      "rankOfEdited": [
+        2
+      ]
+    },
+    {
+      "task": "213c99bd",
+      "config": "BM25 + import graph + signatures",
+      "budget": 16000,
+      "fullRecall": 1,
+      "visibleRecall": 1,
+      "allFull": true,
+      "tokens": 15981,
+      "repoTokens": 807156,
+      "missed": [],
+      "rankOfEdited": [
+        2
+      ]
+    },
+    {
+      "task": "213c99bd",
+      "config": "BM25 + import graph + signatures",
+      "budget": 32000,
+      "fullRecall": 1,
+      "visibleRecall": 1,
+      "allFull": true,
+      "tokens": 32000,
+      "repoTokens": 807156,
+      "missed": [],
+      "rankOfEdited": [
+        2
+      ]
+    },
+    {
+      "task": "07921715",
+      "config": "Recent files (baseline)",
+      "budget": 8000,
+      "fullRecall": 0,
+      "visibleRecall": 0,
+      "allFull": false,
+      "tokens": 7997,
+      "repoTokens": 807156,
+      "missed": [
+        "app/lib/security.ts"
+      ],
+      "rankOfEdited": [
+        177
+      ]
+    },
+    {
+      "task": "07921715",
+      "config": "Recent files (baseline)",
+      "budget": 16000,
+      "fullRecall": 0,
+      "visibleRecall": 0,
+      "allFull": false,
+      "tokens": 15988,
+      "repoTokens": 807156,
+      "missed": [
+        "app/lib/security.ts"
+      ],
+      "rankOfEdited": [
+        177
+      ]
+    },
+    {
+      "task": "07921715",
+      "config": "Recent files (baseline)",
+      "budget": 32000,
+      "fullRecall": 0,
+      "visibleRecall": 0,
+      "allFull": false,
+      "tokens": 31997,
+      "repoTokens": 807156,
+      "missed": [
+        "app/lib/security.ts"
+      ],
+      "rankOfEdited": [
+        177
+      ]
+    },
+    {
+      "task": "07921715",
+      "config": "BM25",
+      "budget": 8000,
+      "fullRecall": 1,
+      "visibleRecall": 1,
+      "allFull": true,
+      "tokens": 7992,
+      "repoTokens": 807156,
+      "missed": [],
+      "rankOfEdited": [
+        1
+      ]
+    },
+    {
+      "task": "07921715",
+      "config": "BM25",
+      "budget": 16000,
+      "fullRecall": 1,
+      "visibleRecall": 1,
+      "allFull": true,
+      "tokens": 15983,
+      "repoTokens": 807156,
+      "missed": [],
+      "rankOfEdited": [
+        1
+      ]
+    },
+    {
+      "task": "07921715",
+      "config": "BM25",
+      "budget": 32000,
+      "fullRecall": 1,
+      "visibleRecall": 1,
+      "allFull": true,
+      "tokens": 31985,
+      "repoTokens": 807156,
+      "missed": [],
+      "rankOfEdited": [
+        1
+      ]
+    },
+    {
+      "task": "07921715",
+      "config": "BM25 + import graph",
+      "budget": 8000,
+      "fullRecall": 1,
+      "visibleRecall": 1,
+      "allFull": true,
+      "tokens": 7981,
+      "repoTokens": 807156,
+      "missed": [],
+      "rankOfEdited": [
+        1
+      ]
+    },
+    {
+      "task": "07921715",
+      "config": "BM25 + import graph",
+      "budget": 16000,
+      "fullRecall": 1,
+      "visibleRecall": 1,
+      "allFull": true,
+      "tokens": 15988,
+      "repoTokens": 807156,
+      "missed": [],
+      "rankOfEdited": [
+        1
+      ]
+    },
+    {
+      "task": "07921715",
+      "config": "BM25 + import graph",
+      "budget": 32000,
+      "fullRecall": 1,
+      "visibleRecall": 1,
+      "allFull": true,
+      "tokens": 31993,
+      "repoTokens": 807156,
+      "missed": [],
+      "rankOfEdited": [
+        1
+      ]
+    },
+    {
+      "task": "07921715",
+      "config": "BM25 + signatures",
+      "budget": 8000,
+      "fullRecall": 1,
+      "visibleRecall": 1,
+      "allFull": true,
+      "tokens": 7999,
+      "repoTokens": 807156,
+      "missed": [],
+      "rankOfEdited": [
+        1
+      ]
+    },
+    {
+      "task": "07921715",
+      "config": "BM25 + signatures",
+      "budget": 16000,
+      "fullRecall": 1,
+      "visibleRecall": 1,
+      "allFull": true,
+      "tokens": 15977,
+      "repoTokens": 807156,
+      "missed": [],
+      "rankOfEdited": [
+        1
+      ]
+    },
+    {
+      "task": "07921715",
+      "config": "BM25 + signatures",
+      "budget": 32000,
+      "fullRecall": 1,
+      "visibleRecall": 1,
+      "allFull": true,
+      "tokens": 31986,
+      "repoTokens": 807156,
+      "missed": [],
+      "rankOfEdited": [
+        1
+      ]
+    },
+    {
+      "task": "07921715",
+      "config": "BM25 + import graph + signatures",
+      "budget": 8000,
+      "fullRecall": 1,
+      "visibleRecall": 1,
+      "allFull": true,
+      "tokens": 7993,
+      "repoTokens": 807156,
+      "missed": [],
+      "rankOfEdited": [
+        1
+      ]
+    },
+    {
+      "task": "07921715",
+      "config": "BM25 + import graph + signatures",
+      "budget": 16000,
+      "fullRecall": 1,
+      "visibleRecall": 1,
+      "allFull": true,
+      "tokens": 15997,
+      "repoTokens": 807156,
+      "missed": [],
+      "rankOfEdited": [
+        1
+      ]
+    },
+    {
+      "task": "07921715",
+      "config": "BM25 + import graph + signatures",
+      "budget": 32000,
+      "fullRecall": 1,
+      "visibleRecall": 1,
+      "allFull": true,
+      "tokens": 31984,
+      "repoTokens": 807156,
+      "missed": [],
+      "rankOfEdited": [
+        1
+      ]
+    },
+    {
+      "task": "9e991958",
+      "config": "Recent files (baseline)",
+      "budget": 8000,
+      "fullRecall": 0,
+      "visibleRecall": 0,
+      "allFull": false,
+      "tokens": 7982,
+      "repoTokens": 806767,
+      "missed": [
+        "app/lib/modules/llm/providers/ollama.ts"
+      ],
+      "rankOfEdited": [
+        336
+      ]
+    },
+    {
+      "task": "9e991958",
+      "config": "Recent files (baseline)",
+      "budget": 16000,
+      "fullRecall": 0,
+      "visibleRecall": 0,
+      "allFull": false,
+      "tokens": 16000,
+      "repoTokens": 806767,
+      "missed": [
+        "app/lib/modules/llm/providers/ollama.ts"
+      ],
+      "rankOfEdited": [
+        336
+      ]
+    },
+    {
+      "task": "9e991958",
+      "config": "Recent files (baseline)",
+      "budget": 32000,
+      "fullRecall": 0,
+      "visibleRecall": 0,
+      "allFull": false,
+      "tokens": 31988,
+      "repoTokens": 806767,
+      "missed": [
+        "app/lib/modules/llm/providers/ollama.ts"
+      ],
+      "rankOfEdited": [
+        336
+      ]
+    },
+    {
+      "task": "9e991958",
+      "config": "BM25",
+      "budget": 8000,
+      "fullRecall": 1,
+      "visibleRecall": 1,
+      "allFull": true,
+      "tokens": 8000,
+      "repoTokens": 806767,
+      "missed": [],
+      "rankOfEdited": [
+        1
+      ]
+    },
+    {
+      "task": "9e991958",
+      "config": "BM25",
+      "budget": 16000,
+      "fullRecall": 1,
+      "visibleRecall": 1,
+      "allFull": true,
+      "tokens": 15999,
+      "repoTokens": 806767,
+      "missed": [],
+      "rankOfEdited": [
+        1
+      ]
+    },
+    {
+      "task": "9e991958",
+      "config": "BM25",
+      "budget": 32000,
+      "fullRecall": 1,
+      "visibleRecall": 1,
+      "allFull": true,
+      "tokens": 32000,
+      "repoTokens": 806767,
+      "missed": [],
+      "rankOfEdited": [
+        1
+      ]
+    },
+    {
+      "task": "9e991958",
+      "config": "BM25 + import graph",
+      "budget": 8000,
+      "fullRecall": 1,
+      "visibleRecall": 1,
+      "allFull": true,
+      "tokens": 8000,
+      "repoTokens": 806767,
+      "missed": [],
+      "rankOfEdited": [
+        3
+      ]
+    },
+    {
+      "task": "9e991958",
+      "config": "BM25 + import graph",
+      "budget": 16000,
+      "fullRecall": 1,
+      "visibleRecall": 1,
+      "allFull": true,
+      "tokens": 15987,
+      "repoTokens": 806767,
+      "missed": [],
+      "rankOfEdited": [
+        3
+      ]
+    },
+    {
+      "task": "9e991958",
+      "config": "BM25 + import graph",
+      "budget": 32000,
+      "fullRecall": 1,
+      "visibleRecall": 1,
+      "allFull": true,
+      "tokens": 31999,
+      "repoTokens": 806767,
+      "missed": [],
+      "rankOfEdited": [
+        3
+      ]
+    },
+    {
+      "task": "9e991958",
+      "config": "BM25 + signatures",
+      "budget": 8000,
+      "fullRecall": 1,
+      "visibleRecall": 1,
+      "allFull": true,
+      "tokens": 7999,
+      "repoTokens": 806767,
+      "missed": [],
+      "rankOfEdited": [
+        1
+      ]
+    },
+    {
+      "task": "9e991958",
+      "config": "BM25 + signatures",
+      "budget": 16000,
+      "fullRecall": 1,
+      "visibleRecall": 1,
+      "allFull": true,
+      "tokens": 15991,
+      "repoTokens": 806767,
+      "missed": [],
+      "rankOfEdited": [
+        1
+      ]
+    },
+    {
+      "task": "9e991958",
+      "config": "BM25 + signatures",
+      "budget": 32000,
+      "fullRecall": 1,
+      "visibleRecall": 1,
+      "allFull": true,
+      "tokens": 31998,
+      "repoTokens": 806767,
+      "missed": [],
+      "rankOfEdited": [
+        1
+      ]
+    },
+    {
+      "task": "9e991958",
+      "config": "BM25 + import graph + signatures",
+      "budget": 8000,
+      "fullRecall": 1,
+      "visibleRecall": 1,
+      "allFull": true,
+      "tokens": 7981,
+      "repoTokens": 806767,
+      "missed": [],
+      "rankOfEdited": [
+        3
+      ]
+    },
+    {
+      "task": "9e991958",
+      "config": "BM25 + import graph + signatures",
+      "budget": 16000,
+      "fullRecall": 1,
+      "visibleRecall": 1,
+      "allFull": true,
+      "tokens": 15978,
+      "repoTokens": 806767,
+      "missed": [],
+      "rankOfEdited": [
+        3
+      ]
+    },
+    {
+      "task": "9e991958",
+      "config": "BM25 + import graph + signatures",
+      "budget": 32000,
+      "fullRecall": 1,
+      "visibleRecall": 1,
+      "allFull": true,
+      "tokens": 31989,
+      "repoTokens": 806767,
+      "missed": [],
+      "rankOfEdited": [
+        3
+      ]
+    },
+    {
+      "task": "deb6c738",
+      "config": "Recent files (baseline)",
+      "budget": 8000,
+      "fullRecall": 0,
+      "visibleRecall": 0,
+      "allFull": false,
+      "tokens": 7990,
+      "repoTokens": 806116,
+      "missed": [
+        "electron/main/vite.config.ts",
+        "electron/preload/vite.config.ts"
+      ],
+      "rankOfEdited": [
+        313,
+        null
+      ]
+    },
+    {
+      "task": "deb6c738",
+      "config": "Recent files (baseline)",
+      "budget": 16000,
+      "fullRecall": 0,
+      "visibleRecall": 0,
+      "allFull": false,
+      "tokens": 15998,
+      "repoTokens": 806116,
+      "missed": [
+        "electron/main/vite.config.ts",
+        "electron/preload/vite.config.ts"
+      ],
+      "rankOfEdited": [
+        313,
+        null
+      ]
+    },
+    {
+      "task": "deb6c738",
+      "config": "Recent files (baseline)",
+      "budget": 32000,
+      "fullRecall": 0,
+      "visibleRecall": 0,
+      "allFull": false,
+      "tokens": 31981,
+      "repoTokens": 806116,
+      "missed": [
+        "electron/main/vite.config.ts",
+        "electron/preload/vite.config.ts"
+      ],
+      "rankOfEdited": [
+        313,
+        null
+      ]
+    },
+    {
+      "task": "deb6c738",
+      "config": "BM25",
+      "budget": 8000,
+      "fullRecall": 1,
+      "visibleRecall": 1,
+      "allFull": true,
+      "tokens": 7999,
+      "repoTokens": 806116,
+      "missed": [],
+      "rankOfEdited": [
+        6,
+        7
+      ]
+    },
+    {
+      "task": "deb6c738",
+      "config": "BM25",
+      "budget": 16000,
+      "fullRecall": 1,
+      "visibleRecall": 1,
+      "allFull": true,
+      "tokens": 16000,
+      "repoTokens": 806116,
+      "missed": [],
+      "rankOfEdited": [
+        6,
+        7
+      ]
+    },
+    {
+      "task": "deb6c738",
+      "config": "BM25",
+      "budget": 32000,
+      "fullRecall": 1,
+      "visibleRecall": 1,
+      "allFull": true,
+      "tokens": 31988,
+      "repoTokens": 806116,
+      "missed": [],
+      "rankOfEdited": [
+        6,
+        7
+      ]
+    },
+    {
+      "task": "deb6c738",
+      "config": "BM25 + import graph",
+      "budget": 8000,
+      "fullRecall": 1,
+      "visibleRecall": 1,
+      "allFull": true,
+      "tokens": 7994,
+      "repoTokens": 806116,
+      "missed": [],
+      "rankOfEdited": [
+        7,
+        9
+      ]
+    },
+    {
+      "task": "deb6c738",
+      "config": "BM25 + import graph",
+      "budget": 16000,
+      "fullRecall": 1,
+      "visibleRecall": 1,
+      "allFull": true,
+      "tokens": 16000,
+      "repoTokens": 806116,
+      "missed": [],
+      "rankOfEdited": [
+        7,
+        9
+      ]
+    },
+    {
+      "task": "deb6c738",
+      "config": "BM25 + import graph",
+      "budget": 32000,
+      "fullRecall": 1,
+      "visibleRecall": 1,
+      "allFull": true,
+      "tokens": 31996,
+      "repoTokens": 806116,
+      "missed": [],
+      "rankOfEdited": [
+        7,
+        9
+      ]
+    },
+    {
+      "task": "deb6c738",
+      "config": "BM25 + signatures",
+      "budget": 8000,
+      "fullRecall": 1,
+      "visibleRecall": 1,
+      "allFull": true,
+      "tokens": 7986,
+      "repoTokens": 806116,
+      "missed": [],
+      "rankOfEdited": [
+        6,
+        7
+      ]
+    },
+    {
+      "task": "deb6c738",
+      "config": "BM25 + signatures",
+      "budget": 16000,
+      "fullRecall": 1,
+      "visibleRecall": 1,
+      "allFull": true,
+      "tokens": 15988,
+      "repoTokens": 806116,
+      "missed": [],
+      "rankOfEdited": [
+        6,
+        7
+      ]
+    },
+    {
+      "task": "deb6c738",
+      "config": "BM25 + signatures",
+      "budget": 32000,
+      "fullRecall": 1,
+      "visibleRecall": 1,
+      "allFull": true,
+      "tokens": 31994,
+      "repoTokens": 806116,
+      "missed": [],
+      "rankOfEdited": [
+        6,
+        7
+      ]
+    },
+    {
+      "task": "deb6c738",
+      "config": "BM25 + import graph + signatures",
+      "budget": 8000,
+      "fullRecall": 0.5,
+      "visibleRecall": 1,
+      "allFull": false,
+      "tokens": 7986,
+      "repoTokens": 806116,
+      "missed": [
+        "electron/preload/vite.config.ts"
+      ],
+      "rankOfEdited": [
+        7,
+        9
+      ]
+    },
+    {
+      "task": "deb6c738",
+      "config": "BM25 + import graph + signatures",
+      "budget": 16000,
+      "fullRecall": 1,
+      "visibleRecall": 1,
+      "allFull": true,
+      "tokens": 15993,
+      "repoTokens": 806116,
+      "missed": [],
+      "rankOfEdited": [
+        7,
+        9
+      ]
+    },
+    {
+      "task": "deb6c738",
+      "config": "BM25 + import graph + signatures",
+      "budget": 32000,
+      "fullRecall": 1,
+      "visibleRecall": 1,
+      "allFull": true,
+      "tokens": 31977,
+      "repoTokens": 806116,
+      "missed": [],
+      "rankOfEdited": [
+        7,
+        9
+      ]
+    },
+    {
+      "task": "06e1d64e",
+      "config": "Recent files (baseline)",
+      "budget": 8000,
+      "fullRecall": 0,
+      "visibleRecall": 0,
+      "allFull": false,
+      "tokens": 7991,
+      "repoTokens": 806116,
+      "missed": [
+        "app/lib/stores/workbench-lifecycle.spec.ts",
+        "tests/performance/core-journeys.perf.test.tsx"
+      ],
+      "rankOfEdited": [
+        146,
+        247
+      ]
+    },
+    {
+      "task": "06e1d64e",
+      "config": "Recent files (baseline)",
+      "budget": 16000,
+      "fullRecall": 0,
+      "visibleRecall": 0,
+      "allFull": false,
+      "tokens": 15996,
+      "repoTokens": 806116,
+      "missed": [
+        "app/lib/stores/workbench-lifecycle.spec.ts",
+        "tests/performance/core-journeys.perf.test.tsx"
+      ],
+      "rankOfEdited": [
+        146,
+        247
+      ]
+    },
+    {
+      "task": "06e1d64e",
+      "config": "Recent files (baseline)",
+      "budget": 32000,
+      "fullRecall": 0,
+      "visibleRecall": 0,
+      "allFull": false,
+      "tokens": 31986,
+      "repoTokens": 806116,
+      "missed": [
+        "app/lib/stores/workbench-lifecycle.spec.ts",
+        "tests/performance/core-journeys.perf.test.tsx"
+      ],
+      "rankOfEdited": [
+        146,
+        247
+      ]
+    },
+    {
+      "task": "06e1d64e",
+      "config": "BM25",
+      "budget": 8000,
+      "fullRecall": 0,
+      "visibleRecall": 0,
+      "allFull": false,
+      "tokens": 7987,
+      "repoTokens": 806116,
+      "missed": [
+        "app/lib/stores/workbench-lifecycle.spec.ts",
+        "tests/performance/core-journeys.perf.test.tsx"
+      ],
+      "rankOfEdited": [
+        14,
+        30
+      ]
+    },
+    {
+      "task": "06e1d64e",
+      "config": "BM25",
+      "budget": 16000,
+      "fullRecall": 0,
+      "visibleRecall": 0,
+      "allFull": false,
+      "tokens": 15987,
+      "repoTokens": 806116,
+      "missed": [
+        "app/lib/stores/workbench-lifecycle.spec.ts",
+        "tests/performance/core-journeys.perf.test.tsx"
+      ],
+      "rankOfEdited": [
+        14,
+        30
+      ]
+    },
+    {
+      "task": "06e1d64e",
+      "config": "BM25",
+      "budget": 32000,
+      "fullRecall": 0,
+      "visibleRecall": 0,
+      "allFull": false,
+      "tokens": 31993,
+      "repoTokens": 806116,
+      "missed": [
+        "app/lib/stores/workbench-lifecycle.spec.ts",
+        "tests/performance/core-journeys.perf.test.tsx"
+      ],
+      "rankOfEdited": [
+        14,
+        30
+      ]
+    },
+    {
+      "task": "06e1d64e",
+      "config": "BM25 + import graph",
+      "budget": 8000,
+      "fullRecall": 0,
+      "visibleRecall": 0,
+      "allFull": false,
+      "tokens": 7999,
+      "repoTokens": 806116,
+      "missed": [
+        "app/lib/stores/workbench-lifecycle.spec.ts",
+        "tests/performance/core-journeys.perf.test.tsx"
+      ],
+      "rankOfEdited": [
+        20,
+        35
+      ]
+    },
+    {
+      "task": "06e1d64e",
+      "config": "BM25 + import graph",
+      "budget": 16000,
+      "fullRecall": 0,
+      "visibleRecall": 0,
+      "allFull": false,
+      "tokens": 15992,
+      "repoTokens": 806116,
+      "missed": [
+        "app/lib/stores/workbench-lifecycle.spec.ts",
+        "tests/performance/core-journeys.perf.test.tsx"
+      ],
+      "rankOfEdited": [
+        20,
+        35
+      ]
+    },
+    {
+      "task": "06e1d64e",
+      "config": "BM25 + import graph",
+      "budget": 32000,
+      "fullRecall": 0.5,
+      "visibleRecall": 0.5,
+      "allFull": false,
+      "tokens": 31998,
+      "repoTokens": 806116,
+      "missed": [
+        "tests/performance/core-journeys.perf.test.tsx"
+      ],
+      "rankOfEdited": [
+        20,
+        35
+      ]
+    },
+    {
+      "task": "06e1d64e",
+      "config": "BM25 + signatures",
+      "budget": 8000,
+      "fullRecall": 0,
+      "visibleRecall": 0,
+      "allFull": false,
+      "tokens": 7991,
+      "repoTokens": 806116,
+      "missed": [
+        "app/lib/stores/workbench-lifecycle.spec.ts",
+        "tests/performance/core-journeys.perf.test.tsx"
+      ],
+      "rankOfEdited": [
+        14,
+        30
+      ]
+    },
+    {
+      "task": "06e1d64e",
+      "config": "BM25 + signatures",
+      "budget": 16000,
+      "fullRecall": 0,
+      "visibleRecall": 0.5,
+      "allFull": false,
+      "tokens": 15995,
+      "repoTokens": 806116,
+      "missed": [
+        "app/lib/stores/workbench-lifecycle.spec.ts",
+        "tests/performance/core-journeys.perf.test.tsx"
+      ],
+      "rankOfEdited": [
+        14,
+        30
+      ]
+    },
+    {
+      "task": "06e1d64e",
+      "config": "BM25 + signatures",
+      "budget": 32000,
+      "fullRecall": 0,
+      "visibleRecall": 1,
+      "allFull": false,
+      "tokens": 31992,
+      "repoTokens": 806116,
+      "missed": [
+        "app/lib/stores/workbench-lifecycle.spec.ts",
+        "tests/performance/core-journeys.perf.test.tsx"
+      ],
+      "rankOfEdited": [
+        14,
+        30
+      ]
+    },
+    {
+      "task": "06e1d64e",
+      "config": "BM25 + import graph + signatures",
+      "budget": 8000,
+      "fullRecall": 0,
+      "visibleRecall": 0.5,
+      "allFull": false,
+      "tokens": 7992,
+      "repoTokens": 806116,
+      "missed": [
+        "app/lib/stores/workbench-lifecycle.spec.ts",
+        "tests/performance/core-journeys.perf.test.tsx"
+      ],
+      "rankOfEdited": [
+        20,
+        35
+      ]
+    },
+    {
+      "task": "06e1d64e",
+      "config": "BM25 + import graph + signatures",
+      "budget": 16000,
+      "fullRecall": 0,
+      "visibleRecall": 0.5,
+      "allFull": false,
+      "tokens": 15995,
+      "repoTokens": 806116,
+      "missed": [
+        "app/lib/stores/workbench-lifecycle.spec.ts",
+        "tests/performance/core-journeys.perf.test.tsx"
+      ],
+      "rankOfEdited": [
+        20,
+        35
+      ]
+    },
+    {
+      "task": "06e1d64e",
+      "config": "BM25 + import graph + signatures",
+      "budget": 32000,
+      "fullRecall": 0,
+      "visibleRecall": 1,
+      "allFull": false,
+      "tokens": 31979,
+      "repoTokens": 806116,
+      "missed": [
+        "app/lib/stores/workbench-lifecycle.spec.ts",
+        "tests/performance/core-journeys.perf.test.tsx"
+      ],
+      "rankOfEdited": [
+        20,
+        35
+      ]
+    },
+    {
+      "task": "5ae893cc",
+      "config": "Recent files (baseline)",
+      "budget": 8000,
+      "fullRecall": 1,
+      "visibleRecall": 1,
+      "allFull": true,
+      "tokens": 7990,
+      "repoTokens": 806116,
+      "missed": [],
+      "rankOfEdited": [
+        1
+      ]
+    },
+    {
+      "task": "5ae893cc",
+      "config": "Recent files (baseline)",
+      "budget": 16000,
+      "fullRecall": 1,
+      "visibleRecall": 1,
+      "allFull": true,
+      "tokens": 15998,
+      "repoTokens": 806116,
+      "missed": [],
+      "rankOfEdited": [
+        1
+      ]
+    },
+    {
+      "task": "5ae893cc",
+      "config": "Recent files (baseline)",
+      "budget": 32000,
+      "fullRecall": 1,
+      "visibleRecall": 1,
+      "allFull": true,
+      "tokens": 31981,
+      "repoTokens": 806116,
+      "missed": [],
+      "rankOfEdited": [
+        1
+      ]
+    },
+    {
+      "task": "5ae893cc",
+      "config": "BM25",
+      "budget": 8000,
+      "fullRecall": 0,
+      "visibleRecall": 0,
+      "allFull": false,
+      "tokens": 7991,
+      "repoTokens": 806116,
+      "missed": [
+        "app/components/chat/ChatBox.tsx"
+      ],
+      "rankOfEdited": [
+        32
+      ]
+    },
+    {
+      "task": "5ae893cc",
+      "config": "BM25",
+      "budget": 16000,
+      "fullRecall": 0,
+      "visibleRecall": 0,
+      "allFull": false,
+      "tokens": 15992,
+      "repoTokens": 806116,
+      "missed": [
+        "app/components/chat/ChatBox.tsx"
+      ],
+      "rankOfEdited": [
+        32
+      ]
+    },
+    {
+      "task": "5ae893cc",
+      "config": "BM25",
+      "budget": 32000,
+      "fullRecall": 0,
+      "visibleRecall": 0,
+      "allFull": false,
+      "tokens": 31981,
+      "repoTokens": 806116,
+      "missed": [
+        "app/components/chat/ChatBox.tsx"
+      ],
+      "rankOfEdited": [
+        32
+      ]
+    },
+    {
+      "task": "5ae893cc",
+      "config": "BM25 + import graph",
+      "budget": 8000,
+      "fullRecall": 0,
+      "visibleRecall": 0,
+      "allFull": false,
+      "tokens": 7982,
+      "repoTokens": 806116,
+      "missed": [
+        "app/components/chat/ChatBox.tsx"
+      ],
+      "rankOfEdited": [
+        12
+      ]
+    },
+    {
+      "task": "5ae893cc",
+      "config": "BM25 + import graph",
+      "budget": 16000,
+      "fullRecall": 0,
+      "visibleRecall": 0,
+      "allFull": false,
+      "tokens": 15982,
+      "repoTokens": 806116,
+      "missed": [
+        "app/components/chat/ChatBox.tsx"
+      ],
+      "rankOfEdited": [
+        12
+      ]
+    },
+    {
+      "task": "5ae893cc",
+      "config": "BM25 + import graph",
+      "budget": 32000,
+      "fullRecall": 1,
+      "visibleRecall": 1,
+      "allFull": true,
+      "tokens": 31993,
+      "repoTokens": 806116,
+      "missed": [],
+      "rankOfEdited": [
+        12
+      ]
+    },
+    {
+      "task": "5ae893cc",
+      "config": "BM25 + signatures",
+      "budget": 8000,
+      "fullRecall": 0,
+      "visibleRecall": 0,
+      "allFull": false,
+      "tokens": 7999,
+      "repoTokens": 806116,
+      "missed": [
+        "app/components/chat/ChatBox.tsx"
+      ],
+      "rankOfEdited": [
+        32
+      ]
+    },
+    {
+      "task": "5ae893cc",
+      "config": "BM25 + signatures",
+      "budget": 16000,
+      "fullRecall": 0,
+      "visibleRecall": 0,
+      "allFull": false,
+      "tokens": 15979,
+      "repoTokens": 806116,
+      "missed": [
+        "app/components/chat/ChatBox.tsx"
+      ],
+      "rankOfEdited": [
+        32
+      ]
+    },
+    {
+      "task": "5ae893cc",
+      "config": "BM25 + signatures",
+      "budget": 32000,
+      "fullRecall": 0,
+      "visibleRecall": 1,
+      "allFull": false,
+      "tokens": 31975,
+      "repoTokens": 806116,
+      "missed": [
+        "app/components/chat/ChatBox.tsx"
+      ],
+      "rankOfEdited": [
+        32
+      ]
+    },
+    {
+      "task": "5ae893cc",
+      "config": "BM25 + import graph + signatures",
+      "budget": 8000,
+      "fullRecall": 0,
+      "visibleRecall": 1,
+      "allFull": false,
+      "tokens": 7986,
+      "repoTokens": 806116,
+      "missed": [
+        "app/components/chat/ChatBox.tsx"
+      ],
+      "rankOfEdited": [
+        12
+      ]
+    },
+    {
+      "task": "5ae893cc",
+      "config": "BM25 + import graph + signatures",
+      "budget": 16000,
+      "fullRecall": 0,
+      "visibleRecall": 1,
+      "allFull": false,
+      "tokens": 15999,
+      "repoTokens": 806116,
+      "missed": [
+        "app/components/chat/ChatBox.tsx"
+      ],
+      "rankOfEdited": [
+        12
+      ]
+    },
+    {
+      "task": "5ae893cc",
+      "config": "BM25 + import graph + signatures",
+      "budget": 32000,
+      "fullRecall": 0,
+      "visibleRecall": 1,
+      "allFull": false,
+      "tokens": 31989,
+      "repoTokens": 806116,
+      "missed": [
+        "app/components/chat/ChatBox.tsx"
+      ],
+      "rankOfEdited": [
+        12
+      ]
+    },
+    {
+      "task": "8eeaf5c4",
+      "config": "Recent files (baseline)",
+      "budget": 8000,
+      "fullRecall": 1,
+      "visibleRecall": 1,
+      "allFull": true,
+      "tokens": 7980,
+      "repoTokens": 806106,
+      "missed": [],
+      "rankOfEdited": [
+        1
+      ]
+    },
+    {
+      "task": "8eeaf5c4",
+      "config": "Recent files (baseline)",
+      "budget": 16000,
+      "fullRecall": 1,
+      "visibleRecall": 1,
+      "allFull": true,
+      "tokens": 15988,
+      "repoTokens": 806106,
+      "missed": [],
+      "rankOfEdited": [
+        1
+      ]
+    },
+    {
+      "task": "8eeaf5c4",
+      "config": "Recent files (baseline)",
+      "budget": 32000,
+      "fullRecall": 1,
+      "visibleRecall": 1,
+      "allFull": true,
+      "tokens": 31998,
+      "repoTokens": 806106,
+      "missed": [],
+      "rankOfEdited": [
+        1
+      ]
+    },
+    {
+      "task": "8eeaf5c4",
+      "config": "BM25",
+      "budget": 8000,
+      "fullRecall": 0,
+      "visibleRecall": 0,
+      "allFull": false,
+      "tokens": 7981,
+      "repoTokens": 806106,
+      "missed": [
+        "app/components/chat/ChatBox.tsx"
+      ],
+      "rankOfEdited": [
+        66
+      ]
+    },
+    {
+      "task": "8eeaf5c4",
+      "config": "BM25",
+      "budget": 16000,
+      "fullRecall": 0,
+      "visibleRecall": 0,
+      "allFull": false,
+      "tokens": 15975,
+      "repoTokens": 806106,
+      "missed": [
+        "app/components/chat/ChatBox.tsx"
+      ],
+      "rankOfEdited": [
+        66
+      ]
+    },
+    {
+      "task": "8eeaf5c4",
+      "config": "BM25",
+      "budget": 32000,
+      "fullRecall": 0,
+      "visibleRecall": 0,
+      "allFull": false,
+      "tokens": 31986,
+      "repoTokens": 806106,
+      "missed": [
+        "app/components/chat/ChatBox.tsx"
+      ],
+      "rankOfEdited": [
+        66
+      ]
+    },
+    {
+      "task": "8eeaf5c4",
+      "config": "BM25 + import graph",
+      "budget": 8000,
+      "fullRecall": 0,
+      "visibleRecall": 0,
+      "allFull": false,
+      "tokens": 7980,
+      "repoTokens": 806106,
+      "missed": [
+        "app/components/chat/ChatBox.tsx"
+      ],
+      "rankOfEdited": [
+        55
+      ]
+    },
+    {
+      "task": "8eeaf5c4",
+      "config": "BM25 + import graph",
+      "budget": 16000,
+      "fullRecall": 0,
+      "visibleRecall": 0,
+      "allFull": false,
+      "tokens": 15996,
+      "repoTokens": 806106,
+      "missed": [
+        "app/components/chat/ChatBox.tsx"
+      ],
+      "rankOfEdited": [
+        55
+      ]
+    },
+    {
+      "task": "8eeaf5c4",
+      "config": "BM25 + import graph",
+      "budget": 32000,
+      "fullRecall": 0,
+      "visibleRecall": 0,
+      "allFull": false,
+      "tokens": 31999,
+      "repoTokens": 806106,
+      "missed": [
+        "app/components/chat/ChatBox.tsx"
+      ],
+      "rankOfEdited": [
+        55
+      ]
+    },
+    {
+      "task": "8eeaf5c4",
+      "config": "BM25 + signatures",
+      "budget": 8000,
+      "fullRecall": 0,
+      "visibleRecall": 0,
+      "allFull": false,
+      "tokens": 7971,
+      "repoTokens": 806106,
+      "missed": [
+        "app/components/chat/ChatBox.tsx"
+      ],
+      "rankOfEdited": [
+        66
+      ]
+    },
+    {
+      "task": "8eeaf5c4",
+      "config": "BM25 + signatures",
+      "budget": 16000,
+      "fullRecall": 0,
+      "visibleRecall": 0,
+      "allFull": false,
+      "tokens": 15987,
+      "repoTokens": 806106,
+      "missed": [
+        "app/components/chat/ChatBox.tsx"
+      ],
+      "rankOfEdited": [
+        66
+      ]
+    },
+    {
+      "task": "8eeaf5c4",
+      "config": "BM25 + signatures",
+      "budget": 32000,
+      "fullRecall": 0,
+      "visibleRecall": 0,
+      "allFull": false,
+      "tokens": 31995,
+      "repoTokens": 806106,
+      "missed": [
+        "app/components/chat/ChatBox.tsx"
+      ],
+      "rankOfEdited": [
+        66
+      ]
+    },
+    {
+      "task": "8eeaf5c4",
+      "config": "BM25 + import graph + signatures",
+      "budget": 8000,
+      "fullRecall": 0,
+      "visibleRecall": 0,
+      "allFull": false,
+      "tokens": 7985,
+      "repoTokens": 806106,
+      "missed": [
+        "app/components/chat/ChatBox.tsx"
+      ],
+      "rankOfEdited": [
+        55
+      ]
+    },
+    {
+      "task": "8eeaf5c4",
+      "config": "BM25 + import graph + signatures",
+      "budget": 16000,
+      "fullRecall": 0,
+      "visibleRecall": 0,
+      "allFull": false,
+      "tokens": 15999,
+      "repoTokens": 806106,
+      "missed": [
+        "app/components/chat/ChatBox.tsx"
+      ],
+      "rankOfEdited": [
+        55
+      ]
+    },
+    {
+      "task": "8eeaf5c4",
+      "config": "BM25 + import graph + signatures",
+      "budget": 32000,
+      "fullRecall": 0,
+      "visibleRecall": 0,
+      "allFull": false,
+      "tokens": 31988,
+      "repoTokens": 806106,
+      "missed": [
+        "app/components/chat/ChatBox.tsx"
+      ],
+      "rankOfEdited": [
+        55
+      ]
+    },
+    {
+      "task": "48edd2cd",
+      "config": "Recent files (baseline)",
+      "budget": 8000,
+      "fullRecall": 0,
+      "visibleRecall": 0,
+      "allFull": false,
+      "tokens": 7998,
+      "repoTokens": 806106,
+      "missed": [
+        "app/components/chat/ChatBox.tsx"
+      ],
+      "rankOfEdited": [
+        9
+      ]
+    },
+    {
+      "task": "48edd2cd",
+      "config": "Recent files (baseline)",
+      "budget": 16000,
+      "fullRecall": 0,
+      "visibleRecall": 0,
+      "allFull": false,
+      "tokens": 15981,
+      "repoTokens": 806106,
+      "missed": [
+        "app/components/chat/ChatBox.tsx"
+      ],
+      "rankOfEdited": [
+        9
+      ]
+    },
+    {
+      "task": "48edd2cd",
+      "config": "Recent files (baseline)",
+      "budget": 32000,
+      "fullRecall": 1,
+      "visibleRecall": 1,
+      "allFull": true,
+      "tokens": 31998,
+      "repoTokens": 806106,
+      "missed": [],
+      "rankOfEdited": [
+        9
+      ]
+    },
+    {
+      "task": "48edd2cd",
+      "config": "BM25",
+      "budget": 8000,
+      "fullRecall": 1,
+      "visibleRecall": 1,
+      "allFull": true,
+      "tokens": 7995,
+      "repoTokens": 806106,
+      "missed": [],
+      "rankOfEdited": [
+        2
+      ]
+    },
+    {
+      "task": "48edd2cd",
+      "config": "BM25",
+      "budget": 16000,
+      "fullRecall": 1,
+      "visibleRecall": 1,
+      "allFull": true,
+      "tokens": 15975,
+      "repoTokens": 806106,
+      "missed": [],
+      "rankOfEdited": [
+        2
+      ]
+    },
+    {
+      "task": "48edd2cd",
+      "config": "BM25",
+      "budget": 32000,
+      "fullRecall": 1,
+      "visibleRecall": 1,
+      "allFull": true,
+      "tokens": 31996,
+      "repoTokens": 806106,
+      "missed": [],
+      "rankOfEdited": [
+        2
+      ]
+    },
+    {
+      "task": "48edd2cd",
+      "config": "BM25 + import graph",
+      "budget": 8000,
+      "fullRecall": 1,
+      "visibleRecall": 1,
+      "allFull": true,
+      "tokens": 7987,
+      "repoTokens": 806106,
+      "missed": [],
+      "rankOfEdited": [
+        2
+      ]
+    },
+    {
+      "task": "48edd2cd",
+      "config": "BM25 + import graph",
+      "budget": 16000,
+      "fullRecall": 1,
+      "visibleRecall": 1,
+      "allFull": true,
+      "tokens": 15983,
+      "repoTokens": 806106,
+      "missed": [],
+      "rankOfEdited": [
+        2
+      ]
+    },
+    {
+      "task": "48edd2cd",
+      "config": "BM25 + import graph",
+      "budget": 32000,
+      "fullRecall": 1,
+      "visibleRecall": 1,
+      "allFull": true,
+      "tokens": 31980,
+      "repoTokens": 806106,
+      "missed": [],
+      "rankOfEdited": [
+        2
+      ]
+    },
+    {
+      "task": "48edd2cd",
+      "config": "BM25 + signatures",
+      "budget": 8000,
+      "fullRecall": 0,
+      "visibleRecall": 1,
+      "allFull": false,
+      "tokens": 7986,
+      "repoTokens": 806106,
+      "missed": [
+        "app/components/chat/ChatBox.tsx"
+      ],
+      "rankOfEdited": [
+        2
+      ]
+    },
+    {
+      "task": "48edd2cd",
+      "config": "BM25 + signatures",
+      "budget": 16000,
+      "fullRecall": 1,
+      "visibleRecall": 1,
+      "allFull": true,
+      "tokens": 15976,
+      "repoTokens": 806106,
+      "missed": [],
+      "rankOfEdited": [
+        2
+      ]
+    },
+    {
+      "task": "48edd2cd",
+      "config": "BM25 + signatures",
+      "budget": 32000,
+      "fullRecall": 1,
+      "visibleRecall": 1,
+      "allFull": true,
+      "tokens": 31981,
+      "repoTokens": 806106,
+      "missed": [],
+      "rankOfEdited": [
+        2
+      ]
+    },
+    {
+      "task": "48edd2cd",
+      "config": "BM25 + import graph + signatures",
+      "budget": 8000,
+      "fullRecall": 0,
+      "visibleRecall": 1,
+      "allFull": false,
+      "tokens": 7985,
+      "repoTokens": 806106,
+      "missed": [
+        "app/components/chat/ChatBox.tsx"
+      ],
+      "rankOfEdited": [
+        2
+      ]
+    },
+    {
+      "task": "48edd2cd",
+      "config": "BM25 + import graph + signatures",
+      "budget": 16000,
+      "fullRecall": 1,
+      "visibleRecall": 1,
+      "allFull": true,
+      "tokens": 16000,
+      "repoTokens": 806106,
+      "missed": [],
+      "rankOfEdited": [
+        2
+      ]
+    },
+    {
+      "task": "48edd2cd",
+      "config": "BM25 + import graph + signatures",
+      "budget": 32000,
+      "fullRecall": 1,
+      "visibleRecall": 1,
+      "allFull": true,
+      "tokens": 31995,
+      "repoTokens": 806106,
+      "missed": [],
+      "rankOfEdited": [
+        2
+      ]
+    },
+    {
+      "task": "922a5c0d",
+      "config": "Recent files (baseline)",
+      "budget": 8000,
+      "fullRecall": 0,
+      "visibleRecall": 0,
+      "allFull": false,
+      "tokens": 7997,
+      "repoTokens": 651906,
+      "missed": [
+        "app/components/chat/StaticComposer.tsx",
+        "tests/unit/StaticComposer.test.tsx"
+      ],
+      "rankOfEdited": [
+        11,
+        29
+      ]
+    },
+    {
+      "task": "922a5c0d",
+      "config": "Recent files (baseline)",
+      "budget": 16000,
+      "fullRecall": 0,
+      "visibleRecall": 0,
+      "allFull": false,
+      "tokens": 15975,
+      "repoTokens": 651906,
+      "missed": [
+        "app/components/chat/StaticComposer.tsx",
+        "tests/unit/StaticComposer.test.tsx"
+      ],
+      "rankOfEdited": [
+        11,
+        29
+      ]
+    },
+    {
+      "task": "922a5c0d",
+      "config": "Recent files (baseline)",
+      "budget": 32000,
+      "fullRecall": 0.5,
+      "visibleRecall": 0.5,
+      "allFull": false,
+      "tokens": 31985,
+      "repoTokens": 651906,
+      "missed": [
+        "tests/unit/StaticComposer.test.tsx"
+      ],
+      "rankOfEdited": [
+        11,
+        29
+      ]
+    },
+    {
+      "task": "922a5c0d",
+      "config": "BM25",
+      "budget": 8000,
+      "fullRecall": 1,
+      "visibleRecall": 1,
+      "allFull": true,
+      "tokens": 7983,
+      "repoTokens": 651906,
+      "missed": [],
+      "rankOfEdited": [
+        1,
+        2
+      ]
+    },
+    {
+      "task": "922a5c0d",
+      "config": "BM25",
+      "budget": 16000,
+      "fullRecall": 1,
+      "visibleRecall": 1,
+      "allFull": true,
+      "tokens": 15987,
+      "repoTokens": 651906,
+      "missed": [],
+      "rankOfEdited": [
+        1,
+        2
+      ]
+    },
+    {
+      "task": "922a5c0d",
+      "config": "BM25",
+      "budget": 32000,
+      "fullRecall": 1,
+      "visibleRecall": 1,
+      "allFull": true,
+      "tokens": 31988,
+      "repoTokens": 651906,
+      "missed": [],
+      "rankOfEdited": [
+        1,
+        2
+      ]
+    },
+    {
+      "task": "922a5c0d",
+      "config": "BM25 + import graph",
+      "budget": 8000,
+      "fullRecall": 1,
+      "visibleRecall": 1,
+      "allFull": true,
+      "tokens": 7983,
+      "repoTokens": 651906,
+      "missed": [],
+      "rankOfEdited": [
+        1,
+        2
+      ]
+    },
+    {
+      "task": "922a5c0d",
+      "config": "BM25 + import graph",
+      "budget": 16000,
+      "fullRecall": 1,
+      "visibleRecall": 1,
+      "allFull": true,
+      "tokens": 15999,
+      "repoTokens": 651906,
+      "missed": [],
+      "rankOfEdited": [
+        1,
+        2
+      ]
+    },
+    {
+      "task": "922a5c0d",
+      "config": "BM25 + import graph",
+      "budget": 32000,
+      "fullRecall": 1,
+      "visibleRecall": 1,
+      "allFull": true,
+      "tokens": 31991,
+      "repoTokens": 651906,
+      "missed": [],
+      "rankOfEdited": [
+        1,
+        2
+      ]
+    },
+    {
+      "task": "922a5c0d",
+      "config": "BM25 + signatures",
+      "budget": 8000,
+      "fullRecall": 1,
+      "visibleRecall": 1,
+      "allFull": true,
+      "tokens": 7991,
+      "repoTokens": 651906,
+      "missed": [],
+      "rankOfEdited": [
+        1,
+        2
+      ]
+    },
+    {
+      "task": "922a5c0d",
+      "config": "BM25 + signatures",
+      "budget": 16000,
+      "fullRecall": 1,
+      "visibleRecall": 1,
+      "allFull": true,
+      "tokens": 15964,
+      "repoTokens": 651906,
+      "missed": [],
+      "rankOfEdited": [
+        1,
+        2
+      ]
+    },
+    {
+      "task": "922a5c0d",
+      "config": "BM25 + signatures",
+      "budget": 32000,
+      "fullRecall": 1,
+      "visibleRecall": 1,
+      "allFull": true,
+      "tokens": 31963,
+      "repoTokens": 651906,
+      "missed": [],
+      "rankOfEdited": [
+        1,
+        2
+      ]
+    },
+    {
+      "task": "922a5c0d",
+      "config": "BM25 + import graph + signatures",
+      "budget": 8000,
+      "fullRecall": 1,
+      "visibleRecall": 1,
+      "allFull": true,
+      "tokens": 7997,
+      "repoTokens": 651906,
+      "missed": [],
+      "rankOfEdited": [
+        1,
+        2
+      ]
+    },
+    {
+      "task": "922a5c0d",
+      "config": "BM25 + import graph + signatures",
+      "budget": 16000,
+      "fullRecall": 1,
+      "visibleRecall": 1,
+      "allFull": true,
+      "tokens": 15994,
+      "repoTokens": 651906,
+      "missed": [],
+      "rankOfEdited": [
+        1,
+        2
+      ]
+    },
+    {
+      "task": "922a5c0d",
+      "config": "BM25 + import graph + signatures",
+      "budget": 32000,
+      "fullRecall": 1,
+      "visibleRecall": 1,
+      "allFull": true,
+      "tokens": 32000,
+      "repoTokens": 651906,
+      "missed": [],
+      "rankOfEdited": [
+        1,
+        2
+      ]
+    },
+    {
+      "task": "70a5f257",
+      "config": "Recent files (baseline)",
+      "budget": 8000,
+      "fullRecall": 0,
+      "visibleRecall": 0,
+      "allFull": false,
+      "tokens": 7998,
+      "repoTokens": 806106,
+      "missed": [
+        "app/components/chat/CodeBlock.tsx"
+      ],
+      "rankOfEdited": [
+        277
+      ]
+    },
+    {
+      "task": "70a5f257",
+      "config": "Recent files (baseline)",
+      "budget": 16000,
+      "fullRecall": 0,
+      "visibleRecall": 0,
+      "allFull": false,
+      "tokens": 15981,
+      "repoTokens": 806106,
+      "missed": [
+        "app/components/chat/CodeBlock.tsx"
+      ],
+      "rankOfEdited": [
+        277
+      ]
+    },
+    {
+      "task": "70a5f257",
+      "config": "Recent files (baseline)",
+      "budget": 32000,
+      "fullRecall": 0,
+      "visibleRecall": 0,
+      "allFull": false,
+      "tokens": 31998,
+      "repoTokens": 806106,
+      "missed": [
+        "app/components/chat/CodeBlock.tsx"
+      ],
+      "rankOfEdited": [
+        277
+      ]
+    },
+    {
+      "task": "70a5f257",
+      "config": "BM25",
+      "budget": 8000,
+      "fullRecall": 0,
+      "visibleRecall": 0,
+      "allFull": false,
+      "tokens": 7980,
+      "repoTokens": 806106,
+      "missed": [
+        "app/components/chat/CodeBlock.tsx"
+      ],
+      "rankOfEdited": [
+        9
+      ]
+    },
+    {
+      "task": "70a5f257",
+      "config": "BM25",
+      "budget": 16000,
+      "fullRecall": 1,
+      "visibleRecall": 1,
+      "allFull": true,
+      "tokens": 15991,
+      "repoTokens": 806106,
+      "missed": [],
+      "rankOfEdited": [
+        9
+      ]
+    },
+    {
+      "task": "70a5f257",
+      "config": "BM25",
+      "budget": 32000,
+      "fullRecall": 1,
+      "visibleRecall": 1,
+      "allFull": true,
+      "tokens": 32000,
+      "repoTokens": 806106,
+      "missed": [],
+      "rankOfEdited": [
+        9
+      ]
+    },
+    {
+      "task": "70a5f257",
+      "config": "BM25 + import graph",
+      "budget": 8000,
+      "fullRecall": 0,
+      "visibleRecall": 0,
+      "allFull": false,
+      "tokens": 7987,
+      "repoTokens": 806106,
+      "missed": [
+        "app/components/chat/CodeBlock.tsx"
+      ],
+      "rankOfEdited": [
+        12
+      ]
+    },
+    {
+      "task": "70a5f257",
+      "config": "BM25 + import graph",
+      "budget": 16000,
+      "fullRecall": 0,
+      "visibleRecall": 0,
+      "allFull": false,
+      "tokens": 15999,
+      "repoTokens": 806106,
+      "missed": [
+        "app/components/chat/CodeBlock.tsx"
+      ],
+      "rankOfEdited": [
+        12
+      ]
+    },
+    {
+      "task": "70a5f257",
+      "config": "BM25 + import graph",
+      "budget": 32000,
+      "fullRecall": 1,
+      "visibleRecall": 1,
+      "allFull": true,
+      "tokens": 32000,
+      "repoTokens": 806106,
+      "missed": [],
+      "rankOfEdited": [
+        12
+      ]
+    },
+    {
+      "task": "70a5f257",
+      "config": "BM25 + signatures",
+      "budget": 8000,
+      "fullRecall": 0,
+      "visibleRecall": 1,
+      "allFull": false,
+      "tokens": 7995,
+      "repoTokens": 806106,
+      "missed": [
+        "app/components/chat/CodeBlock.tsx"
+      ],
+      "rankOfEdited": [
+        9
+      ]
+    },
+    {
+      "task": "70a5f257",
+      "config": "BM25 + signatures",
+      "budget": 16000,
+      "fullRecall": 0,
+      "visibleRecall": 1,
+      "allFull": false,
+      "tokens": 15983,
+      "repoTokens": 806106,
+      "missed": [
+        "app/components/chat/CodeBlock.tsx"
+      ],
+      "rankOfEdited": [
+        9
+      ]
+    },
+    {
+      "task": "70a5f257",
+      "config": "BM25 + signatures",
+      "budget": 32000,
+      "fullRecall": 1,
+      "visibleRecall": 1,
+      "allFull": true,
+      "tokens": 31987,
+      "repoTokens": 806106,
+      "missed": [],
+      "rankOfEdited": [
+        9
+      ]
+    },
+    {
+      "task": "70a5f257",
+      "config": "BM25 + import graph + signatures",
+      "budget": 8000,
+      "fullRecall": 0,
+      "visibleRecall": 1,
+      "allFull": false,
+      "tokens": 8000,
+      "repoTokens": 806106,
+      "missed": [
+        "app/components/chat/CodeBlock.tsx"
+      ],
+      "rankOfEdited": [
+        12
+      ]
+    },
+    {
+      "task": "70a5f257",
+      "config": "BM25 + import graph + signatures",
+      "budget": 16000,
+      "fullRecall": 0,
+      "visibleRecall": 1,
+      "allFull": false,
+      "tokens": 15997,
+      "repoTokens": 806106,
+      "missed": [
+        "app/components/chat/CodeBlock.tsx"
+      ],
+      "rankOfEdited": [
+        12
+      ]
+    },
+    {
+      "task": "70a5f257",
+      "config": "BM25 + import graph + signatures",
+      "budget": 32000,
+      "fullRecall": 0,
+      "visibleRecall": 1,
+      "allFull": false,
+      "tokens": 31996,
+      "repoTokens": 806106,
+      "missed": [
+        "app/components/chat/CodeBlock.tsx"
+      ],
+      "rankOfEdited": [
+        12
+      ]
+    },
+    {
+      "task": "c89f3a39",
+      "config": "Recent files (baseline)",
+      "budget": 8000,
+      "fullRecall": 0,
+      "visibleRecall": 0,
+      "allFull": false,
+      "tokens": 7998,
+      "repoTokens": 806106,
+      "missed": [
+        "app/components/chat/BaseChat.tsx"
+      ],
+      "rankOfEdited": [
+        11
+      ]
+    },
+    {
+      "task": "c89f3a39",
+      "config": "Recent files (baseline)",
+      "budget": 16000,
+      "fullRecall": 0,
+      "visibleRecall": 0,
+      "allFull": false,
+      "tokens": 15981,
+      "repoTokens": 806106,
+      "missed": [
+        "app/components/chat/BaseChat.tsx"
+      ],
+      "rankOfEdited": [
+        11
+      ]
+    },
+    {
+      "task": "c89f3a39",
+      "config": "Recent files (baseline)",
+      "budget": 32000,
+      "fullRecall": 0,
+      "visibleRecall": 0,
+      "allFull": false,
+      "tokens": 31998,
+      "repoTokens": 806106,
+      "missed": [
+        "app/components/chat/BaseChat.tsx"
+      ],
+      "rankOfEdited": [
+        11
+      ]
+    },
+    {
+      "task": "c89f3a39",
+      "config": "BM25",
+      "budget": 8000,
+      "fullRecall": 0,
+      "visibleRecall": 0,
+      "allFull": false,
+      "tokens": 7996,
+      "repoTokens": 806106,
+      "missed": [
+        "app/components/chat/BaseChat.tsx"
+      ],
+      "rankOfEdited": [
+        44
+      ]
+    },
+    {
+      "task": "c89f3a39",
+      "config": "BM25",
+      "budget": 16000,
+      "fullRecall": 0,
+      "visibleRecall": 0,
+      "allFull": false,
+      "tokens": 15977,
+      "repoTokens": 806106,
+      "missed": [
+        "app/components/chat/BaseChat.tsx"
+      ],
+      "rankOfEdited": [
+        44
+      ]
+    },
+    {
+      "task": "c89f3a39",
+      "config": "BM25",
+      "budget": 32000,
+      "fullRecall": 0,
+      "visibleRecall": 0,
+      "allFull": false,
+      "tokens": 31992,
+      "repoTokens": 806106,
+      "missed": [
+        "app/components/chat/BaseChat.tsx"
+      ],
+      "rankOfEdited": [
+        44
+      ]
+    },
+    {
+      "task": "c89f3a39",
+      "config": "BM25 + import graph",
+      "budget": 8000,
+      "fullRecall": 0,
+      "visibleRecall": 0,
+      "allFull": false,
+      "tokens": 8000,
+      "repoTokens": 806106,
+      "missed": [
+        "app/components/chat/BaseChat.tsx"
+      ],
+      "rankOfEdited": [
+        22
+      ]
+    },
+    {
+      "task": "c89f3a39",
+      "config": "BM25 + import graph",
+      "budget": 16000,
+      "fullRecall": 0,
+      "visibleRecall": 0,
+      "allFull": false,
+      "tokens": 15992,
+      "repoTokens": 806106,
+      "missed": [
+        "app/components/chat/BaseChat.tsx"
+      ],
+      "rankOfEdited": [
+        22
+      ]
+    },
+    {
+      "task": "c89f3a39",
+      "config": "BM25 + import graph",
+      "budget": 32000,
+      "fullRecall": 0,
+      "visibleRecall": 0,
+      "allFull": false,
+      "tokens": 31981,
+      "repoTokens": 806106,
+      "missed": [
+        "app/components/chat/BaseChat.tsx"
+      ],
+      "rankOfEdited": [
+        22
+      ]
+    },
+    {
+      "task": "c89f3a39",
+      "config": "BM25 + signatures",
+      "budget": 8000,
+      "fullRecall": 0,
+      "visibleRecall": 0,
+      "allFull": false,
+      "tokens": 7996,
+      "repoTokens": 806106,
+      "missed": [
+        "app/components/chat/BaseChat.tsx"
+      ],
+      "rankOfEdited": [
+        44
+      ]
+    },
+    {
+      "task": "c89f3a39",
+      "config": "BM25 + signatures",
+      "budget": 16000,
+      "fullRecall": 0,
+      "visibleRecall": 0,
+      "allFull": false,
+      "tokens": 15997,
+      "repoTokens": 806106,
+      "missed": [
+        "app/components/chat/BaseChat.tsx"
+      ],
+      "rankOfEdited": [
+        44
+      ]
+    },
+    {
+      "task": "c89f3a39",
+      "config": "BM25 + signatures",
+      "budget": 32000,
+      "fullRecall": 0,
+      "visibleRecall": 1,
+      "allFull": false,
+      "tokens": 31992,
+      "repoTokens": 806106,
+      "missed": [
+        "app/components/chat/BaseChat.tsx"
+      ],
+      "rankOfEdited": [
+        44
+      ]
+    },
+    {
+      "task": "c89f3a39",
+      "config": "BM25 + import graph + signatures",
+      "budget": 8000,
+      "fullRecall": 0,
+      "visibleRecall": 0,
+      "allFull": false,
+      "tokens": 7993,
+      "repoTokens": 806106,
+      "missed": [
+        "app/components/chat/BaseChat.tsx"
+      ],
+      "rankOfEdited": [
+        22
+      ]
+    },
+    {
+      "task": "c89f3a39",
+      "config": "BM25 + import graph + signatures",
+      "budget": 16000,
+      "fullRecall": 0,
+      "visibleRecall": 1,
+      "allFull": false,
+      "tokens": 15986,
+      "repoTokens": 806106,
+      "missed": [
+        "app/components/chat/BaseChat.tsx"
+      ],
+      "rankOfEdited": [
+        22
+      ]
+    },
+    {
+      "task": "c89f3a39",
+      "config": "BM25 + import graph + signatures",
+      "budget": 32000,
+      "fullRecall": 0,
+      "visibleRecall": 1,
+      "allFull": false,
+      "tokens": 31977,
+      "repoTokens": 806106,
+      "missed": [
+        "app/components/chat/BaseChat.tsx"
+      ],
+      "rankOfEdited": [
+        22
+      ]
+    },
+    {
+      "task": "7fd6e157",
+      "config": "Recent files (baseline)",
+      "budget": 8000,
+      "fullRecall": 0.3333333333333333,
+      "visibleRecall": 0.3333333333333333,
+      "allFull": false,
+      "tokens": 7993,
+      "repoTokens": 804554,
+      "missed": [
+        "app/lib/.server/llm/agent-loop.ts",
+        "app/lib/common/agentLoop.ts"
+      ],
+      "rankOfEdited": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "task": "7fd6e157",
+      "config": "Recent files (baseline)",
+      "budget": 16000,
+      "fullRecall": 1,
+      "visibleRecall": 1,
+      "allFull": true,
+      "tokens": 15987,
+      "repoTokens": 804554,
+      "missed": [],
+      "rankOfEdited": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "task": "7fd6e157",
+      "config": "Recent files (baseline)",
+      "budget": 32000,
+      "fullRecall": 1,
+      "visibleRecall": 1,
+      "allFull": true,
+      "tokens": 31982,
+      "repoTokens": 804554,
+      "missed": [],
+      "rankOfEdited": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "task": "7fd6e157",
+      "config": "BM25",
+      "budget": 8000,
+      "fullRecall": 1,
+      "visibleRecall": 1,
+      "allFull": true,
+      "tokens": 7992,
+      "repoTokens": 804554,
+      "missed": [],
+      "rankOfEdited": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "task": "7fd6e157",
+      "config": "BM25",
+      "budget": 16000,
+      "fullRecall": 1,
+      "visibleRecall": 1,
+      "allFull": true,
+      "tokens": 15983,
+      "repoTokens": 804554,
+      "missed": [],
+      "rankOfEdited": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "task": "7fd6e157",
+      "config": "BM25",
+      "budget": 32000,
+      "fullRecall": 1,
+      "visibleRecall": 1,
+      "allFull": true,
+      "tokens": 31999,
+      "repoTokens": 804554,
+      "missed": [],
+      "rankOfEdited": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "task": "7fd6e157",
+      "config": "BM25 + import graph",
+      "budget": 8000,
+      "fullRecall": 1,
+      "visibleRecall": 1,
+      "allFull": true,
+      "tokens": 7998,
+      "repoTokens": 804554,
+      "missed": [],
+      "rankOfEdited": [
+        3,
+        2,
+        1
+      ]
+    },
+    {
+      "task": "7fd6e157",
+      "config": "BM25 + import graph",
+      "budget": 16000,
+      "fullRecall": 1,
+      "visibleRecall": 1,
+      "allFull": true,
+      "tokens": 16000,
+      "repoTokens": 804554,
+      "missed": [],
+      "rankOfEdited": [
+        3,
+        2,
+        1
+      ]
+    },
+    {
+      "task": "7fd6e157",
+      "config": "BM25 + import graph",
+      "budget": 32000,
+      "fullRecall": 1,
+      "visibleRecall": 1,
+      "allFull": true,
+      "tokens": 31996,
+      "repoTokens": 804554,
+      "missed": [],
+      "rankOfEdited": [
+        3,
+        2,
+        1
+      ]
+    },
+    {
+      "task": "7fd6e157",
+      "config": "BM25 + signatures",
+      "budget": 8000,
+      "fullRecall": 0.6666666666666666,
+      "visibleRecall": 1,
+      "allFull": false,
+      "tokens": 7992,
+      "repoTokens": 804554,
+      "missed": [
+        "app/lib/common/agentLoop.ts"
+      ],
+      "rankOfEdited": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "task": "7fd6e157",
+      "config": "BM25 + signatures",
+      "budget": 16000,
+      "fullRecall": 1,
+      "visibleRecall": 1,
+      "allFull": true,
+      "tokens": 15972,
+      "repoTokens": 804554,
+      "missed": [],
+      "rankOfEdited": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "task": "7fd6e157",
+      "config": "BM25 + signatures",
+      "budget": 32000,
+      "fullRecall": 1,
+      "visibleRecall": 1,
+      "allFull": true,
+      "tokens": 31995,
+      "repoTokens": 804554,
+      "missed": [],
+      "rankOfEdited": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "task": "7fd6e157",
+      "config": "BM25 + import graph + signatures",
+      "budget": 8000,
+      "fullRecall": 0.6666666666666666,
+      "visibleRecall": 1,
+      "allFull": false,
+      "tokens": 7992,
+      "repoTokens": 804554,
+      "missed": [
+        "app/lib/.server/llm/agent-loop.spec.ts"
+      ],
+      "rankOfEdited": [
+        3,
+        2,
+        1
+      ]
+    },
+    {
+      "task": "7fd6e157",
+      "config": "BM25 + import graph + signatures",
+      "budget": 16000,
+      "fullRecall": 1,
+      "visibleRecall": 1,
+      "allFull": true,
+      "tokens": 15988,
+      "repoTokens": 804554,
+      "missed": [],
+      "rankOfEdited": [
+        3,
+        2,
+        1
+      ]
+    },
+    {
+      "task": "7fd6e157",
+      "config": "BM25 + import graph + signatures",
+      "budget": 32000,
+      "fullRecall": 1,
+      "visibleRecall": 1,
+      "allFull": true,
+      "tokens": 31999,
+      "repoTokens": 804554,
+      "missed": [],
+      "rankOfEdited": [
+        3,
+        2,
+        1
+      ]
+    },
+    {
+      "task": "8133577a",
+      "config": "Recent files (baseline)",
+      "budget": 8000,
+      "fullRecall": 0,
+      "visibleRecall": 0,
+      "allFull": false,
+      "tokens": 7998,
+      "repoTokens": 804512,
+      "missed": [
+        "app/components/@settings/tabs/connectors/ConnectorsTab.tsx"
+      ],
+      "rankOfEdited": [
+        15
+      ]
+    },
+    {
+      "task": "8133577a",
+      "config": "Recent files (baseline)",
+      "budget": 16000,
+      "fullRecall": 0,
+      "visibleRecall": 0,
+      "allFull": false,
+      "tokens": 15977,
+      "repoTokens": 804512,
+      "missed": [
+        "app/components/@settings/tabs/connectors/ConnectorsTab.tsx"
+      ],
+      "rankOfEdited": [
+        15
+      ]
+    },
+    {
+      "task": "8133577a",
+      "config": "Recent files (baseline)",
+      "budget": 32000,
+      "fullRecall": 0,
+      "visibleRecall": 0,
+      "allFull": false,
+      "tokens": 31995,
+      "repoTokens": 804512,
+      "missed": [
+        "app/components/@settings/tabs/connectors/ConnectorsTab.tsx"
+      ],
+      "rankOfEdited": [
+        15
+      ]
+    },
+    {
+      "task": "8133577a",
+      "config": "BM25",
+      "budget": 8000,
+      "fullRecall": 1,
+      "visibleRecall": 1,
+      "allFull": true,
+      "tokens": 7985,
+      "repoTokens": 804512,
+      "missed": [],
+      "rankOfEdited": [
+        1
+      ]
+    },
+    {
+      "task": "8133577a",
+      "config": "BM25",
+      "budget": 16000,
+      "fullRecall": 1,
+      "visibleRecall": 1,
+      "allFull": true,
+      "tokens": 15984,
+      "repoTokens": 804512,
+      "missed": [],
+      "rankOfEdited": [
+        1
+      ]
+    },
+    {
+      "task": "8133577a",
+      "config": "BM25",
+      "budget": 32000,
+      "fullRecall": 1,
+      "visibleRecall": 1,
+      "allFull": true,
+      "tokens": 31977,
+      "repoTokens": 804512,
+      "missed": [],
+      "rankOfEdited": [
+        1
+      ]
+    },
+    {
+      "task": "8133577a",
+      "config": "BM25 + import graph",
+      "budget": 8000,
+      "fullRecall": 1,
+      "visibleRecall": 1,
+      "allFull": true,
+      "tokens": 7978,
+      "repoTokens": 804512,
+      "missed": [],
+      "rankOfEdited": [
+        1
+      ]
+    },
+    {
+      "task": "8133577a",
+      "config": "BM25 + import graph",
+      "budget": 16000,
+      "fullRecall": 1,
+      "visibleRecall": 1,
+      "allFull": true,
+      "tokens": 15989,
+      "repoTokens": 804512,
+      "missed": [],
+      "rankOfEdited": [
+        1
+      ]
+    },
+    {
+      "task": "8133577a",
+      "config": "BM25 + import graph",
+      "budget": 32000,
+      "fullRecall": 1,
+      "visibleRecall": 1,
+      "allFull": true,
+      "tokens": 31984,
+      "repoTokens": 804512,
+      "missed": [],
+      "rankOfEdited": [
+        1
+      ]
+    },
+    {
+      "task": "8133577a",
+      "config": "BM25 + signatures",
+      "budget": 8000,
+      "fullRecall": 0,
+      "visibleRecall": 1,
+      "allFull": false,
+      "tokens": 7983,
+      "repoTokens": 804512,
+      "missed": [
+        "app/components/@settings/tabs/connectors/ConnectorsTab.tsx"
+      ],
+      "rankOfEdited": [
+        1
+      ]
+    },
+    {
+      "task": "8133577a",
+      "config": "BM25 + signatures",
+      "budget": 16000,
+      "fullRecall": 1,
+      "visibleRecall": 1,
+      "allFull": true,
+      "tokens": 15994,
+      "repoTokens": 804512,
+      "missed": [],
+      "rankOfEdited": [
+        1
+      ]
+    },
+    {
+      "task": "8133577a",
+      "config": "BM25 + signatures",
+      "budget": 32000,
+      "fullRecall": 1,
+      "visibleRecall": 1,
+      "allFull": true,
+      "tokens": 31983,
+      "repoTokens": 804512,
+      "missed": [],
+      "rankOfEdited": [
+        1
+      ]
+    },
+    {
+      "task": "8133577a",
+      "config": "BM25 + import graph + signatures",
+      "budget": 8000,
+      "fullRecall": 0,
+      "visibleRecall": 1,
+      "allFull": false,
+      "tokens": 7995,
+      "repoTokens": 804512,
+      "missed": [
+        "app/components/@settings/tabs/connectors/ConnectorsTab.tsx"
+      ],
+      "rankOfEdited": [
+        1
+      ]
+    },
+    {
+      "task": "8133577a",
+      "config": "BM25 + import graph + signatures",
+      "budget": 16000,
+      "fullRecall": 1,
+      "visibleRecall": 1,
+      "allFull": true,
+      "tokens": 15984,
+      "repoTokens": 804512,
+      "missed": [],
+      "rankOfEdited": [
+        1
+      ]
+    },
+    {
+      "task": "8133577a",
+      "config": "BM25 + import graph + signatures",
+      "budget": 32000,
+      "fullRecall": 1,
+      "visibleRecall": 1,
+      "allFull": true,
+      "tokens": 31997,
+      "repoTokens": 804512,
+      "missed": [],
+      "rankOfEdited": [
+        1
+      ]
+    },
+    {
+      "task": "79eac0c0",
+      "config": "Recent files (baseline)",
+      "budget": 8000,
+      "fullRecall": 0,
+      "visibleRecall": 0,
+      "allFull": false,
+      "tokens": 7992,
+      "repoTokens": 803490,
+      "missed": [
+        "app/components/chat/ChatBox.tsx"
+      ],
+      "rankOfEdited": [
+        9
+      ]
+    },
+    {
+      "task": "79eac0c0",
+      "config": "Recent files (baseline)",
+      "budget": 16000,
+      "fullRecall": 1,
+      "visibleRecall": 1,
+      "allFull": true,
+      "tokens": 15979,
+      "repoTokens": 803490,
+      "missed": [],
+      "rankOfEdited": [
+        9
+      ]
+    },
+    {
+      "task": "79eac0c0",
+      "config": "Recent files (baseline)",
+      "budget": 32000,
+      "fullRecall": 1,
+      "visibleRecall": 1,
+      "allFull": true,
+      "tokens": 31987,
+      "repoTokens": 803490,
+      "missed": [],
+      "rankOfEdited": [
+        9
+      ]
+    },
+    {
+      "task": "79eac0c0",
+      "config": "BM25",
+      "budget": 8000,
+      "fullRecall": 1,
+      "visibleRecall": 1,
+      "allFull": true,
+      "tokens": 7999,
+      "repoTokens": 803490,
+      "missed": [],
+      "rankOfEdited": [
+        1
+      ]
+    },
+    {
+      "task": "79eac0c0",
+      "config": "BM25",
+      "budget": 16000,
+      "fullRecall": 1,
+      "visibleRecall": 1,
+      "allFull": true,
+      "tokens": 15990,
+      "repoTokens": 803490,
+      "missed": [],
+      "rankOfEdited": [
+        1
+      ]
+    },
+    {
+      "task": "79eac0c0",
+      "config": "BM25",
+      "budget": 32000,
+      "fullRecall": 1,
+      "visibleRecall": 1,
+      "allFull": true,
+      "tokens": 31974,
+      "repoTokens": 803490,
+      "missed": [],
+      "rankOfEdited": [
+        1
+      ]
+    },
+    {
+      "task": "79eac0c0",
+      "config": "BM25 + import graph",
+      "budget": 8000,
+      "fullRecall": 1,
+      "visibleRecall": 1,
+      "allFull": true,
+      "tokens": 7983,
+      "repoTokens": 803490,
+      "missed": [],
+      "rankOfEdited": [
+        1
+      ]
+    },
+    {
+      "task": "79eac0c0",
+      "config": "BM25 + import graph",
+      "budget": 16000,
+      "fullRecall": 1,
+      "visibleRecall": 1,
+      "allFull": true,
+      "tokens": 15991,
+      "repoTokens": 803490,
+      "missed": [],
+      "rankOfEdited": [
+        1
+      ]
+    },
+    {
+      "task": "79eac0c0",
+      "config": "BM25 + import graph",
+      "budget": 32000,
+      "fullRecall": 1,
+      "visibleRecall": 1,
+      "allFull": true,
+      "tokens": 31999,
+      "repoTokens": 803490,
+      "missed": [],
+      "rankOfEdited": [
+        1
+      ]
+    },
+    {
+      "task": "79eac0c0",
+      "config": "BM25 + signatures",
+      "budget": 8000,
+      "fullRecall": 1,
+      "visibleRecall": 1,
+      "allFull": true,
+      "tokens": 7993,
+      "repoTokens": 803490,
+      "missed": [],
+      "rankOfEdited": [
+        1
+      ]
+    },
+    {
+      "task": "79eac0c0",
+      "config": "BM25 + signatures",
+      "budget": 16000,
+      "fullRecall": 1,
+      "visibleRecall": 1,
+      "allFull": true,
+      "tokens": 15987,
+      "repoTokens": 803490,
+      "missed": [],
+      "rankOfEdited": [
+        1
+      ]
+    },
+    {
+      "task": "79eac0c0",
+      "config": "BM25 + signatures",
+      "budget": 32000,
+      "fullRecall": 1,
+      "visibleRecall": 1,
+      "allFull": true,
+      "tokens": 31993,
+      "repoTokens": 803490,
+      "missed": [],
+      "rankOfEdited": [
+        1
+      ]
+    },
+    {
+      "task": "79eac0c0",
+      "config": "BM25 + import graph + signatures",
+      "budget": 8000,
+      "fullRecall": 1,
+      "visibleRecall": 1,
+      "allFull": true,
+      "tokens": 7980,
+      "repoTokens": 803490,
+      "missed": [],
+      "rankOfEdited": [
+        1
+      ]
+    },
+    {
+      "task": "79eac0c0",
+      "config": "BM25 + import graph + signatures",
+      "budget": 16000,
+      "fullRecall": 1,
+      "visibleRecall": 1,
+      "allFull": true,
+      "tokens": 15982,
+      "repoTokens": 803490,
+      "missed": [],
+      "rankOfEdited": [
+        1
+      ]
+    },
+    {
+      "task": "79eac0c0",
+      "config": "BM25 + import graph + signatures",
+      "budget": 32000,
+      "fullRecall": 1,
+      "visibleRecall": 1,
+      "allFull": true,
+      "tokens": 31989,
+      "repoTokens": 803490,
+      "missed": [],
+      "rankOfEdited": [
+        1
+      ]
+    },
+    {
+      "task": "72bf4bcc",
+      "config": "Recent files (baseline)",
+      "budget": 8000,
+      "fullRecall": 1,
+      "visibleRecall": 1,
+      "allFull": true,
+      "tokens": 7995,
+      "repoTokens": 803466,
+      "missed": [],
+      "rankOfEdited": [
+        2
+      ]
+    },
+    {
+      "task": "72bf4bcc",
+      "config": "Recent files (baseline)",
+      "budget": 16000,
+      "fullRecall": 1,
+      "visibleRecall": 1,
+      "allFull": true,
+      "tokens": 15997,
+      "repoTokens": 803466,
+      "missed": [],
+      "rankOfEdited": [
+        2
+      ]
+    },
+    {
+      "task": "72bf4bcc",
+      "config": "Recent files (baseline)",
+      "budget": 32000,
+      "fullRecall": 1,
+      "visibleRecall": 1,
+      "allFull": true,
+      "tokens": 31979,
+      "repoTokens": 803466,
+      "missed": [],
+      "rankOfEdited": [
+        2
+      ]
+    },
+    {
+      "task": "72bf4bcc",
+      "config": "BM25",
+      "budget": 8000,
+      "fullRecall": 0,
+      "visibleRecall": 0,
+      "allFull": false,
+      "tokens": 7999,
+      "repoTokens": 803466,
+      "missed": [
+        "app/components/@settings/core/constants.tsx"
+      ],
+      "rankOfEdited": [
+        8
+      ]
+    },
+    {
+      "task": "72bf4bcc",
+      "config": "BM25",
+      "budget": 16000,
+      "fullRecall": 0,
+      "visibleRecall": 0,
+      "allFull": false,
+      "tokens": 15988,
+      "repoTokens": 803466,
+      "missed": [
+        "app/components/@settings/core/constants.tsx"
+      ],
+      "rankOfEdited": [
+        8
+      ]
+    },
+    {
+      "task": "72bf4bcc",
+      "config": "BM25",
+      "budget": 32000,
+      "fullRecall": 1,
+      "visibleRecall": 1,
+      "allFull": true,
+      "tokens": 31991,
+      "repoTokens": 803466,
+      "missed": [],
+      "rankOfEdited": [
+        8
+      ]
+    },
+    {
+      "task": "72bf4bcc",
+      "config": "BM25 + import graph",
+      "budget": 8000,
+      "fullRecall": 1,
+      "visibleRecall": 1,
+      "allFull": true,
+      "tokens": 7994,
+      "repoTokens": 803466,
+      "missed": [],
+      "rankOfEdited": [
+        7
+      ]
+    },
+    {
+      "task": "72bf4bcc",
+      "config": "BM25 + import graph",
+      "budget": 16000,
+      "fullRecall": 0,
+      "visibleRecall": 0,
+      "allFull": false,
+      "tokens": 15988,
+      "repoTokens": 803466,
+      "missed": [
+        "app/components/@settings/core/constants.tsx"
+      ],
+      "rankOfEdited": [
+        7
+      ]
+    },
+    {
+      "task": "72bf4bcc",
+      "config": "BM25 + import graph",
+      "budget": 32000,
+      "fullRecall": 1,
+      "visibleRecall": 1,
+      "allFull": true,
+      "tokens": 31993,
+      "repoTokens": 803466,
+      "missed": [],
+      "rankOfEdited": [
+        7
+      ]
+    },
+    {
+      "task": "72bf4bcc",
+      "config": "BM25 + signatures",
+      "budget": 8000,
+      "fullRecall": 0,
+      "visibleRecall": 1,
+      "allFull": false,
+      "tokens": 7998,
+      "repoTokens": 803466,
+      "missed": [
+        "app/components/@settings/core/constants.tsx"
+      ],
+      "rankOfEdited": [
+        8
+      ]
+    },
+    {
+      "task": "72bf4bcc",
+      "config": "BM25 + signatures",
+      "budget": 16000,
+      "fullRecall": 0,
+      "visibleRecall": 1,
+      "allFull": false,
+      "tokens": 15969,
+      "repoTokens": 803466,
+      "missed": [
+        "app/components/@settings/core/constants.tsx"
+      ],
+      "rankOfEdited": [
+        8
+      ]
+    },
+    {
+      "task": "72bf4bcc",
+      "config": "BM25 + signatures",
+      "budget": 32000,
+      "fullRecall": 1,
+      "visibleRecall": 1,
+      "allFull": true,
+      "tokens": 31986,
+      "repoTokens": 803466,
+      "missed": [],
+      "rankOfEdited": [
+        8
+      ]
+    },
+    {
+      "task": "72bf4bcc",
+      "config": "BM25 + import graph + signatures",
+      "budget": 8000,
+      "fullRecall": 0,
+      "visibleRecall": 1,
+      "allFull": false,
+      "tokens": 7997,
+      "repoTokens": 803466,
+      "missed": [
+        "app/components/@settings/core/constants.tsx"
+      ],
+      "rankOfEdited": [
+        7
+      ]
+    },
+    {
+      "task": "72bf4bcc",
+      "config": "BM25 + import graph + signatures",
+      "budget": 16000,
+      "fullRecall": 0,
+      "visibleRecall": 1,
+      "allFull": false,
+      "tokens": 15990,
+      "repoTokens": 803466,
+      "missed": [
+        "app/components/@settings/core/constants.tsx"
+      ],
+      "rankOfEdited": [
+        7
+      ]
+    },
+    {
+      "task": "72bf4bcc",
+      "config": "BM25 + import graph + signatures",
+      "budget": 32000,
+      "fullRecall": 1,
+      "visibleRecall": 1,
+      "allFull": true,
+      "tokens": 31999,
+      "repoTokens": 803466,
+      "missed": [],
+      "rankOfEdited": [
+        7
+      ]
+    },
+    {
+      "task": "9b9f907d",
+      "config": "Recent files (baseline)",
+      "budget": 8000,
+      "fullRecall": 1,
+      "visibleRecall": 1,
+      "allFull": true,
+      "tokens": 7996,
+      "repoTokens": 803186,
+      "missed": [],
+      "rankOfEdited": [
+        2
+      ]
+    },
+    {
+      "task": "9b9f907d",
+      "config": "Recent files (baseline)",
+      "budget": 16000,
+      "fullRecall": 1,
+      "visibleRecall": 1,
+      "allFull": true,
+      "tokens": 15981,
+      "repoTokens": 803186,
+      "missed": [],
+      "rankOfEdited": [
+        2
+      ]
+    },
+    {
+      "task": "9b9f907d",
+      "config": "Recent files (baseline)",
+      "budget": 32000,
+      "fullRecall": 1,
+      "visibleRecall": 1,
+      "allFull": true,
+      "tokens": 31975,
+      "repoTokens": 803186,
+      "missed": [],
+      "rankOfEdited": [
+        2
+      ]
+    },
+    {
+      "task": "9b9f907d",
+      "config": "BM25",
+      "budget": 8000,
+      "fullRecall": 0,
+      "visibleRecall": 0,
+      "allFull": false,
+      "tokens": 7991,
+      "repoTokens": 803186,
+      "missed": [
+        "app/components/chat/BaseChat.tsx"
+      ],
+      "rankOfEdited": [
+        157
+      ]
+    },
+    {
+      "task": "9b9f907d",
+      "config": "BM25",
+      "budget": 16000,
+      "fullRecall": 0,
+      "visibleRecall": 0,
+      "allFull": false,
+      "tokens": 15983,
+      "repoTokens": 803186,
+      "missed": [
+        "app/components/chat/BaseChat.tsx"
+      ],
+      "rankOfEdited": [
+        157
+      ]
+    },
+    {
+      "task": "9b9f907d",
+      "config": "BM25",
+      "budget": 32000,
+      "fullRecall": 0,
+      "visibleRecall": 0,
+      "allFull": false,
+      "tokens": 31970,
+      "repoTokens": 803186,
+      "missed": [
+        "app/components/chat/BaseChat.tsx"
+      ],
+      "rankOfEdited": [
+        157
+      ]
+    },
+    {
+      "task": "9b9f907d",
+      "config": "BM25 + import graph",
+      "budget": 8000,
+      "fullRecall": 0,
+      "visibleRecall": 0,
+      "allFull": false,
+      "tokens": 8000,
+      "repoTokens": 803186,
+      "missed": [
+        "app/components/chat/BaseChat.tsx"
+      ],
+      "rankOfEdited": [
+        55
+      ]
+    },
+    {
+      "task": "9b9f907d",
+      "config": "BM25 + import graph",
+      "budget": 16000,
+      "fullRecall": 0,
+      "visibleRecall": 0,
+      "allFull": false,
+      "tokens": 15983,
+      "repoTokens": 803186,
+      "missed": [
+        "app/components/chat/BaseChat.tsx"
+      ],
+      "rankOfEdited": [
+        55
+      ]
+    },
+    {
+      "task": "9b9f907d",
+      "config": "BM25 + import graph",
+      "budget": 32000,
+      "fullRecall": 0,
+      "visibleRecall": 0,
+      "allFull": false,
+      "tokens": 31994,
+      "repoTokens": 803186,
+      "missed": [
+        "app/components/chat/BaseChat.tsx"
+      ],
+      "rankOfEdited": [
+        55
+      ]
+    },
+    {
+      "task": "9b9f907d",
+      "config": "BM25 + signatures",
+      "budget": 8000,
+      "fullRecall": 0,
+      "visibleRecall": 0,
+      "allFull": false,
+      "tokens": 7980,
+      "repoTokens": 803186,
+      "missed": [
+        "app/components/chat/BaseChat.tsx"
+      ],
+      "rankOfEdited": [
+        157
+      ]
+    },
+    {
+      "task": "9b9f907d",
+      "config": "BM25 + signatures",
+      "budget": 16000,
+      "fullRecall": 0,
+      "visibleRecall": 0,
+      "allFull": false,
+      "tokens": 15998,
+      "repoTokens": 803186,
+      "missed": [
+        "app/components/chat/BaseChat.tsx"
+      ],
+      "rankOfEdited": [
+        157
+      ]
+    },
+    {
+      "task": "9b9f907d",
+      "config": "BM25 + signatures",
+      "budget": 32000,
+      "fullRecall": 0,
+      "visibleRecall": 0,
+      "allFull": false,
+      "tokens": 31998,
+      "repoTokens": 803186,
+      "missed": [
+        "app/components/chat/BaseChat.tsx"
+      ],
+      "rankOfEdited": [
+        157
+      ]
+    },
+    {
+      "task": "9b9f907d",
+      "config": "BM25 + import graph + signatures",
+      "budget": 8000,
+      "fullRecall": 0,
+      "visibleRecall": 0,
+      "allFull": false,
+      "tokens": 7998,
+      "repoTokens": 803186,
+      "missed": [
+        "app/components/chat/BaseChat.tsx"
+      ],
+      "rankOfEdited": [
+        55
+      ]
+    },
+    {
+      "task": "9b9f907d",
+      "config": "BM25 + import graph + signatures",
+      "budget": 16000,
+      "fullRecall": 0,
+      "visibleRecall": 0,
+      "allFull": false,
+      "tokens": 15977,
+      "repoTokens": 803186,
+      "missed": [
+        "app/components/chat/BaseChat.tsx"
+      ],
+      "rankOfEdited": [
+        55
+      ]
+    },
+    {
+      "task": "9b9f907d",
+      "config": "BM25 + import graph + signatures",
+      "budget": 32000,
+      "fullRecall": 0,
+      "visibleRecall": 0,
+      "allFull": false,
+      "tokens": 31994,
+      "repoTokens": 803186,
+      "missed": [
+        "app/components/chat/BaseChat.tsx"
+      ],
+      "rankOfEdited": [
+        55
+      ]
+    },
+    {
+      "task": "b196baac",
+      "config": "Recent files (baseline)",
+      "budget": 8000,
+      "fullRecall": 0,
+      "visibleRecall": 0,
+      "allFull": false,
+      "tokens": 7984,
+      "repoTokens": 802789,
+      "missed": [
+        "app/lib/.server/llm/agent-stream.ts",
+        "app/lib/services/connectorActivation.ts",
+        "app/utils/clearLocks.ts"
+      ],
+      "rankOfEdited": [
+        16,
+        39,
+        52
+      ]
+    },
+    {
+      "task": "b196baac",
+      "config": "Recent files (baseline)",
+      "budget": 16000,
+      "fullRecall": 0,
+      "visibleRecall": 0,
+      "allFull": false,
+      "tokens": 15976,
+      "repoTokens": 802789,
+      "missed": [
+        "app/lib/.server/llm/agent-stream.ts",
+        "app/lib/services/connectorActivation.ts",
+        "app/utils/clearLocks.ts"
+      ],
+      "rankOfEdited": [
+        16,
+        39,
+        52
+      ]
+    },
+    {
+      "task": "b196baac",
+      "config": "Recent files (baseline)",
+      "budget": 32000,
+      "fullRecall": 0,
+      "visibleRecall": 0,
+      "allFull": false,
+      "tokens": 31990,
+      "repoTokens": 802789,
+      "missed": [
+        "app/lib/.server/llm/agent-stream.ts",
+        "app/lib/services/connectorActivation.ts",
+        "app/utils/clearLocks.ts"
+      ],
+      "rankOfEdited": [
+        16,
+        39,
+        52
+      ]
+    },
+    {
+      "task": "b196baac",
+      "config": "BM25",
+      "budget": 8000,
+      "fullRecall": 0,
+      "visibleRecall": 0,
+      "allFull": false,
+      "tokens": 7976,
+      "repoTokens": 802789,
+      "missed": [
+        "app/lib/.server/llm/agent-stream.ts",
+        "app/lib/services/connectorActivation.ts",
+        "app/utils/clearLocks.ts"
+      ],
+      "rankOfEdited": [
+        119,
+        null,
+        null
+      ]
+    },
+    {
+      "task": "b196baac",
+      "config": "BM25",
+      "budget": 16000,
+      "fullRecall": 0,
+      "visibleRecall": 0,
+      "allFull": false,
+      "tokens": 15986,
+      "repoTokens": 802789,
+      "missed": [
+        "app/lib/.server/llm/agent-stream.ts",
+        "app/lib/services/connectorActivation.ts",
+        "app/utils/clearLocks.ts"
+      ],
+      "rankOfEdited": [
+        119,
+        null,
+        null
+      ]
+    },
+    {
+      "task": "b196baac",
+      "config": "BM25",
+      "budget": 32000,
+      "fullRecall": 0,
+      "visibleRecall": 0,
+      "allFull": false,
+      "tokens": 31988,
+      "repoTokens": 802789,
+      "missed": [
+        "app/lib/.server/llm/agent-stream.ts",
+        "app/lib/services/connectorActivation.ts",
+        "app/utils/clearLocks.ts"
+      ],
+      "rankOfEdited": [
+        119,
+        null,
+        null
+      ]
+    },
+    {
+      "task": "b196baac",
+      "config": "BM25 + import graph",
+      "budget": 8000,
+      "fullRecall": 0,
+      "visibleRecall": 0,
+      "allFull": false,
+      "tokens": 7993,
+      "repoTokens": 802789,
+      "missed": [
+        "app/lib/.server/llm/agent-stream.ts",
+        "app/lib/services/connectorActivation.ts",
+        "app/utils/clearLocks.ts"
+      ],
+      "rankOfEdited": [
+        114,
+        319,
+        355
+      ]
+    },
+    {
+      "task": "b196baac",
+      "config": "BM25 + import graph",
+      "budget": 16000,
+      "fullRecall": 0,
+      "visibleRecall": 0,
+      "allFull": false,
+      "tokens": 16000,
+      "repoTokens": 802789,
+      "missed": [
+        "app/lib/.server/llm/agent-stream.ts",
+        "app/lib/services/connectorActivation.ts",
+        "app/utils/clearLocks.ts"
+      ],
+      "rankOfEdited": [
+        114,
+        319,
+        355
+      ]
+    },
+    {
+      "task": "b196baac",
+      "config": "BM25 + import graph",
+      "budget": 32000,
+      "fullRecall": 0,
+      "visibleRecall": 0,
+      "allFull": false,
+      "tokens": 31976,
+      "repoTokens": 802789,
+      "missed": [
+        "app/lib/.server/llm/agent-stream.ts",
+        "app/lib/services/connectorActivation.ts",
+        "app/utils/clearLocks.ts"
+      ],
+      "rankOfEdited": [
+        114,
+        319,
+        355
+      ]
+    },
+    {
+      "task": "b196baac",
+      "config": "BM25 + signatures",
+      "budget": 8000,
+      "fullRecall": 0,
+      "visibleRecall": 0,
+      "allFull": false,
+      "tokens": 8000,
+      "repoTokens": 802789,
+      "missed": [
+        "app/lib/.server/llm/agent-stream.ts",
+        "app/lib/services/connectorActivation.ts",
+        "app/utils/clearLocks.ts"
+      ],
+      "rankOfEdited": [
+        119,
+        null,
+        null
+      ]
+    },
+    {
+      "task": "b196baac",
+      "config": "BM25 + signatures",
+      "budget": 16000,
+      "fullRecall": 0,
+      "visibleRecall": 0,
+      "allFull": false,
+      "tokens": 16000,
+      "repoTokens": 802789,
+      "missed": [
+        "app/lib/.server/llm/agent-stream.ts",
+        "app/lib/services/connectorActivation.ts",
+        "app/utils/clearLocks.ts"
+      ],
+      "rankOfEdited": [
+        119,
+        null,
+        null
+      ]
+    },
+    {
+      "task": "b196baac",
+      "config": "BM25 + signatures",
+      "budget": 32000,
+      "fullRecall": 0,
+      "visibleRecall": 0,
+      "allFull": false,
+      "tokens": 31994,
+      "repoTokens": 802789,
+      "missed": [
+        "app/lib/.server/llm/agent-stream.ts",
+        "app/lib/services/connectorActivation.ts",
+        "app/utils/clearLocks.ts"
+      ],
+      "rankOfEdited": [
+        119,
+        null,
+        null
+      ]
+    },
+    {
+      "task": "b196baac",
+      "config": "BM25 + import graph + signatures",
+      "budget": 8000,
+      "fullRecall": 0,
+      "visibleRecall": 0,
+      "allFull": false,
+      "tokens": 7994,
+      "repoTokens": 802789,
+      "missed": [
+        "app/lib/.server/llm/agent-stream.ts",
+        "app/lib/services/connectorActivation.ts",
+        "app/utils/clearLocks.ts"
+      ],
+      "rankOfEdited": [
+        114,
+        319,
+        355
+      ]
+    },
+    {
+      "task": "b196baac",
+      "config": "BM25 + import graph + signatures",
+      "budget": 16000,
+      "fullRecall": 0,
+      "visibleRecall": 0,
+      "allFull": false,
+      "tokens": 15993,
+      "repoTokens": 802789,
+      "missed": [
+        "app/lib/.server/llm/agent-stream.ts",
+        "app/lib/services/connectorActivation.ts",
+        "app/utils/clearLocks.ts"
+      ],
+      "rankOfEdited": [
+        114,
+        319,
+        355
+      ]
+    },
+    {
+      "task": "b196baac",
+      "config": "BM25 + import graph + signatures",
+      "budget": 32000,
+      "fullRecall": 0,
+      "visibleRecall": 0,
+      "allFull": false,
+      "tokens": 31979,
+      "repoTokens": 802789,
+      "missed": [
+        "app/lib/.server/llm/agent-stream.ts",
+        "app/lib/services/connectorActivation.ts",
+        "app/utils/clearLocks.ts"
+      ],
+      "rankOfEdited": [
+        114,
+        319,
+        355
+      ]
+    },
+    {
+      "task": "7c117ba2",
+      "config": "Recent files (baseline)",
+      "budget": 8000,
+      "fullRecall": 0.3333333333333333,
+      "visibleRecall": 0.3333333333333333,
+      "allFull": false,
+      "tokens": 7992,
+      "repoTokens": 788452,
+      "missed": [
+        "app/components/chat/Chat.client.tsx",
+        "app/components/onboarding/FirstRunOnboarding.tsx"
+      ],
+      "rankOfEdited": [
+        2,
+        3,
+        88
+      ]
+    },
+    {
+      "task": "7c117ba2",
+      "config": "Recent files (baseline)",
+      "budget": 16000,
+      "fullRecall": 0.6666666666666666,
+      "visibleRecall": 0.6666666666666666,
+      "allFull": false,
+      "tokens": 15996,
+      "repoTokens": 788452,
+      "missed": [
+        "app/components/onboarding/FirstRunOnboarding.tsx"
+      ],
+      "rankOfEdited": [
+        2,
+        3,
+        88
+      ]
+    },
+    {
+      "task": "7c117ba2",
+      "config": "Recent files (baseline)",
+      "budget": 32000,
+      "fullRecall": 0.6666666666666666,
+      "visibleRecall": 0.6666666666666666,
+      "allFull": false,
+      "tokens": 31996,
+      "repoTokens": 788452,
+      "missed": [
+        "app/components/onboarding/FirstRunOnboarding.tsx"
+      ],
+      "rankOfEdited": [
+        2,
+        3,
+        88
+      ]
+    },
+    {
+      "task": "7c117ba2",
+      "config": "BM25",
+      "budget": 8000,
+      "fullRecall": 0.3333333333333333,
+      "visibleRecall": 0.3333333333333333,
+      "allFull": false,
+      "tokens": 7973,
+      "repoTokens": 788452,
+      "missed": [
+        "app/components/chat/BaseChat.tsx",
+        "app/components/chat/Chat.client.tsx"
+      ],
+      "rankOfEdited": [
+        76,
+        29,
+        1
+      ]
+    },
+    {
+      "task": "7c117ba2",
+      "config": "BM25",
+      "budget": 16000,
+      "fullRecall": 0.3333333333333333,
+      "visibleRecall": 0.3333333333333333,
+      "allFull": false,
+      "tokens": 15989,
+      "repoTokens": 788452,
+      "missed": [
+        "app/components/chat/BaseChat.tsx",
+        "app/components/chat/Chat.client.tsx"
+      ],
+      "rankOfEdited": [
+        76,
+        29,
+        1
+      ]
+    },
+    {
+      "task": "7c117ba2",
+      "config": "BM25",
+      "budget": 32000,
+      "fullRecall": 0.3333333333333333,
+      "visibleRecall": 0.3333333333333333,
+      "allFull": false,
+      "tokens": 31981,
+      "repoTokens": 788452,
+      "missed": [
+        "app/components/chat/BaseChat.tsx",
+        "app/components/chat/Chat.client.tsx"
+      ],
+      "rankOfEdited": [
+        76,
+        29,
+        1
+      ]
+    },
+    {
+      "task": "7c117ba2",
+      "config": "BM25 + import graph",
+      "budget": 8000,
+      "fullRecall": 0.3333333333333333,
+      "visibleRecall": 0.3333333333333333,
+      "allFull": false,
+      "tokens": 7979,
+      "repoTokens": 788452,
+      "missed": [
+        "app/components/chat/BaseChat.tsx",
+        "app/components/chat/Chat.client.tsx"
+      ],
+      "rankOfEdited": [
+        31,
+        12,
+        1
+      ]
+    },
+    {
+      "task": "7c117ba2",
+      "config": "BM25 + import graph",
+      "budget": 16000,
+      "fullRecall": 0.3333333333333333,
+      "visibleRecall": 0.3333333333333333,
+      "allFull": false,
+      "tokens": 15986,
+      "repoTokens": 788452,
+      "missed": [
+        "app/components/chat/BaseChat.tsx",
+        "app/components/chat/Chat.client.tsx"
+      ],
+      "rankOfEdited": [
+        31,
+        12,
+        1
+      ]
+    },
+    {
+      "task": "7c117ba2",
+      "config": "BM25 + import graph",
+      "budget": 32000,
+      "fullRecall": 0.6666666666666666,
+      "visibleRecall": 0.6666666666666666,
+      "allFull": false,
+      "tokens": 31999,
+      "repoTokens": 788452,
+      "missed": [
+        "app/components/chat/BaseChat.tsx"
+      ],
+      "rankOfEdited": [
+        31,
+        12,
+        1
+      ]
+    },
+    {
+      "task": "7c117ba2",
+      "config": "BM25 + signatures",
+      "budget": 8000,
+      "fullRecall": 0.3333333333333333,
+      "visibleRecall": 0.3333333333333333,
+      "allFull": false,
+      "tokens": 7990,
+      "repoTokens": 788452,
+      "missed": [
+        "app/components/chat/BaseChat.tsx",
+        "app/components/chat/Chat.client.tsx"
+      ],
+      "rankOfEdited": [
+        76,
+        29,
+        1
+      ]
+    },
+    {
+      "task": "7c117ba2",
+      "config": "BM25 + signatures",
+      "budget": 16000,
+      "fullRecall": 0.3333333333333333,
+      "visibleRecall": 0.6666666666666666,
+      "allFull": false,
+      "tokens": 15990,
+      "repoTokens": 788452,
+      "missed": [
+        "app/components/chat/BaseChat.tsx",
+        "app/components/chat/Chat.client.tsx"
+      ],
+      "rankOfEdited": [
+        76,
+        29,
+        1
+      ]
+    },
+    {
+      "task": "7c117ba2",
+      "config": "BM25 + signatures",
+      "budget": 32000,
+      "fullRecall": 0.3333333333333333,
+      "visibleRecall": 0.6666666666666666,
+      "allFull": false,
+      "tokens": 31988,
+      "repoTokens": 788452,
+      "missed": [
+        "app/components/chat/BaseChat.tsx",
+        "app/components/chat/Chat.client.tsx"
+      ],
+      "rankOfEdited": [
+        76,
+        29,
+        1
+      ]
+    },
+    {
+      "task": "7c117ba2",
+      "config": "BM25 + import graph + signatures",
+      "budget": 8000,
+      "fullRecall": 0.3333333333333333,
+      "visibleRecall": 0.3333333333333333,
+      "allFull": false,
+      "tokens": 7997,
+      "repoTokens": 788452,
+      "missed": [
+        "app/components/chat/BaseChat.tsx",
+        "app/components/chat/Chat.client.tsx"
+      ],
+      "rankOfEdited": [
+        31,
+        12,
+        1
+      ]
+    },
+    {
+      "task": "7c117ba2",
+      "config": "BM25 + import graph + signatures",
+      "budget": 16000,
+      "fullRecall": 0.3333333333333333,
+      "visibleRecall": 0.6666666666666666,
+      "allFull": false,
+      "tokens": 15991,
+      "repoTokens": 788452,
+      "missed": [
+        "app/components/chat/BaseChat.tsx",
+        "app/components/chat/Chat.client.tsx"
+      ],
+      "rankOfEdited": [
+        31,
+        12,
+        1
+      ]
+    },
+    {
+      "task": "7c117ba2",
+      "config": "BM25 + import graph + signatures",
+      "budget": 32000,
+      "fullRecall": 0.3333333333333333,
+      "visibleRecall": 1,
+      "allFull": false,
+      "tokens": 31993,
+      "repoTokens": 788452,
+      "missed": [
+        "app/components/chat/BaseChat.tsx",
+        "app/components/chat/Chat.client.tsx"
+      ],
+      "rankOfEdited": [
+        31,
+        12,
+        1
+      ]
+    },
+    {
+      "task": "c2eb4e4f",
+      "config": "Recent files (baseline)",
+      "budget": 8000,
+      "fullRecall": 0,
+      "visibleRecall": 0,
+      "allFull": false,
+      "tokens": 7988,
+      "repoTokens": 738278,
+      "missed": [
+        "app/components/workbench/InspectorPanel.tsx"
+      ],
+      "rankOfEdited": [
+        5
+      ]
+    },
+    {
+      "task": "c2eb4e4f",
+      "config": "Recent files (baseline)",
+      "budget": 16000,
+      "fullRecall": 0,
+      "visibleRecall": 0,
+      "allFull": false,
+      "tokens": 15985,
+      "repoTokens": 738278,
+      "missed": [
+        "app/components/workbench/InspectorPanel.tsx"
+      ],
+      "rankOfEdited": [
+        5
+      ]
+    },
+    {
+      "task": "c2eb4e4f",
+      "config": "Recent files (baseline)",
+      "budget": 32000,
+      "fullRecall": 1,
+      "visibleRecall": 1,
+      "allFull": true,
+      "tokens": 31994,
+      "repoTokens": 738278,
+      "missed": [],
+      "rankOfEdited": [
+        5
+      ]
+    },
+    {
+      "task": "c2eb4e4f",
+      "config": "BM25",
+      "budget": 8000,
+      "fullRecall": 1,
+      "visibleRecall": 1,
+      "allFull": true,
+      "tokens": 7984,
+      "repoTokens": 738278,
+      "missed": [],
+      "rankOfEdited": [
+        1
+      ]
+    },
+    {
+      "task": "c2eb4e4f",
+      "config": "BM25",
+      "budget": 16000,
+      "fullRecall": 1,
+      "visibleRecall": 1,
+      "allFull": true,
+      "tokens": 15980,
+      "repoTokens": 738278,
+      "missed": [],
+      "rankOfEdited": [
+        1
+      ]
+    },
+    {
+      "task": "c2eb4e4f",
+      "config": "BM25",
+      "budget": 32000,
+      "fullRecall": 1,
+      "visibleRecall": 1,
+      "allFull": true,
+      "tokens": 31976,
+      "repoTokens": 738278,
+      "missed": [],
+      "rankOfEdited": [
+        1
+      ]
+    },
+    {
+      "task": "c2eb4e4f",
+      "config": "BM25 + import graph",
+      "budget": 8000,
+      "fullRecall": 1,
+      "visibleRecall": 1,
+      "allFull": true,
+      "tokens": 7979,
+      "repoTokens": 738278,
+      "missed": [],
+      "rankOfEdited": [
+        2
+      ]
+    },
+    {
+      "task": "c2eb4e4f",
+      "config": "BM25 + import graph",
+      "budget": 16000,
+      "fullRecall": 1,
+      "visibleRecall": 1,
+      "allFull": true,
+      "tokens": 15985,
+      "repoTokens": 738278,
+      "missed": [],
+      "rankOfEdited": [
+        2
+      ]
+    },
+    {
+      "task": "c2eb4e4f",
+      "config": "BM25 + import graph",
+      "budget": 32000,
+      "fullRecall": 1,
+      "visibleRecall": 1,
+      "allFull": true,
+      "tokens": 31976,
+      "repoTokens": 738278,
+      "missed": [],
+      "rankOfEdited": [
+        2
+      ]
+    },
+    {
+      "task": "c2eb4e4f",
+      "config": "BM25 + signatures",
+      "budget": 8000,
+      "fullRecall": 1,
+      "visibleRecall": 1,
+      "allFull": true,
+      "tokens": 7979,
+      "repoTokens": 738278,
+      "missed": [],
+      "rankOfEdited": [
+        1
+      ]
+    },
+    {
+      "task": "c2eb4e4f",
+      "config": "BM25 + signatures",
+      "budget": 16000,
+      "fullRecall": 1,
+      "visibleRecall": 1,
+      "allFull": true,
+      "tokens": 15993,
+      "repoTokens": 738278,
+      "missed": [],
+      "rankOfEdited": [
+        1
+      ]
+    },
+    {
+      "task": "c2eb4e4f",
+      "config": "BM25 + signatures",
+      "budget": 32000,
+      "fullRecall": 1,
+      "visibleRecall": 1,
+      "allFull": true,
+      "tokens": 31975,
+      "repoTokens": 738278,
+      "missed": [],
+      "rankOfEdited": [
+        1
+      ]
+    },
+    {
+      "task": "c2eb4e4f",
+      "config": "BM25 + import graph + signatures",
+      "budget": 8000,
+      "fullRecall": 1,
+      "visibleRecall": 1,
+      "allFull": true,
+      "tokens": 7985,
+      "repoTokens": 738278,
+      "missed": [],
+      "rankOfEdited": [
+        2
+      ]
+    },
+    {
+      "task": "c2eb4e4f",
+      "config": "BM25 + import graph + signatures",
+      "budget": 16000,
+      "fullRecall": 1,
+      "visibleRecall": 1,
+      "allFull": true,
+      "tokens": 15980,
+      "repoTokens": 738278,
+      "missed": [],
+      "rankOfEdited": [
+        2
+      ]
+    },
+    {
+      "task": "c2eb4e4f",
+      "config": "BM25 + import graph + signatures",
+      "budget": 32000,
+      "fullRecall": 1,
+      "visibleRecall": 1,
+      "allFull": true,
+      "tokens": 31999,
+      "repoTokens": 738278,
+      "missed": [],
+      "rankOfEdited": [
+        2
+      ]
+    },
+    {
+      "task": "b280127d",
+      "config": "Recent files (baseline)",
+      "budget": 8000,
+      "fullRecall": 0,
+      "visibleRecall": 0,
+      "allFull": false,
+      "tokens": 7990,
+      "repoTokens": 734828,
+      "missed": [
+        "app/routes/api.github-template.ts",
+        "app/utils/selectStarterTemplate.ts"
+      ],
+      "rankOfEdited": [
+        129,
+        40
+      ]
+    },
+    {
+      "task": "b280127d",
+      "config": "Recent files (baseline)",
+      "budget": 16000,
+      "fullRecall": 0,
+      "visibleRecall": 0,
+      "allFull": false,
+      "tokens": 15992,
+      "repoTokens": 734828,
+      "missed": [
+        "app/routes/api.github-template.ts",
+        "app/utils/selectStarterTemplate.ts"
+      ],
+      "rankOfEdited": [
+        129,
+        40
+      ]
+    },
+    {
+      "task": "b280127d",
+      "config": "Recent files (baseline)",
+      "budget": 32000,
+      "fullRecall": 0,
+      "visibleRecall": 0,
+      "allFull": false,
+      "tokens": 31996,
+      "repoTokens": 734828,
+      "missed": [
+        "app/routes/api.github-template.ts",
+        "app/utils/selectStarterTemplate.ts"
+      ],
+      "rankOfEdited": [
+        129,
+        40
+      ]
+    },
+    {
+      "task": "b280127d",
+      "config": "BM25",
+      "budget": 8000,
+      "fullRecall": 0.5,
+      "visibleRecall": 0.5,
+      "allFull": false,
+      "tokens": 7996,
+      "repoTokens": 734828,
+      "missed": [
+        "app/routes/api.github-template.ts"
+      ],
+      "rankOfEdited": [
+        9,
+        3
+      ]
+    },
+    {
+      "task": "b280127d",
+      "config": "BM25",
+      "budget": 16000,
+      "fullRecall": 0.5,
+      "visibleRecall": 0.5,
+      "allFull": false,
+      "tokens": 15984,
+      "repoTokens": 734828,
+      "missed": [
+        "app/routes/api.github-template.ts"
+      ],
+      "rankOfEdited": [
+        9,
+        3
+      ]
+    },
+    {
+      "task": "b280127d",
+      "config": "BM25",
+      "budget": 32000,
+      "fullRecall": 1,
+      "visibleRecall": 1,
+      "allFull": true,
+      "tokens": 31976,
+      "repoTokens": 734828,
+      "missed": [],
+      "rankOfEdited": [
+        9,
+        3
+      ]
+    },
+    {
+      "task": "b280127d",
+      "config": "BM25 + import graph",
+      "budget": 8000,
+      "fullRecall": 0.5,
+      "visibleRecall": 0.5,
+      "allFull": false,
+      "tokens": 7997,
+      "repoTokens": 734828,
+      "missed": [
+        "app/routes/api.github-template.ts"
+      ],
+      "rankOfEdited": [
+        9,
+        3
+      ]
+    },
+    {
+      "task": "b280127d",
+      "config": "BM25 + import graph",
+      "budget": 16000,
+      "fullRecall": 1,
+      "visibleRecall": 1,
+      "allFull": true,
+      "tokens": 15994,
+      "repoTokens": 734828,
+      "missed": [],
+      "rankOfEdited": [
+        9,
+        3
+      ]
+    },
+    {
+      "task": "b280127d",
+      "config": "BM25 + import graph",
+      "budget": 32000,
+      "fullRecall": 1,
+      "visibleRecall": 1,
+      "allFull": true,
+      "tokens": 31976,
+      "repoTokens": 734828,
+      "missed": [],
+      "rankOfEdited": [
+        9,
+        3
+      ]
+    },
+    {
+      "task": "b280127d",
+      "config": "BM25 + signatures",
+      "budget": 8000,
+      "fullRecall": 0.5,
+      "visibleRecall": 1,
+      "allFull": false,
+      "tokens": 8000,
+      "repoTokens": 734828,
+      "missed": [
+        "app/routes/api.github-template.ts"
+      ],
+      "rankOfEdited": [
+        9,
+        3
+      ]
+    },
+    {
+      "task": "b280127d",
+      "config": "BM25 + signatures",
+      "budget": 16000,
+      "fullRecall": 0.5,
+      "visibleRecall": 1,
+      "allFull": false,
+      "tokens": 15994,
+      "repoTokens": 734828,
+      "missed": [
+        "app/routes/api.github-template.ts"
+      ],
+      "rankOfEdited": [
+        9,
+        3
+      ]
+    },
+    {
+      "task": "b280127d",
+      "config": "BM25 + signatures",
+      "budget": 32000,
+      "fullRecall": 1,
+      "visibleRecall": 1,
+      "allFull": true,
+      "tokens": 31977,
+      "repoTokens": 734828,
+      "missed": [],
+      "rankOfEdited": [
+        9,
+        3
+      ]
+    },
+    {
+      "task": "b280127d",
+      "config": "BM25 + import graph + signatures",
+      "budget": 8000,
+      "fullRecall": 0.5,
+      "visibleRecall": 1,
+      "allFull": false,
+      "tokens": 8000,
+      "repoTokens": 734828,
+      "missed": [
+        "app/routes/api.github-template.ts"
+      ],
+      "rankOfEdited": [
+        9,
+        3
+      ]
+    },
+    {
+      "task": "b280127d",
+      "config": "BM25 + import graph + signatures",
+      "budget": 16000,
+      "fullRecall": 0.5,
+      "visibleRecall": 1,
+      "allFull": false,
+      "tokens": 15999,
+      "repoTokens": 734828,
+      "missed": [
+        "app/routes/api.github-template.ts"
+      ],
+      "rankOfEdited": [
+        9,
+        3
+      ]
+    },
+    {
+      "task": "b280127d",
+      "config": "BM25 + import graph + signatures",
+      "budget": 32000,
+      "fullRecall": 1,
+      "visibleRecall": 1,
+      "allFull": true,
+      "tokens": 31977,
+      "repoTokens": 734828,
+      "missed": [],
+      "rankOfEdited": [
+        9,
+        3
+      ]
+    },
+    {
+      "task": "0c1c8e3f",
+      "config": "Recent files (baseline)",
+      "budget": 8000,
+      "fullRecall": 0,
+      "visibleRecall": 0,
+      "allFull": false,
+      "tokens": 7991,
+      "repoTokens": 762430,
+      "missed": [
+        "app/components/chat/AssistantMessage.tsx",
+        "app/components/chat/BaseChat.tsx",
+        "app/components/chat/ToolInvocations.tsx",
+        "app/lib/runtime/projectMcp.ts"
+      ],
+      "rankOfEdited": [
+        233,
+        58,
+        78,
+        64
+      ]
+    },
+    {
+      "task": "0c1c8e3f",
+      "config": "Recent files (baseline)",
+      "budget": 16000,
+      "fullRecall": 0,
+      "visibleRecall": 0,
+      "allFull": false,
+      "tokens": 15995,
+      "repoTokens": 762430,
+      "missed": [
+        "app/components/chat/AssistantMessage.tsx",
+        "app/components/chat/BaseChat.tsx",
+        "app/components/chat/ToolInvocations.tsx",
+        "app/lib/runtime/projectMcp.ts"
+      ],
+      "rankOfEdited": [
+        233,
+        58,
+        78,
+        64
+      ]
+    },
+    {
+      "task": "0c1c8e3f",
+      "config": "Recent files (baseline)",
+      "budget": 32000,
+      "fullRecall": 0,
+      "visibleRecall": 0,
+      "allFull": false,
+      "tokens": 31979,
+      "repoTokens": 762430,
+      "missed": [
+        "app/components/chat/AssistantMessage.tsx",
+        "app/components/chat/BaseChat.tsx",
+        "app/components/chat/ToolInvocations.tsx",
+        "app/lib/runtime/projectMcp.ts"
+      ],
+      "rankOfEdited": [
+        233,
+        58,
+        78,
+        64
+      ]
+    },
+    {
+      "task": "0c1c8e3f",
+      "config": "BM25",
+      "budget": 8000,
+      "fullRecall": 0,
+      "visibleRecall": 0,
+      "allFull": false,
+      "tokens": 7958,
+      "repoTokens": 762430,
+      "missed": [
+        "app/components/chat/AssistantMessage.tsx",
+        "app/components/chat/BaseChat.tsx",
+        "app/components/chat/ToolInvocations.tsx",
+        "app/lib/runtime/projectMcp.ts"
+      ],
+      "rankOfEdited": [
+        null,
+        null,
+        9,
+        null
+      ]
+    },
+    {
+      "task": "0c1c8e3f",
+      "config": "BM25",
+      "budget": 16000,
+      "fullRecall": 0.25,
+      "visibleRecall": 0.25,
+      "allFull": false,
+      "tokens": 15924,
+      "repoTokens": 762430,
+      "missed": [
+        "app/components/chat/AssistantMessage.tsx",
+        "app/components/chat/BaseChat.tsx",
+        "app/lib/runtime/projectMcp.ts"
+      ],
+      "rankOfEdited": [
+        null,
+        null,
+        9,
+        null
+      ]
+    },
+    {
+      "task": "0c1c8e3f",
+      "config": "BM25",
+      "budget": 32000,
+      "fullRecall": 0.25,
+      "visibleRecall": 0.25,
+      "allFull": false,
+      "tokens": 31979,
+      "repoTokens": 762430,
+      "missed": [
+        "app/components/chat/AssistantMessage.tsx",
+        "app/components/chat/BaseChat.tsx",
+        "app/lib/runtime/projectMcp.ts"
+      ],
+      "rankOfEdited": [
+        null,
+        null,
+        9,
+        null
+      ]
+    },
+    {
+      "task": "0c1c8e3f",
+      "config": "BM25 + import graph",
+      "budget": 8000,
+      "fullRecall": 0,
+      "visibleRecall": 0,
+      "allFull": false,
+      "tokens": 7993,
+      "repoTokens": 762430,
+      "missed": [
+        "app/components/chat/AssistantMessage.tsx",
+        "app/components/chat/BaseChat.tsx",
+        "app/components/chat/ToolInvocations.tsx",
+        "app/lib/runtime/projectMcp.ts"
+      ],
+      "rankOfEdited": [
+        87,
+        131,
+        9,
+        68
+      ]
+    },
+    {
+      "task": "0c1c8e3f",
+      "config": "BM25 + import graph",
+      "budget": 16000,
+      "fullRecall": 0.25,
+      "visibleRecall": 0.25,
+      "allFull": false,
+      "tokens": 15998,
+      "repoTokens": 762430,
+      "missed": [
+        "app/components/chat/AssistantMessage.tsx",
+        "app/components/chat/BaseChat.tsx",
+        "app/lib/runtime/projectMcp.ts"
+      ],
+      "rankOfEdited": [
+        87,
+        131,
+        9,
+        68
+      ]
+    },
+    {
+      "task": "0c1c8e3f",
+      "config": "BM25 + import graph",
+      "budget": 32000,
+      "fullRecall": 0.25,
+      "visibleRecall": 0.25,
+      "allFull": false,
+      "tokens": 31985,
+      "repoTokens": 762430,
+      "missed": [
+        "app/components/chat/AssistantMessage.tsx",
+        "app/components/chat/BaseChat.tsx",
+        "app/lib/runtime/projectMcp.ts"
+      ],
+      "rankOfEdited": [
+        87,
+        131,
+        9,
+        68
+      ]
+    },
+    {
+      "task": "0c1c8e3f",
+      "config": "BM25 + signatures",
+      "budget": 8000,
+      "fullRecall": 0,
+      "visibleRecall": 0.25,
+      "allFull": false,
+      "tokens": 7984,
+      "repoTokens": 762430,
+      "missed": [
+        "app/components/chat/AssistantMessage.tsx",
+        "app/components/chat/BaseChat.tsx",
+        "app/components/chat/ToolInvocations.tsx",
+        "app/lib/runtime/projectMcp.ts"
+      ],
+      "rankOfEdited": [
+        null,
+        null,
+        9,
+        null
+      ]
+    },
+    {
+      "task": "0c1c8e3f",
+      "config": "BM25 + signatures",
+      "budget": 16000,
+      "fullRecall": 0,
+      "visibleRecall": 0.25,
+      "allFull": false,
+      "tokens": 15985,
+      "repoTokens": 762430,
+      "missed": [
+        "app/components/chat/AssistantMessage.tsx",
+        "app/components/chat/BaseChat.tsx",
+        "app/components/chat/ToolInvocations.tsx",
+        "app/lib/runtime/projectMcp.ts"
+      ],
+      "rankOfEdited": [
+        null,
+        null,
+        9,
+        null
+      ]
+    },
+    {
+      "task": "0c1c8e3f",
+      "config": "BM25 + signatures",
+      "budget": 32000,
+      "fullRecall": 0.25,
+      "visibleRecall": 0.25,
+      "allFull": false,
+      "tokens": 31915,
+      "repoTokens": 762430,
+      "missed": [
+        "app/components/chat/AssistantMessage.tsx",
+        "app/components/chat/BaseChat.tsx",
+        "app/lib/runtime/projectMcp.ts"
+      ],
+      "rankOfEdited": [
+        null,
+        null,
+        9,
+        null
+      ]
+    },
+    {
+      "task": "0c1c8e3f",
+      "config": "BM25 + import graph + signatures",
+      "budget": 8000,
+      "fullRecall": 0,
+      "visibleRecall": 0.25,
+      "allFull": false,
+      "tokens": 7998,
+      "repoTokens": 762430,
+      "missed": [
+        "app/components/chat/AssistantMessage.tsx",
+        "app/components/chat/BaseChat.tsx",
+        "app/components/chat/ToolInvocations.tsx",
+        "app/lib/runtime/projectMcp.ts"
+      ],
+      "rankOfEdited": [
+        87,
+        131,
+        9,
+        68
+      ]
+    },
+    {
+      "task": "0c1c8e3f",
+      "config": "BM25 + import graph + signatures",
+      "budget": 16000,
+      "fullRecall": 0,
+      "visibleRecall": 0.25,
+      "allFull": false,
+      "tokens": 15998,
+      "repoTokens": 762430,
+      "missed": [
+        "app/components/chat/AssistantMessage.tsx",
+        "app/components/chat/BaseChat.tsx",
+        "app/components/chat/ToolInvocations.tsx",
+        "app/lib/runtime/projectMcp.ts"
+      ],
+      "rankOfEdited": [
+        87,
+        131,
+        9,
+        68
+      ]
+    },
+    {
+      "task": "0c1c8e3f",
+      "config": "BM25 + import graph + signatures",
+      "budget": 32000,
+      "fullRecall": 0.25,
+      "visibleRecall": 0.25,
+      "allFull": false,
+      "tokens": 31997,
+      "repoTokens": 762430,
+      "missed": [
+        "app/components/chat/AssistantMessage.tsx",
+        "app/components/chat/BaseChat.tsx",
+        "app/lib/runtime/projectMcp.ts"
+      ],
+      "rankOfEdited": [
+        87,
+        131,
+        9,
+        68
+      ]
+    },
+    {
+      "task": "8b7d8aac",
+      "config": "Recent files (baseline)",
+      "budget": 8000,
+      "fullRecall": 0,
+      "visibleRecall": 0,
+      "allFull": false,
+      "tokens": 7991,
+      "repoTokens": 762337,
+      "missed": [
+        "app/components/@settings/tabs/plugins/PluginTab.tsx"
+      ],
+      "rankOfEdited": [
+        2
+      ]
+    },
+    {
+      "task": "8b7d8aac",
+      "config": "Recent files (baseline)",
+      "budget": 16000,
+      "fullRecall": 1,
+      "visibleRecall": 1,
+      "allFull": true,
+      "tokens": 15977,
+      "repoTokens": 762337,
+      "missed": [],
+      "rankOfEdited": [
+        2
+      ]
+    },
+    {
+      "task": "8b7d8aac",
+      "config": "Recent files (baseline)",
+      "budget": 32000,
+      "fullRecall": 1,
+      "visibleRecall": 1,
+      "allFull": true,
+      "tokens": 31998,
+      "repoTokens": 762337,
+      "missed": [],
+      "rankOfEdited": [
+        2
+      ]
+    },
+    {
+      "task": "8b7d8aac",
+      "config": "BM25",
+      "budget": 8000,
+      "fullRecall": 0,
+      "visibleRecall": 0,
+      "allFull": false,
+      "tokens": 7977,
+      "repoTokens": 762337,
+      "missed": [
+        "app/components/@settings/tabs/plugins/PluginTab.tsx"
+      ],
+      "rankOfEdited": [
+        1
+      ]
+    },
+    {
+      "task": "8b7d8aac",
+      "config": "BM25",
+      "budget": 16000,
+      "fullRecall": 1,
+      "visibleRecall": 1,
+      "allFull": true,
+      "tokens": 15992,
+      "repoTokens": 762337,
+      "missed": [],
+      "rankOfEdited": [
+        1
+      ]
+    },
+    {
+      "task": "8b7d8aac",
+      "config": "BM25",
+      "budget": 32000,
+      "fullRecall": 1,
+      "visibleRecall": 1,
+      "allFull": true,
+      "tokens": 31995,
+      "repoTokens": 762337,
+      "missed": [],
+      "rankOfEdited": [
+        1
+      ]
+    },
+    {
+      "task": "8b7d8aac",
+      "config": "BM25 + import graph",
+      "budget": 8000,
+      "fullRecall": 0,
+      "visibleRecall": 0,
+      "allFull": false,
+      "tokens": 7989,
+      "repoTokens": 762337,
+      "missed": [
+        "app/components/@settings/tabs/plugins/PluginTab.tsx"
+      ],
+      "rankOfEdited": [
+        1
+      ]
+    },
+    {
+      "task": "8b7d8aac",
+      "config": "BM25 + import graph",
+      "budget": 16000,
+      "fullRecall": 1,
+      "visibleRecall": 1,
+      "allFull": true,
+      "tokens": 15984,
+      "repoTokens": 762337,
+      "missed": [],
+      "rankOfEdited": [
+        1
+      ]
+    },
+    {
+      "task": "8b7d8aac",
+      "config": "BM25 + import graph",
+      "budget": 32000,
+      "fullRecall": 1,
+      "visibleRecall": 1,
+      "allFull": true,
+      "tokens": 31998,
+      "repoTokens": 762337,
+      "missed": [],
+      "rankOfEdited": [
+        1
+      ]
+    },
+    {
+      "task": "8b7d8aac",
+      "config": "BM25 + signatures",
+      "budget": 8000,
+      "fullRecall": 0,
+      "visibleRecall": 1,
+      "allFull": false,
+      "tokens": 7991,
+      "repoTokens": 762337,
+      "missed": [
+        "app/components/@settings/tabs/plugins/PluginTab.tsx"
+      ],
+      "rankOfEdited": [
+        1
+      ]
+    },
+    {
+      "task": "8b7d8aac",
+      "config": "BM25 + signatures",
+      "budget": 16000,
+      "fullRecall": 0,
+      "visibleRecall": 1,
+      "allFull": false,
+      "tokens": 15996,
+      "repoTokens": 762337,
+      "missed": [
+        "app/components/@settings/tabs/plugins/PluginTab.tsx"
+      ],
+      "rankOfEdited": [
+        1
+      ]
+    },
+    {
+      "task": "8b7d8aac",
+      "config": "BM25 + signatures",
+      "budget": 32000,
+      "fullRecall": 1,
+      "visibleRecall": 1,
+      "allFull": true,
+      "tokens": 31987,
+      "repoTokens": 762337,
+      "missed": [],
+      "rankOfEdited": [
+        1
+      ]
+    },
+    {
+      "task": "8b7d8aac",
+      "config": "BM25 + import graph + signatures",
+      "budget": 8000,
+      "fullRecall": 0,
+      "visibleRecall": 1,
+      "allFull": false,
+      "tokens": 7994,
+      "repoTokens": 762337,
+      "missed": [
+        "app/components/@settings/tabs/plugins/PluginTab.tsx"
+      ],
+      "rankOfEdited": [
+        1
+      ]
+    },
+    {
+      "task": "8b7d8aac",
+      "config": "BM25 + import graph + signatures",
+      "budget": 16000,
+      "fullRecall": 0,
+      "visibleRecall": 1,
+      "allFull": false,
+      "tokens": 15998,
+      "repoTokens": 762337,
+      "missed": [
+        "app/components/@settings/tabs/plugins/PluginTab.tsx"
+      ],
+      "rankOfEdited": [
+        1
+      ]
+    },
+    {
+      "task": "8b7d8aac",
+      "config": "BM25 + import graph + signatures",
+      "budget": 32000,
+      "fullRecall": 1,
+      "visibleRecall": 1,
+      "allFull": true,
+      "tokens": 31997,
+      "repoTokens": 762337,
+      "missed": [],
+      "rankOfEdited": [
+        1
+      ]
+    },
+    {
+      "task": "f8ba527f",
+      "config": "Recent files (baseline)",
+      "budget": 8000,
+      "fullRecall": 0,
+      "visibleRecall": 0,
+      "allFull": false,
+      "tokens": 7984,
+      "repoTokens": 762272,
+      "missed": [
+        "app/lib/plugins/marketplace.ts"
+      ],
+      "rankOfEdited": [
+        11
+      ]
+    },
+    {
+      "task": "f8ba527f",
+      "config": "Recent files (baseline)",
+      "budget": 16000,
+      "fullRecall": 0,
+      "visibleRecall": 0,
+      "allFull": false,
+      "tokens": 15989,
+      "repoTokens": 762272,
+      "missed": [
+        "app/lib/plugins/marketplace.ts"
+      ],
+      "rankOfEdited": [
+        11
+      ]
+    },
+    {
+      "task": "f8ba527f",
+      "config": "Recent files (baseline)",
+      "budget": 32000,
+      "fullRecall": 0,
+      "visibleRecall": 0,
+      "allFull": false,
+      "tokens": 32000,
+      "repoTokens": 762272,
+      "missed": [
+        "app/lib/plugins/marketplace.ts"
+      ],
+      "rankOfEdited": [
+        11
+      ]
+    },
+    {
+      "task": "f8ba527f",
+      "config": "BM25",
+      "budget": 8000,
+      "fullRecall": 1,
+      "visibleRecall": 1,
+      "allFull": true,
+      "tokens": 7992,
+      "repoTokens": 762272,
+      "missed": [],
+      "rankOfEdited": [
+        4
+      ]
+    },
+    {
+      "task": "f8ba527f",
+      "config": "BM25",
+      "budget": 16000,
+      "fullRecall": 0,
+      "visibleRecall": 0,
+      "allFull": false,
+      "tokens": 15986,
+      "repoTokens": 762272,
+      "missed": [
+        "app/lib/plugins/marketplace.ts"
+      ],
+      "rankOfEdited": [
+        4
+      ]
+    },
+    {
+      "task": "f8ba527f",
+      "config": "BM25",
+      "budget": 32000,
+      "fullRecall": 1,
+      "visibleRecall": 1,
+      "allFull": true,
+      "tokens": 31989,
+      "repoTokens": 762272,
+      "missed": [],
+      "rankOfEdited": [
+        4
+      ]
+    },
+    {
+      "task": "f8ba527f",
+      "config": "BM25 + import graph",
+      "budget": 8000,
+      "fullRecall": 1,
+      "visibleRecall": 1,
+      "allFull": true,
+      "tokens": 7992,
+      "repoTokens": 762272,
+      "missed": [],
+      "rankOfEdited": [
+        3
+      ]
+    },
+    {
+      "task": "f8ba527f",
+      "config": "BM25 + import graph",
+      "budget": 16000,
+      "fullRecall": 1,
+      "visibleRecall": 1,
+      "allFull": true,
+      "tokens": 15985,
+      "repoTokens": 762272,
+      "missed": [],
+      "rankOfEdited": [
+        3
+      ]
+    },
+    {
+      "task": "f8ba527f",
+      "config": "BM25 + import graph",
+      "budget": 32000,
+      "fullRecall": 1,
+      "visibleRecall": 1,
+      "allFull": true,
+      "tokens": 31978,
+      "repoTokens": 762272,
+      "missed": [],
+      "rankOfEdited": [
+        3
+      ]
+    },
+    {
+      "task": "f8ba527f",
+      "config": "BM25 + signatures",
+      "budget": 8000,
+      "fullRecall": 0,
+      "visibleRecall": 1,
+      "allFull": false,
+      "tokens": 7992,
+      "repoTokens": 762272,
+      "missed": [
+        "app/lib/plugins/marketplace.ts"
+      ],
+      "rankOfEdited": [
+        4
+      ]
+    },
+    {
+      "task": "f8ba527f",
+      "config": "BM25 + signatures",
+      "budget": 16000,
+      "fullRecall": 1,
+      "visibleRecall": 1,
+      "allFull": true,
+      "tokens": 16000,
+      "repoTokens": 762272,
+      "missed": [],
+      "rankOfEdited": [
+        4
+      ]
+    },
+    {
+      "task": "f8ba527f",
+      "config": "BM25 + signatures",
+      "budget": 32000,
+      "fullRecall": 1,
+      "visibleRecall": 1,
+      "allFull": true,
+      "tokens": 31999,
+      "repoTokens": 762272,
+      "missed": [],
+      "rankOfEdited": [
+        4
+      ]
+    },
+    {
+      "task": "f8ba527f",
+      "config": "BM25 + import graph + signatures",
+      "budget": 8000,
+      "fullRecall": 0,
+      "visibleRecall": 1,
+      "allFull": false,
+      "tokens": 7995,
+      "repoTokens": 762272,
+      "missed": [
+        "app/lib/plugins/marketplace.ts"
+      ],
+      "rankOfEdited": [
+        3
+      ]
+    },
+    {
+      "task": "f8ba527f",
+      "config": "BM25 + import graph + signatures",
+      "budget": 16000,
+      "fullRecall": 1,
+      "visibleRecall": 1,
+      "allFull": true,
+      "tokens": 15989,
+      "repoTokens": 762272,
+      "missed": [],
+      "rankOfEdited": [
+        3
+      ]
+    },
+    {
+      "task": "f8ba527f",
+      "config": "BM25 + import graph + signatures",
+      "budget": 32000,
+      "fullRecall": 1,
+      "visibleRecall": 1,
+      "allFull": true,
+      "tokens": 31999,
+      "repoTokens": 762272,
+      "missed": [],
+      "rankOfEdited": [
+        3
+      ]
+    },
+    {
+      "task": "7532d96b",
+      "config": "Recent files (baseline)",
+      "budget": 8000,
+      "fullRecall": 0,
+      "visibleRecall": 0,
+      "allFull": false,
+      "tokens": 7984,
+      "repoTokens": 762229,
+      "missed": [
+        "app/components/@settings/tabs/plugins/PluginTab.tsx"
+      ],
+      "rankOfEdited": [
+        4
+      ]
+    },
+    {
+      "task": "7532d96b",
+      "config": "Recent files (baseline)",
+      "budget": 16000,
+      "fullRecall": 0,
+      "visibleRecall": 0,
+      "allFull": false,
+      "tokens": 15978,
+      "repoTokens": 762229,
+      "missed": [
+        "app/components/@settings/tabs/plugins/PluginTab.tsx"
+      ],
+      "rankOfEdited": [
+        4
+      ]
+    },
+    {
+      "task": "7532d96b",
+      "config": "Recent files (baseline)",
+      "budget": 32000,
+      "fullRecall": 1,
+      "visibleRecall": 1,
+      "allFull": true,
+      "tokens": 31993,
+      "repoTokens": 762229,
+      "missed": [],
+      "rankOfEdited": [
+        4
+      ]
+    },
+    {
+      "task": "7532d96b",
+      "config": "BM25",
+      "budget": 8000,
+      "fullRecall": 0,
+      "visibleRecall": 0,
+      "allFull": false,
+      "tokens": 7996,
+      "repoTokens": 762229,
+      "missed": [
+        "app/components/@settings/tabs/plugins/PluginTab.tsx"
+      ],
+      "rankOfEdited": [
+        3
+      ]
+    },
+    {
+      "task": "7532d96b",
+      "config": "BM25",
+      "budget": 16000,
+      "fullRecall": 0,
+      "visibleRecall": 0,
+      "allFull": false,
+      "tokens": 15995,
+      "repoTokens": 762229,
+      "missed": [
+        "app/components/@settings/tabs/plugins/PluginTab.tsx"
+      ],
+      "rankOfEdited": [
+        3
+      ]
+    },
+    {
+      "task": "7532d96b",
+      "config": "BM25",
+      "budget": 32000,
+      "fullRecall": 1,
+      "visibleRecall": 1,
+      "allFull": true,
+      "tokens": 31977,
+      "repoTokens": 762229,
+      "missed": [],
+      "rankOfEdited": [
+        3
+      ]
+    },
+    {
+      "task": "7532d96b",
+      "config": "BM25 + import graph",
+      "budget": 8000,
+      "fullRecall": 0,
+      "visibleRecall": 0,
+      "allFull": false,
+      "tokens": 7976,
+      "repoTokens": 762229,
+      "missed": [
+        "app/components/@settings/tabs/plugins/PluginTab.tsx"
+      ],
+      "rankOfEdited": [
+        4
+      ]
+    },
+    {
+      "task": "7532d96b",
+      "config": "BM25 + import graph",
+      "budget": 16000,
+      "fullRecall": 0,
+      "visibleRecall": 0,
+      "allFull": false,
+      "tokens": 15986,
+      "repoTokens": 762229,
+      "missed": [
+        "app/components/@settings/tabs/plugins/PluginTab.tsx"
+      ],
+      "rankOfEdited": [
+        4
+      ]
+    },
+    {
+      "task": "7532d96b",
+      "config": "BM25 + import graph",
+      "budget": 32000,
+      "fullRecall": 1,
+      "visibleRecall": 1,
+      "allFull": true,
+      "tokens": 31986,
+      "repoTokens": 762229,
+      "missed": [],
+      "rankOfEdited": [
+        4
+      ]
+    },
+    {
+      "task": "7532d96b",
+      "config": "BM25 + signatures",
+      "budget": 8000,
+      "fullRecall": 0,
+      "visibleRecall": 1,
+      "allFull": false,
+      "tokens": 7994,
+      "repoTokens": 762229,
+      "missed": [
+        "app/components/@settings/tabs/plugins/PluginTab.tsx"
+      ],
+      "rankOfEdited": [
+        3
+      ]
+    },
+    {
+      "task": "7532d96b",
+      "config": "BM25 + signatures",
+      "budget": 16000,
+      "fullRecall": 0,
+      "visibleRecall": 1,
+      "allFull": false,
+      "tokens": 16000,
+      "repoTokens": 762229,
+      "missed": [
+        "app/components/@settings/tabs/plugins/PluginTab.tsx"
+      ],
+      "rankOfEdited": [
+        3
+      ]
+    },
+    {
+      "task": "7532d96b",
+      "config": "BM25 + signatures",
+      "budget": 32000,
+      "fullRecall": 1,
+      "visibleRecall": 1,
+      "allFull": true,
+      "tokens": 31994,
+      "repoTokens": 762229,
+      "missed": [],
+      "rankOfEdited": [
+        3
+      ]
+    },
+    {
+      "task": "7532d96b",
+      "config": "BM25 + import graph + signatures",
+      "budget": 8000,
+      "fullRecall": 0,
+      "visibleRecall": 1,
+      "allFull": false,
+      "tokens": 7992,
+      "repoTokens": 762229,
+      "missed": [
+        "app/components/@settings/tabs/plugins/PluginTab.tsx"
+      ],
+      "rankOfEdited": [
+        4
+      ]
+    },
+    {
+      "task": "7532d96b",
+      "config": "BM25 + import graph + signatures",
+      "budget": 16000,
+      "fullRecall": 0,
+      "visibleRecall": 1,
+      "allFull": false,
+      "tokens": 15982,
+      "repoTokens": 762229,
+      "missed": [
+        "app/components/@settings/tabs/plugins/PluginTab.tsx"
+      ],
+      "rankOfEdited": [
+        4
+      ]
+    },
+    {
+      "task": "7532d96b",
+      "config": "BM25 + import graph + signatures",
+      "budget": 32000,
+      "fullRecall": 1,
+      "visibleRecall": 1,
+      "allFull": true,
+      "tokens": 31999,
+      "repoTokens": 762229,
+      "missed": [],
+      "rankOfEdited": [
+        4
+      ]
+    },
+    {
+      "task": "7dc4187e",
+      "config": "Recent files (baseline)",
+      "budget": 8000,
+      "fullRecall": 0,
+      "visibleRecall": 0,
+      "allFull": false,
+      "tokens": 8000,
+      "repoTokens": 728424,
+      "missed": [
+        "app/components/@settings/tabs/connectors/ConnectorsTab.tsx"
+      ],
+      "rankOfEdited": [
+        108
+      ]
+    },
+    {
+      "task": "7dc4187e",
+      "config": "Recent files (baseline)",
+      "budget": 16000,
+      "fullRecall": 0,
+      "visibleRecall": 0,
+      "allFull": false,
+      "tokens": 15981,
+      "repoTokens": 728424,
+      "missed": [
+        "app/components/@settings/tabs/connectors/ConnectorsTab.tsx"
+      ],
+      "rankOfEdited": [
+        108
+      ]
+    },
+    {
+      "task": "7dc4187e",
+      "config": "Recent files (baseline)",
+      "budget": 32000,
+      "fullRecall": 0,
+      "visibleRecall": 0,
+      "allFull": false,
+      "tokens": 31993,
+      "repoTokens": 728424,
+      "missed": [
+        "app/components/@settings/tabs/connectors/ConnectorsTab.tsx"
+      ],
+      "rankOfEdited": [
+        108
+      ]
+    },
+    {
+      "task": "7dc4187e",
+      "config": "BM25",
+      "budget": 8000,
+      "fullRecall": 0,
+      "visibleRecall": 0,
+      "allFull": false,
+      "tokens": 7970,
+      "repoTokens": 728424,
+      "missed": [
+        "app/components/@settings/tabs/connectors/ConnectorsTab.tsx"
+      ],
+      "rankOfEdited": [
+        4
+      ]
+    },
+    {
+      "task": "7dc4187e",
+      "config": "BM25",
+      "budget": 16000,
+      "fullRecall": 1,
+      "visibleRecall": 1,
+      "allFull": true,
+      "tokens": 16000,
+      "repoTokens": 728424,
+      "missed": [],
+      "rankOfEdited": [
+        4
+      ]
+    },
+    {
+      "task": "7dc4187e",
+      "config": "BM25",
+      "budget": 32000,
+      "fullRecall": 1,
+      "visibleRecall": 1,
+      "allFull": true,
+      "tokens": 31991,
+      "repoTokens": 728424,
+      "missed": [],
+      "rankOfEdited": [
+        4
+      ]
+    },
+    {
+      "task": "7dc4187e",
+      "config": "BM25 + import graph",
+      "budget": 8000,
+      "fullRecall": 0,
+      "visibleRecall": 0,
+      "allFull": false,
+      "tokens": 7998,
+      "repoTokens": 728424,
+      "missed": [
+        "app/components/@settings/tabs/connectors/ConnectorsTab.tsx"
+      ],
+      "rankOfEdited": [
+        4
+      ]
+    },
+    {
+      "task": "7dc4187e",
+      "config": "BM25 + import graph",
+      "budget": 16000,
+      "fullRecall": 1,
+      "visibleRecall": 1,
+      "allFull": true,
+      "tokens": 15996,
+      "repoTokens": 728424,
+      "missed": [],
+      "rankOfEdited": [
+        4
+      ]
+    },
+    {
+      "task": "7dc4187e",
+      "config": "BM25 + import graph",
+      "budget": 32000,
+      "fullRecall": 1,
+      "visibleRecall": 1,
+      "allFull": true,
+      "tokens": 31998,
+      "repoTokens": 728424,
+      "missed": [],
+      "rankOfEdited": [
+        4
+      ]
+    },
+    {
+      "task": "7dc4187e",
+      "config": "BM25 + signatures",
+      "budget": 8000,
+      "fullRecall": 0,
+      "visibleRecall": 1,
+      "allFull": false,
+      "tokens": 7988,
+      "repoTokens": 728424,
+      "missed": [
+        "app/components/@settings/tabs/connectors/ConnectorsTab.tsx"
+      ],
+      "rankOfEdited": [
+        4
+      ]
+    },
+    {
+      "task": "7dc4187e",
+      "config": "BM25 + signatures",
+      "budget": 16000,
+      "fullRecall": 1,
+      "visibleRecall": 1,
+      "allFull": true,
+      "tokens": 15955,
+      "repoTokens": 728424,
+      "missed": [],
+      "rankOfEdited": [
+        4
+      ]
+    },
+    {
+      "task": "7dc4187e",
+      "config": "BM25 + signatures",
+      "budget": 32000,
+      "fullRecall": 1,
+      "visibleRecall": 1,
+      "allFull": true,
+      "tokens": 31452,
+      "repoTokens": 728424,
+      "missed": [],
+      "rankOfEdited": [
+        4
+      ]
+    },
+    {
+      "task": "7dc4187e",
+      "config": "BM25 + import graph + signatures",
+      "budget": 8000,
+      "fullRecall": 0,
+      "visibleRecall": 1,
+      "allFull": false,
+      "tokens": 7978,
+      "repoTokens": 728424,
+      "missed": [
+        "app/components/@settings/tabs/connectors/ConnectorsTab.tsx"
+      ],
+      "rankOfEdited": [
+        4
+      ]
+    },
+    {
+      "task": "7dc4187e",
+      "config": "BM25 + import graph + signatures",
+      "budget": 16000,
+      "fullRecall": 1,
+      "visibleRecall": 1,
+      "allFull": true,
+      "tokens": 15998,
+      "repoTokens": 728424,
+      "missed": [],
+      "rankOfEdited": [
+        4
+      ]
+    },
+    {
+      "task": "7dc4187e",
+      "config": "BM25 + import graph + signatures",
+      "budget": 32000,
+      "fullRecall": 1,
+      "visibleRecall": 1,
+      "allFull": true,
+      "tokens": 31986,
+      "repoTokens": 728424,
+      "missed": [],
+      "rankOfEdited": [
+        4
+      ]
+    },
+    {
+      "task": "8c2d2380",
+      "config": "Recent files (baseline)",
+      "budget": 8000,
+      "fullRecall": 0,
+      "visibleRecall": 0,
+      "allFull": false,
+      "tokens": 7982,
+      "repoTokens": 722552,
+      "missed": [
+        "app/entry.server.tsx",
+        "app/lib/.server/llm/prompt-workstyle.ts",
+        "app/lib/.server/llm/stream-text.ts",
+        "app/root.tsx",
+        "vite.config.ts"
+      ],
+      "rankOfEdited": [
+        204,
+        36,
+        116,
+        75,
+        33
+      ]
+    },
+    {
+      "task": "8c2d2380",
+      "config": "Recent files (baseline)",
+      "budget": 16000,
+      "fullRecall": 0,
+      "visibleRecall": 0,
+      "allFull": false,
+      "tokens": 15985,
+      "repoTokens": 722552,
+      "missed": [
+        "app/entry.server.tsx",
+        "app/lib/.server/llm/prompt-workstyle.ts",
+        "app/lib/.server/llm/stream-text.ts",
+        "app/root.tsx",
+        "vite.config.ts"
+      ],
+      "rankOfEdited": [
+        204,
+        36,
+        116,
+        75,
+        33
+      ]
+    },
+    {
+      "task": "8c2d2380",
+      "config": "Recent files (baseline)",
+      "budget": 32000,
+      "fullRecall": 0,
+      "visibleRecall": 0,
+      "allFull": false,
+      "tokens": 31996,
+      "repoTokens": 722552,
+      "missed": [
+        "app/entry.server.tsx",
+        "app/lib/.server/llm/prompt-workstyle.ts",
+        "app/lib/.server/llm/stream-text.ts",
+        "app/root.tsx",
+        "vite.config.ts"
+      ],
+      "rankOfEdited": [
+        204,
+        36,
+        116,
+        75,
+        33
+      ]
+    },
+    {
+      "task": "8c2d2380",
+      "config": "BM25",
+      "budget": 8000,
+      "fullRecall": 0,
+      "visibleRecall": 0,
+      "allFull": false,
+      "tokens": 7997,
+      "repoTokens": 722552,
+      "missed": [
+        "app/entry.server.tsx",
+        "app/lib/.server/llm/prompt-workstyle.ts",
+        "app/lib/.server/llm/stream-text.ts",
+        "app/root.tsx",
+        "vite.config.ts"
+      ],
+      "rankOfEdited": [
+        85,
+        36,
+        40,
+        null,
+        30
+      ]
+    },
+    {
+      "task": "8c2d2380",
+      "config": "BM25",
+      "budget": 16000,
+      "fullRecall": 0,
+      "visibleRecall": 0,
+      "allFull": false,
+      "tokens": 15980,
+      "repoTokens": 722552,
+      "missed": [
+        "app/entry.server.tsx",
+        "app/lib/.server/llm/prompt-workstyle.ts",
+        "app/lib/.server/llm/stream-text.ts",
+        "app/root.tsx",
+        "vite.config.ts"
+      ],
+      "rankOfEdited": [
+        85,
+        36,
+        40,
+        null,
+        30
+      ]
+    },
+    {
+      "task": "8c2d2380",
+      "config": "BM25",
+      "budget": 32000,
+      "fullRecall": 0,
+      "visibleRecall": 0,
+      "allFull": false,
+      "tokens": 31997,
+      "repoTokens": 722552,
+      "missed": [
+        "app/entry.server.tsx",
+        "app/lib/.server/llm/prompt-workstyle.ts",
+        "app/lib/.server/llm/stream-text.ts",
+        "app/root.tsx",
+        "vite.config.ts"
+      ],
+      "rankOfEdited": [
+        85,
+        36,
+        40,
+        null,
+        30
+      ]
+    },
+    {
+      "task": "8c2d2380",
+      "config": "BM25 + import graph",
+      "budget": 8000,
+      "fullRecall": 0,
+      "visibleRecall": 0,
+      "allFull": false,
+      "tokens": 7997,
+      "repoTokens": 722552,
+      "missed": [
+        "app/entry.server.tsx",
+        "app/lib/.server/llm/prompt-workstyle.ts",
+        "app/lib/.server/llm/stream-text.ts",
+        "app/root.tsx",
+        "vite.config.ts"
+      ],
+      "rankOfEdited": [
+        98,
+        43,
+        30,
+        300,
+        39
+      ]
+    },
+    {
+      "task": "8c2d2380",
+      "config": "BM25 + import graph",
+      "budget": 16000,
+      "fullRecall": 0,
+      "visibleRecall": 0,
+      "allFull": false,
+      "tokens": 15999,
+      "repoTokens": 722552,
+      "missed": [
+        "app/entry.server.tsx",
+        "app/lib/.server/llm/prompt-workstyle.ts",
+        "app/lib/.server/llm/stream-text.ts",
+        "app/root.tsx",
+        "vite.config.ts"
+      ],
+      "rankOfEdited": [
+        98,
+        43,
+        30,
+        300,
+        39
+      ]
+    },
+    {
+      "task": "8c2d2380",
+      "config": "BM25 + import graph",
+      "budget": 32000,
+      "fullRecall": 0,
+      "visibleRecall": 0,
+      "allFull": false,
+      "tokens": 31982,
+      "repoTokens": 722552,
+      "missed": [
+        "app/entry.server.tsx",
+        "app/lib/.server/llm/prompt-workstyle.ts",
+        "app/lib/.server/llm/stream-text.ts",
+        "app/root.tsx",
+        "vite.config.ts"
+      ],
+      "rankOfEdited": [
+        98,
+        43,
+        30,
+        300,
+        39
+      ]
+    },
+    {
+      "task": "8c2d2380",
+      "config": "BM25 + signatures",
+      "budget": 8000,
+      "fullRecall": 0,
+      "visibleRecall": 0,
+      "allFull": false,
+      "tokens": 7995,
+      "repoTokens": 722552,
+      "missed": [
+        "app/entry.server.tsx",
+        "app/lib/.server/llm/prompt-workstyle.ts",
+        "app/lib/.server/llm/stream-text.ts",
+        "app/root.tsx",
+        "vite.config.ts"
+      ],
+      "rankOfEdited": [
+        85,
+        36,
+        40,
+        null,
+        30
+      ]
+    },
+    {
+      "task": "8c2d2380",
+      "config": "BM25 + signatures",
+      "budget": 16000,
+      "fullRecall": 0,
+      "visibleRecall": 0.2,
+      "allFull": false,
+      "tokens": 15998,
+      "repoTokens": 722552,
+      "missed": [
+        "app/entry.server.tsx",
+        "app/lib/.server/llm/prompt-workstyle.ts",
+        "app/lib/.server/llm/stream-text.ts",
+        "app/root.tsx",
+        "vite.config.ts"
+      ],
+      "rankOfEdited": [
+        85,
+        36,
+        40,
+        null,
+        30
+      ]
+    },
+    {
+      "task": "8c2d2380",
+      "config": "BM25 + signatures",
+      "budget": 32000,
+      "fullRecall": 0,
+      "visibleRecall": 0.6,
+      "allFull": false,
+      "tokens": 32000,
+      "repoTokens": 722552,
+      "missed": [
+        "app/entry.server.tsx",
+        "app/lib/.server/llm/prompt-workstyle.ts",
+        "app/lib/.server/llm/stream-text.ts",
+        "app/root.tsx",
+        "vite.config.ts"
+      ],
+      "rankOfEdited": [
+        85,
+        36,
+        40,
+        null,
+        30
+      ]
+    },
+    {
+      "task": "8c2d2380",
+      "config": "BM25 + import graph + signatures",
+      "budget": 8000,
+      "fullRecall": 0,
+      "visibleRecall": 0,
+      "allFull": false,
+      "tokens": 7980,
+      "repoTokens": 722552,
+      "missed": [
+        "app/entry.server.tsx",
+        "app/lib/.server/llm/prompt-workstyle.ts",
+        "app/lib/.server/llm/stream-text.ts",
+        "app/root.tsx",
+        "vite.config.ts"
+      ],
+      "rankOfEdited": [
+        98,
+        43,
+        30,
+        300,
+        39
+      ]
+    },
+    {
+      "task": "8c2d2380",
+      "config": "BM25 + import graph + signatures",
+      "budget": 16000,
+      "fullRecall": 0,
+      "visibleRecall": 0,
+      "allFull": false,
+      "tokens": 15999,
+      "repoTokens": 722552,
+      "missed": [
+        "app/entry.server.tsx",
+        "app/lib/.server/llm/prompt-workstyle.ts",
+        "app/lib/.server/llm/stream-text.ts",
+        "app/root.tsx",
+        "vite.config.ts"
+      ],
+      "rankOfEdited": [
+        98,
+        43,
+        30,
+        300,
+        39
+      ]
+    },
+    {
+      "task": "8c2d2380",
+      "config": "BM25 + import graph + signatures",
+      "budget": 32000,
+      "fullRecall": 0,
+      "visibleRecall": 0.6,
+      "allFull": false,
+      "tokens": 32000,
+      "repoTokens": 722552,
+      "missed": [
+        "app/entry.server.tsx",
+        "app/lib/.server/llm/prompt-workstyle.ts",
+        "app/lib/.server/llm/stream-text.ts",
+        "app/root.tsx",
+        "vite.config.ts"
+      ],
+      "rankOfEdited": [
+        98,
+        43,
+        30,
+        300,
+        39
+      ]
+    }
+  ]
+}
