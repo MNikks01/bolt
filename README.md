@@ -2,7 +2,7 @@
 
 Given a repo and a request, pick the files a coding agent should see within a token budget, and compress the next tier down to signatures. It's evaluated on **30 real tasks from bolt.diy's own git history**, with a separate dev split for tuning.
 
-**Target:** StackBlitz · Senior Applied AI Engineer (Bolt.new). The role names context compression; Bolt's [own docs](https://support.bolt.new/best-practices/manage-context) tell users large context causes errors and worse results.
+**Why:** Bolt's [own docs](https://support.bolt.new/best-practices/manage-context) tell users large context causes errors and worse results.
 
 ## Result
 
